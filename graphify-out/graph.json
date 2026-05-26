@@ -1,0 +1,2370 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "web_security_topics_group",
+        "label": "Web Security Topics Covered in UFCD 10791",
+        "nodes": [
+          "concept_sql_injection",
+          "concept_xss",
+          "concept_csrf",
+          "concept_code_injection",
+          "concept_session_hijacking",
+          "concept_known_vulnerabilities",
+          "concept_brute_force",
+          "concept_security_by_design"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "src/app.component.ts"
+      },
+      {
+        "id": "angular_project_files",
+        "label": "Angular Project Configuration Files",
+        "nodes": [
+          "angular_json_angularconfig",
+          "package_json_packageconfig",
+          "tsconfig_json_tsconfig",
+          "index_tsx_bootstrapentry"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "angular.json"
+      },
+      {
+        "id": "security_defense_patterns",
+        "label": "Security Defense Patterns (Good Practices)",
+        "nodes": [
+          "concept_prepared_statements",
+          "concept_output_encoding",
+          "concept_csrf_tokens",
+          "concept_secure_cookies_https",
+          "concept_dependency_management",
+          "concept_rate_limiting"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "src/app.component.ts"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "angular.json",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L1",
+      "id": "angular_json",
+      "community": 4,
+      "norm_label": "angular.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L2",
+      "id": "tiago_mota_angular_schema",
+      "community": 4,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L3",
+      "id": "tiago_mota_angular_version",
+      "community": 4,
+      "norm_label": "version"
+    },
+    {
+      "label": "newProjectRoot",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L4",
+      "id": "tiago_mota_angular_newprojectroot",
+      "community": 4,
+      "norm_label": "newprojectroot"
+    },
+    {
+      "label": "projects",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L5",
+      "id": "tiago_mota_angular_projects",
+      "community": 4,
+      "norm_label": "projects"
+    },
+    {
+      "label": "app",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L6",
+      "id": "tiago_mota_angular_projects_app",
+      "community": 4,
+      "norm_label": "app"
+    },
+    {
+      "label": "projectType",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L7",
+      "id": "tiago_mota_angular_app_projecttype",
+      "community": 4,
+      "norm_label": "projecttype"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L8",
+      "id": "tiago_mota_angular_app_root",
+      "community": 4,
+      "norm_label": "root"
+    },
+    {
+      "label": "sourceRoot",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L9",
+      "id": "tiago_mota_angular_app_sourceroot",
+      "community": 4,
+      "norm_label": "sourceroot"
+    },
+    {
+      "label": "prefix",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L10",
+      "id": "tiago_mota_angular_app_prefix",
+      "community": 4,
+      "norm_label": "prefix"
+    },
+    {
+      "label": "architect",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L11",
+      "id": "tiago_mota_angular_app_architect",
+      "community": 1,
+      "norm_label": "architect"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L12",
+      "id": "tiago_mota_angular_architect_build",
+      "community": 1,
+      "norm_label": "build"
+    },
+    {
+      "label": "builder",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L13",
+      "id": "tiago_mota_angular_build_builder",
+      "community": 1,
+      "norm_label": "builder"
+    },
+    {
+      "label": "options",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L14",
+      "id": "tiago_mota_angular_build_options",
+      "community": 6,
+      "norm_label": "options"
+    },
+    {
+      "label": "outputPath",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L15",
+      "id": "tiago_mota_angular_options_outputpath",
+      "community": 6,
+      "norm_label": "outputpath"
+    },
+    {
+      "label": "base",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L16",
+      "id": "tiago_mota_angular_outputpath_base",
+      "community": 6,
+      "norm_label": "base"
+    },
+    {
+      "label": "browser",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L17",
+      "id": "tiago_mota_angular_outputpath_browser",
+      "community": 6,
+      "norm_label": "browser"
+    },
+    {
+      "label": "browser",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L19",
+      "id": "tiago_mota_angular_options_browser",
+      "community": 6,
+      "norm_label": "browser"
+    },
+    {
+      "label": "tsConfig",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L20",
+      "id": "tiago_mota_angular_options_tsconfig",
+      "community": 6,
+      "norm_label": "tsconfig"
+    },
+    {
+      "label": "configurations",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L22",
+      "id": "tiago_mota_angular_build_configurations",
+      "community": 1,
+      "norm_label": "configurations"
+    },
+    {
+      "label": "production",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L23",
+      "id": "tiago_mota_angular_configurations_production",
+      "community": 1,
+      "norm_label": "production"
+    },
+    {
+      "label": "outputHashing",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L24",
+      "id": "tiago_mota_angular_production_outputhashing",
+      "community": 1,
+      "norm_label": "outputhashing"
+    },
+    {
+      "label": "development",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L26",
+      "id": "tiago_mota_angular_configurations_development",
+      "community": 1,
+      "norm_label": "development"
+    },
+    {
+      "label": "optimization",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L27",
+      "id": "tiago_mota_angular_development_optimization",
+      "community": 1,
+      "norm_label": "optimization"
+    },
+    {
+      "label": "extractLicenses",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L28",
+      "id": "tiago_mota_angular_development_extractlicenses",
+      "community": 1,
+      "norm_label": "extractlicenses"
+    },
+    {
+      "label": "sourceMap",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L29",
+      "id": "tiago_mota_angular_development_sourcemap",
+      "community": 1,
+      "norm_label": "sourcemap"
+    },
+    {
+      "label": "defaultConfiguration",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L32",
+      "id": "tiago_mota_angular_build_defaultconfiguration",
+      "community": 1,
+      "norm_label": "defaultconfiguration"
+    },
+    {
+      "label": "serve",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L34",
+      "id": "tiago_mota_angular_architect_serve",
+      "community": 1,
+      "norm_label": "serve"
+    },
+    {
+      "label": "builder",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L35",
+      "id": "tiago_mota_angular_serve_builder",
+      "community": 1,
+      "norm_label": "builder"
+    },
+    {
+      "label": "options",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L36",
+      "id": "tiago_mota_angular_serve_options",
+      "community": 1,
+      "norm_label": "options"
+    },
+    {
+      "label": "port",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L37",
+      "id": "tiago_mota_angular_options_port",
+      "community": 1,
+      "norm_label": "port"
+    },
+    {
+      "label": "configurations",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L39",
+      "id": "tiago_mota_angular_serve_configurations",
+      "community": 1,
+      "norm_label": "configurations"
+    },
+    {
+      "label": "buildTarget",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L41",
+      "id": "tiago_mota_angular_production_buildtarget",
+      "community": 1,
+      "norm_label": "buildtarget"
+    },
+    {
+      "label": "buildTarget",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L44",
+      "id": "tiago_mota_angular_development_buildtarget",
+      "community": 1,
+      "norm_label": "buildtarget"
+    },
+    {
+      "label": "defaultConfiguration",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": "L47",
+      "id": "tiago_mota_angular_serve_defaultconfiguration",
+      "community": 1,
+      "norm_label": "defaultconfiguration"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 3,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "tiago_mota_package_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "tiago_mota_package_private",
+      "community": 3,
+      "norm_label": "private"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "tiago_mota_package_version",
+      "community": 3,
+      "norm_label": "version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "tiago_mota_package_type",
+      "community": 3,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "tiago_mota_package_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "tiago_mota_package_scripts_dev",
+      "community": 3,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "tiago_mota_package_scripts_build",
+      "community": 3,
+      "norm_label": "build"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "tiago_mota_package_scripts_preview",
+      "community": 3,
+      "norm_label": "preview"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "tiago_mota_package_dependencies",
+      "community": 5,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "rxjs",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "tiago_mota_package_dependencies_rxjs",
+      "community": 5,
+      "norm_label": "rxjs"
+    },
+    {
+      "label": "@angular/compiler",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "tiago_mota_package_dependencies_angular_compiler",
+      "community": 5,
+      "norm_label": "@angular/compiler"
+    },
+    {
+      "label": "@angular/platform-browser",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "tiago_mota_package_dependencies_angular_platform_browser",
+      "community": 5,
+      "norm_label": "@angular/platform-browser"
+    },
+    {
+      "label": "@angular/core",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "tiago_mota_package_dependencies_angular_core",
+      "community": 5,
+      "norm_label": "@angular/core"
+    },
+    {
+      "label": "@angular/common",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "tiago_mota_package_dependencies_angular_common",
+      "community": 5,
+      "norm_label": "@angular/common"
+    },
+    {
+      "label": "@angular/build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "tiago_mota_package_dependencies_angular_build",
+      "community": 5,
+      "norm_label": "@angular/build"
+    },
+    {
+      "label": "@angular/cli",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "tiago_mota_package_dependencies_angular_cli",
+      "community": 5,
+      "norm_label": "@angular/cli"
+    },
+    {
+      "label": "@angular/compiler-cli",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "tiago_mota_package_dependencies_angular_compiler_cli",
+      "community": 5,
+      "norm_label": "@angular/compiler-cli"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "tiago_mota_package_dependencies_tailwindcss",
+      "community": 5,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "id": "tiago_mota_package_devdependencies",
+      "community": 3,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "tiago_mota_package_devdependencies_types_node",
+      "community": 3,
+      "norm_label": "@types/node"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "tiago_mota_package_devdependencies_typescript",
+      "community": 3,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "tiago_mota_package_devdependencies_vite",
+      "community": 3,
+      "norm_label": "vite"
+    },
+    {
+      "label": "metadata.json",
+      "file_type": "code",
+      "source_file": "metadata.json",
+      "source_location": "L1",
+      "id": "metadata_json",
+      "community": 8,
+      "norm_label": "metadata.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "metadata.json",
+      "source_location": "L2",
+      "id": "tiago_mota_metadata_name",
+      "community": 8,
+      "norm_label": "name"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "metadata.json",
+      "source_location": "L3",
+      "id": "tiago_mota_metadata_description",
+      "community": 8,
+      "norm_label": "description"
+    },
+    {
+      "label": "requestFramePermissions",
+      "file_type": "code",
+      "source_file": "metadata.json",
+      "source_location": "L4",
+      "id": "tiago_mota_metadata_requestframepermissions",
+      "community": 8,
+      "norm_label": "requestframepermissions"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "id": "tsconfig_json",
+      "community": 2,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "id": "tiago_mota_tsconfig_compileroptions",
+      "community": 2,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "id": "tiago_mota_tsconfig_compileroptions_target",
+      "community": 2,
+      "norm_label": "target"
+    },
+    {
+      "label": "experimentalDecorators",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "id": "tiago_mota_tsconfig_compileroptions_experimentaldecorators",
+      "community": 2,
+      "norm_label": "experimentaldecorators"
+    },
+    {
+      "label": "useDefineForClassFields",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "id": "tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
+      "community": 2,
+      "norm_label": "usedefineforclassfields"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "id": "tiago_mota_tsconfig_compileroptions_module",
+      "community": 2,
+      "norm_label": "module"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L7",
+      "id": "tiago_mota_tsconfig_compileroptions_lib",
+      "community": 2,
+      "norm_label": "lib"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "id": "tiago_mota_tsconfig_compileroptions_skiplibcheck",
+      "community": 2,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "types",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "id": "tiago_mota_tsconfig_compileroptions_types",
+      "community": 2,
+      "norm_label": "types"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "id": "tiago_mota_tsconfig_compileroptions_moduleresolution",
+      "community": 2,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L17",
+      "id": "tiago_mota_tsconfig_compileroptions_isolatedmodules",
+      "community": 2,
+      "norm_label": "isolatedmodules"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L18",
+      "id": "tiago_mota_tsconfig_compileroptions_moduledetection",
+      "community": 2,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L19",
+      "id": "tiago_mota_tsconfig_compileroptions_allowjs",
+      "community": 2,
+      "norm_label": "allowjs"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L20",
+      "id": "tiago_mota_tsconfig_compileroptions_jsx",
+      "community": 2,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L21",
+      "id": "tiago_mota_tsconfig_compileroptions_paths",
+      "community": 2,
+      "norm_label": "paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L22",
+      "id": "tiago_mota_tsconfig_paths",
+      "community": 2,
+      "norm_label": "@/*"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L27",
+      "id": "tiago_mota_tsconfig_files",
+      "community": 2,
+      "norm_label": "files"
+    },
+    {
+      "label": "angularCompilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L30",
+      "id": "tiago_mota_tsconfig_angularcompileroptions",
+      "community": 2,
+      "norm_label": "angularcompileroptions"
+    },
+    {
+      "label": "disableTypeScriptVersionCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "id": "tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
+      "community": 2,
+      "norm_label": "disabletypescriptversioncheck"
+    },
+    {
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "index.tsx",
+      "source_location": "L1",
+      "id": "index_tsx",
+      "community": 0,
+      "norm_label": "index.tsx"
+    },
+    {
+      "label": "app.component.ts",
+      "file_type": "code",
+      "source_file": "src/app.component.ts",
+      "source_location": "L1",
+      "id": "src_app_component_ts",
+      "community": 0,
+      "norm_label": "app.component.ts"
+    },
+    {
+      "label": "SecurityTopic",
+      "file_type": "code",
+      "source_file": "src/app.component.ts",
+      "source_location": "L4",
+      "id": "src_app_component_securitytopic",
+      "community": 0,
+      "norm_label": "securitytopic"
+    },
+    {
+      "label": "AppComponent",
+      "file_type": "code",
+      "source_file": "src/app.component.ts",
+      "source_location": "L30",
+      "id": "src_app_component_appcomponent",
+      "community": 0,
+      "norm_label": "appcomponent"
+    },
+    {
+      "label": ".ngAfterViewInit()",
+      "file_type": "code",
+      "source_file": "src/app.component.ts",
+      "source_location": "L349",
+      "id": "src_app_component_appcomponent_ngafterviewinit",
+      "community": 0,
+      "norm_label": ".ngafterviewinit()"
+    },
+    {
+      "label": ".ngOnDestroy()",
+      "file_type": "code",
+      "source_file": "src/app.component.ts",
+      "source_location": "L367",
+      "id": "src_app_component_appcomponent_ngondestroy",
+      "community": 0,
+      "norm_label": ".ngondestroy()"
+    },
+    {
+      "label": ".selectTopic()",
+      "file_type": "code",
+      "source_file": "src/app.component.ts",
+      "source_location": "L371",
+      "id": "src_app_component_appcomponent_selecttopic",
+      "community": 0,
+      "norm_label": ".selecttopic()"
+    },
+    {
+      "label": "Angular Project Configuration (angular.json)",
+      "file_type": "code",
+      "source_file": "angular.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "angular_json_angularconfig",
+      "community": 7,
+      "norm_label": "angular project configuration (angular.json)"
+    },
+    {
+      "label": "Package Configuration (package.json)",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "package_json_packageconfig",
+      "community": 7,
+      "norm_label": "package configuration (package.json)"
+    },
+    {
+      "label": "App Metadata (metadata.json)",
+      "file_type": "document",
+      "source_file": "metadata.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "metadata_json_appmetadata",
+      "community": 9,
+      "norm_label": "app metadata (metadata.json)"
+    },
+    {
+      "label": "TypeScript Configuration (tsconfig.json)",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tsconfig_json_tsconfig",
+      "community": 7,
+      "norm_label": "typescript configuration (tsconfig.json)"
+    },
+    {
+      "label": "Application Bootstrap Entry (index.tsx)",
+      "file_type": "code",
+      "source_file": "index.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index_tsx_bootstrapentry",
+      "community": 7,
+      "norm_label": "application bootstrap entry (index.tsx)"
+    },
+    {
+      "label": "README - Run and Deploy AI Studio App",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_md_readme",
+      "community": 10,
+      "norm_label": "readme - run and deploy ai studio app"
+    },
+    {
+      "label": "HTML Shell (index.html)",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index_html_htmlshell",
+      "community": 0,
+      "norm_label": "html shell (index.html)"
+    },
+    {
+      "label": "AppComponent Template (app.component.html)",
+      "file_type": "code",
+      "source_file": "src/app.component.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "src_app_component_html_template",
+      "community": 0,
+      "norm_label": "appcomponent template (app.component.html)"
+    },
+    {
+      "label": "SQL Injection",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 63",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_sql_injection",
+      "community": 0,
+      "norm_label": "sql injection"
+    },
+    {
+      "label": "Cross-Site Scripting (XSS)",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 87",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_xss",
+      "community": 0,
+      "norm_label": "cross-site scripting (xss)"
+    },
+    {
+      "label": "Cross-Site Request Forgery (CSRF)",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 121",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_csrf",
+      "community": 0,
+      "norm_label": "cross-site request forgery (csrf)"
+    },
+    {
+      "label": "Code Injection",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 158",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_code_injection",
+      "community": 0,
+      "norm_label": "code injection"
+    },
+    {
+      "label": "Session Hijacking and Authentication",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 203",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_session_hijacking",
+      "community": 0,
+      "norm_label": "session hijacking and authentication"
+    },
+    {
+      "label": "Using Components with Known Vulnerabilities",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 247",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_known_vulnerabilities",
+      "community": 0,
+      "norm_label": "using components with known vulnerabilities"
+    },
+    {
+      "label": "Brute Force Attacks and Account Lockout",
+      "file_type": "concept",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 283",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_brute_force",
+      "community": 0,
+      "norm_label": "brute force attacks and account lockout"
+    },
+    {
+      "label": "Security by Design",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 37",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_security_by_design",
+      "community": 9,
+      "norm_label": "security by design"
+    },
+    {
+      "label": "Prepared Statements (SQL Injection Defense)",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 77",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_prepared_statements",
+      "community": 0,
+      "norm_label": "prepared statements (sql injection defense)"
+    },
+    {
+      "label": "Output Encoding and Input Validation (XSS Defense)",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 101",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_output_encoding",
+      "community": 0,
+      "norm_label": "output encoding and input validation (xss defense)"
+    },
+    {
+      "label": "Anti-CSRF Tokens",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 136",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_csrf_tokens",
+      "community": 0,
+      "norm_label": "anti-csrf tokens"
+    },
+    {
+      "label": "Secure Cookies and HTTPS (Session Defense)",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 218",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_secure_cookies_https",
+      "community": 0,
+      "norm_label": "secure cookies and https (session defense)"
+    },
+    {
+      "label": "Active Dependency Management (OWASP Dependency-Check)",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 265",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_dependency_management",
+      "community": 0,
+      "norm_label": "active dependency management (owasp dependency-check)"
+    },
+    {
+      "label": "Rate Limiting and Account Lockout (Brute Force Defense)",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 304",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_rate_limiting",
+      "community": 0,
+      "norm_label": "rate limiting and account lockout (brute force defense)"
+    },
+    {
+      "label": "Zoneless Change Detection (Angular 21)",
+      "file_type": "rationale",
+      "source_file": "index.tsx",
+      "source_location": "line 7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_zoneless_change_detection",
+      "community": 7,
+      "norm_label": "zoneless change detection (angular 21)"
+    },
+    {
+      "label": "IntersectionObserver for Scroll Animations",
+      "file_type": "rationale",
+      "source_file": "src/app.component.ts",
+      "source_location": "line 349",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_intersection_observer",
+      "community": 0,
+      "norm_label": "intersectionobserver for scroll animations"
+    },
+    {
+      "label": "UFCD 10791 - Web Application Development in Java",
+      "file_type": "concept",
+      "source_file": "metadata.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Tiago Santos Mota",
+      "contributor": null,
+      "id": "concept_ufcd10791",
+      "community": 9,
+      "norm_label": "ufcd 10791 - web application development in java"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "angular_json",
+      "target": "tiago_mota_angular_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "angular_json",
+      "target": "tiago_mota_angular_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "angular_json",
+      "target": "tiago_mota_angular_newprojectroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "angular_json",
+      "target": "tiago_mota_angular_projects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_projects",
+      "target": "tiago_mota_angular_projects_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_projects_app",
+      "target": "tiago_mota_angular_app_projecttype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_projects_app",
+      "target": "tiago_mota_angular_app_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_projects_app",
+      "target": "tiago_mota_angular_app_sourceroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_projects_app",
+      "target": "tiago_mota_angular_app_prefix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_projects_app",
+      "target": "tiago_mota_angular_app_architect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_app_architect",
+      "target": "tiago_mota_angular_architect_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_app_architect",
+      "target": "tiago_mota_angular_architect_serve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_build",
+      "target": "tiago_mota_angular_build_builder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_build",
+      "target": "tiago_mota_angular_build_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_build",
+      "target": "tiago_mota_angular_build_configurations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_build",
+      "target": "tiago_mota_angular_build_defaultconfiguration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_build_options",
+      "target": "tiago_mota_angular_options_outputpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_build_options",
+      "target": "tiago_mota_angular_options_browser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_build_options",
+      "target": "tiago_mota_angular_options_tsconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_options_outputpath",
+      "target": "tiago_mota_angular_outputpath_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_options_outputpath",
+      "target": "tiago_mota_angular_outputpath_browser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_build_configurations",
+      "target": "tiago_mota_angular_configurations_production",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_build_configurations",
+      "target": "tiago_mota_angular_configurations_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_configurations_production",
+      "target": "tiago_mota_angular_production_outputhashing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_serve_configurations",
+      "target": "tiago_mota_angular_configurations_production",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_configurations_production",
+      "target": "tiago_mota_angular_production_buildtarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_configurations_development",
+      "target": "tiago_mota_angular_development_optimization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_configurations_development",
+      "target": "tiago_mota_angular_development_extractlicenses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_configurations_development",
+      "target": "tiago_mota_angular_development_sourcemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_serve_configurations",
+      "target": "tiago_mota_angular_configurations_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_configurations_development",
+      "target": "tiago_mota_angular_development_buildtarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_serve",
+      "target": "tiago_mota_angular_serve_builder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_serve",
+      "target": "tiago_mota_angular_serve_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_serve",
+      "target": "tiago_mota_angular_serve_configurations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_architect_serve",
+      "target": "tiago_mota_angular_serve_defaultconfiguration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "angular.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "tiago_mota_angular_serve_options",
+      "target": "tiago_mota_angular_options_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "tiago_mota_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tiago_mota_package_scripts",
+      "target": "tiago_mota_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tiago_mota_package_scripts",
+      "target": "tiago_mota_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tiago_mota_package_scripts",
+      "target": "tiago_mota_package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_rxjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_compiler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_platform_browser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_core",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_common",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_angular_compiler_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tiago_mota_package_dependencies",
+      "target": "tiago_mota_package_dependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tiago_mota_package_devdependencies",
+      "target": "tiago_mota_package_devdependencies_types_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tiago_mota_package_devdependencies",
+      "target": "tiago_mota_package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tiago_mota_package_devdependencies",
+      "target": "tiago_mota_package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "metadata.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "metadata_json",
+      "target": "tiago_mota_metadata_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "metadata.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "metadata_json",
+      "target": "tiago_mota_metadata_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "metadata.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "metadata_json",
+      "target": "tiago_mota_metadata_requestframepermissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "tiago_mota_tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "tiago_mota_tsconfig_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "tsconfig_json",
+      "target": "tiago_mota_tsconfig_angularcompileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_experimentaldecorators",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_allowjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions",
+      "target": "tiago_mota_tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_compileroptions_paths",
+      "target": "tiago_mota_tsconfig_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "tiago_mota_tsconfig_angularcompileroptions",
+      "target": "tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "index.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "index_tsx",
+      "target": "src_app_component_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "index.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "index_tsx",
+      "target": "src_app_component_appcomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app.component.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_component_ts",
+      "target": "src_app_component_securitytopic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app.component.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_app_component_ts",
+      "target": "src_app_component_appcomponent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 35",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "src_app_component_securitytopic"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app.component.ts",
+      "source_location": "L349",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "src_app_component_appcomponent_ngafterviewinit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app.component.ts",
+      "source_location": "L367",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "src_app_component_appcomponent_ngondestroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app.component.ts",
+      "source_location": "L371",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "src_app_component_appcomponent_selecttopic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.tsx",
+      "source_location": "line 5-7",
+      "weight": 1.0,
+      "source": "index_tsx_bootstrapentry",
+      "target": "src_app_component_appcomponent"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.html",
+      "source_location": "line 19",
+      "weight": 1.0,
+      "source": "src_app_component_html_template",
+      "target": "src_app_component_appcomponent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 63",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_sql_injection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 87",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_xss"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 121",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_csrf"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 158",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_code_injection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 203",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_session_hijacking"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 247",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_known_vulnerabilities"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 283",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_brute_force"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 349",
+      "weight": 1.0,
+      "source": "src_app_component_appcomponent",
+      "target": "concept_intersection_observer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "line 45",
+      "weight": 1.0,
+      "source": "index_html_htmlshell",
+      "target": "src_app_component_appcomponent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "line 19",
+      "weight": 1.0,
+      "source": "angular_json_angularconfig",
+      "target": "index_tsx_bootstrapentry"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "line 20",
+      "weight": 1.0,
+      "source": "angular_json_angularconfig",
+      "target": "tsconfig_json_tsconfig"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "package.json",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "package_json_packageconfig",
+      "target": "angular_json_angularconfig"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "metadata.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "metadata_json_appmetadata",
+      "target": "concept_ufcd10791"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tsconfig.json",
+      "source_location": "line 28",
+      "weight": 1.0,
+      "source": "tsconfig_json_tsconfig",
+      "target": "index_tsx_bootstrapentry"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.tsx",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "index_tsx_bootstrapentry",
+      "target": "concept_zoneless_change_detection"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 77",
+      "weight": 1.0,
+      "source": "concept_prepared_statements",
+      "target": "concept_sql_injection"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/app.component.ts",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "concept_sql_injection",
+      "target": "concept_code_injection"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 101",
+      "weight": 1.0,
+      "source": "concept_output_encoding",
+      "target": "concept_xss"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 207",
+      "weight": 1.0,
+      "source": "concept_xss",
+      "target": "concept_session_hijacking"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/app.component.ts",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "concept_xss",
+      "target": "concept_csrf"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 136",
+      "weight": 1.0,
+      "source": "concept_csrf_tokens",
+      "target": "concept_csrf"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 218",
+      "weight": 1.0,
+      "source": "concept_secure_cookies_https",
+      "target": "concept_session_hijacking"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 265",
+      "weight": 1.0,
+      "source": "concept_dependency_management",
+      "target": "concept_known_vulnerabilities"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 304",
+      "weight": 1.0,
+      "source": "concept_rate_limiting",
+      "target": "concept_brute_force"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/app.component.ts",
+      "source_location": "line 37",
+      "weight": 0.95,
+      "source": "concept_security_by_design",
+      "target": "concept_ufcd10791"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "web_security_topics_group",
+      "label": "Web Security Topics Covered in UFCD 10791",
+      "nodes": [
+        "concept_sql_injection",
+        "concept_xss",
+        "concept_csrf",
+        "concept_code_injection",
+        "concept_session_hijacking",
+        "concept_known_vulnerabilities",
+        "concept_brute_force",
+        "concept_security_by_design"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app.component.ts"
+    },
+    {
+      "id": "angular_project_files",
+      "label": "Angular Project Configuration Files",
+      "nodes": [
+        "angular_json_angularconfig",
+        "package_json_packageconfig",
+        "tsconfig_json_tsconfig",
+        "index_tsx_bootstrapentry"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json"
+    },
+    {
+      "id": "security_defense_patterns",
+      "label": "Security Defense Patterns (Good Practices)",
+      "nodes": [
+        "concept_prepared_statements",
+        "concept_output_encoding",
+        "concept_csrf_tokens",
+        "concept_secure_cookies_https",
+        "concept_dependency_management",
+        "concept_rate_limiting"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/app.component.ts"
+    }
+  ],
+  "built_at_commit": "706c7cd1757d8b095e3d15c2020e4b13654f20b8"
+}
