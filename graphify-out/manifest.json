@@ -1,0 +1,47 @@
+{
+  "/home/user/Tiago-Mota/angular.json": {
+    "mtime": 1779811879.4386365,
+    "ast_hash": "7829d49c5b5fffa73653c759c7a406f6",
+    "semantic_hash": "7829d49c5b5fffa73653c759c7a406f6"
+  },
+  "/home/user/Tiago-Mota/package.json": {
+    "mtime": 1779811879.4386365,
+    "ast_hash": "90a798f594cfe610d8f15af858c3fa86",
+    "semantic_hash": "90a798f594cfe610d8f15af858c3fa86"
+  },
+  "/home/user/Tiago-Mota/metadata.json": {
+    "mtime": 1779811879.4386365,
+    "ast_hash": "5a88df827de1ce35596cbda4c59b05af",
+    "semantic_hash": "5a88df827de1ce35596cbda4c59b05af"
+  },
+  "/home/user/Tiago-Mota/tsconfig.json": {
+    "mtime": 1779811879.4439049,
+    "ast_hash": "f5516fba1a29c8802c96717d75af98dd",
+    "semantic_hash": "f5516fba1a29c8802c96717d75af98dd"
+  },
+  "/home/user/Tiago-Mota/index.tsx": {
+    "mtime": 1779811879.4386365,
+    "ast_hash": "74be7b0db5a4b98ec48c123d9be240d3",
+    "semantic_hash": "74be7b0db5a4b98ec48c123d9be240d3"
+  },
+  "/home/user/Tiago-Mota/src/app.component.ts": {
+    "mtime": 1779811879.4439049,
+    "ast_hash": "2409fe090e156614f9049a0ee906852c",
+    "semantic_hash": "2409fe090e156614f9049a0ee906852c"
+  },
+  "/home/user/Tiago-Mota/README.md": {
+    "mtime": 1779811879.4386365,
+    "ast_hash": "4e8651945759cd630d32e0981d4347ec",
+    "semantic_hash": "4e8651945759cd630d32e0981d4347ec"
+  },
+  "/home/user/Tiago-Mota/index.html": {
+    "mtime": 1779811879.4386365,
+    "ast_hash": "9acf3960e6c23eb0e972fe6b595e0102",
+    "semantic_hash": "9acf3960e6c23eb0e972fe6b595e0102"
+  },
+  "/home/user/Tiago-Mota/src/app.component.html": {
+    "mtime": 1779811879.4439049,
+    "ast_hash": "9c98bec505910d6023b87ba6532a5436",
+    "semantic_hash": "9c98bec505910d6023b87ba6532a5436"
+  }
+}
