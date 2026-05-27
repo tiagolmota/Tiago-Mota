@@ -55,796 +55,1214 @@
   },
   "nodes": [
     {
+      "label": "snapshot.md",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L1",
+      "id": "claude_sessions_snapshot_md",
+      "community": 5,
+      "norm_label": "snapshot.md"
+    },
+    {
+      "label": "Session Snapshot \u2014 2026-05-27 09:51",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L1",
+      "id": "sessions_snapshot_session_snapshot_2026_05_27_09_51",
+      "community": 5,
+      "norm_label": "session snapshot \u2014 2026-05-27 09:51"
+    },
+    {
+      "label": "Files Changed",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L3",
+      "id": "sessions_snapshot_files_changed",
+      "community": 5,
+      "norm_label": "files changed"
+    },
+    {
+      "label": "Recent Commits",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L15",
+      "id": "sessions_snapshot_recent_commits",
+      "community": 5,
+      "norm_label": "recent commits"
+    },
+    {
+      "label": "Token Estimate",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L22",
+      "id": "sessions_snapshot_token_estimate",
+      "community": 5,
+      "norm_label": "token estimate"
+    },
+    {
+      "label": "Last Turn",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L25",
+      "id": "sessions_snapshot_last_turn",
+      "community": 5,
+      "norm_label": "last turn"
+    },
+    {
+      "label": "Otimiza\u00e7\u00e3o total estimada: ~88-95% menos tokens por sess\u00e3o",
+      "file_type": "document",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L26",
+      "id": "sessions_snapshot_otimiza\u00e7\u00e3o_total_estimada_88_95_menos_tokens_por_sess\u00e3o",
+      "community": 5,
+      "norm_label": "otimizacao total estimada: ~88-95% menos tokens por sessao"
+    },
+    {
+      "label": "ARCHITECTURE_MAP.md",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L1",
+      "community": 12,
+      "norm_label": "architecture_map.md",
+      "id": "claude_architecture_map_md"
+    },
+    {
+      "label": "Architecture Map \u2014 UFCD 10791",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L1",
+      "community": 12,
+      "norm_label": "architecture map \u2014 ufcd 10791",
+      "id": "claude_architecture_map_architecture_map_ufcd_10791"
+    },
+    {
+      "label": "File Tree",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L3",
+      "community": 12,
+      "norm_label": "file tree",
+      "id": "claude_architecture_map_file_tree"
+    },
+    {
+      "label": "code:block1 (Tiago-Mota/)",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L4",
+      "community": 12,
+      "norm_label": "code:block1 (tiago-mota/)",
+      "id": "claude_architecture_map_codeblock_1"
+    },
+    {
+      "label": "Data Flow",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L29",
+      "community": 12,
+      "norm_label": "data flow",
+      "id": "claude_architecture_map_data_flow"
+    },
+    {
+      "label": "code:block2 (index.html (importmap CDN))",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L30",
+      "community": 12,
+      "norm_label": "code:block2 (index.html (importmap cdn))",
+      "id": "claude_architecture_map_codeblock_2"
+    },
+    {
+      "label": "Security Topics (IDs)",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L40",
+      "community": 12,
+      "norm_label": "security topics (ids)",
+      "id": "claude_architecture_map_security_topics_ids"
+    },
+    {
+      "label": "Key Patterns",
+      "file_type": "document",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L43",
+      "community": 12,
+      "norm_label": "key patterns",
+      "id": "claude_architecture_map_key_patterns"
+    },
+    {
+      "label": "pre-tool-bash-guard.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/pre-tool-bash-guard.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 14,
+      "norm_label": "pre-tool-bash-guard.sh",
+      "id": "claude_hooks_pre_tool_bash_guard_sh"
+    },
+    {
+      "label": "pre-tool-bash-guard.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/pre-tool-bash-guard.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 14,
+      "norm_label": "pre-tool-bash-guard.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_pre_tool_bash_guard_sh__entry"
+    },
+    {
+      "label": "pre-tool-read-guard.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/pre-tool-read-guard.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 15,
+      "norm_label": "pre-tool-read-guard.sh",
+      "id": "claude_hooks_pre_tool_read_guard_sh"
+    },
+    {
+      "label": "pre-tool-read-guard.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/pre-tool-read-guard.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 15,
+      "norm_label": "pre-tool-read-guard.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_pre_tool_read_guard_sh__entry"
+    },
+    {
+      "label": "stop-session-snapshot.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/stop-session-snapshot.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 16,
+      "norm_label": "stop-session-snapshot.sh",
+      "id": "claude_hooks_stop_session_snapshot_sh"
+    },
+    {
+      "label": "stop-session-snapshot.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/stop-session-snapshot.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 16,
+      "norm_label": "stop-session-snapshot.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_stop_session_snapshot_sh__entry"
+    },
+    {
+      "label": "user-prompt-inject-context.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-inject-context.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 17,
+      "norm_label": "user-prompt-inject-context.sh",
+      "id": "claude_hooks_user_prompt_inject_context_sh"
+    },
+    {
+      "label": "user-prompt-inject-context.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-inject-context.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 17,
+      "norm_label": "user-prompt-inject-context.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_user_prompt_inject_context_sh__entry"
+    },
+    {
+      "label": "user-prompt-inject-snapshot.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-inject-snapshot.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 18,
+      "norm_label": "user-prompt-inject-snapshot.sh",
+      "id": "claude_hooks_user_prompt_inject_snapshot_sh"
+    },
+    {
+      "label": "user-prompt-inject-snapshot.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-inject-snapshot.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 18,
+      "norm_label": "user-prompt-inject-snapshot.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_user_prompt_inject_snapshot_sh__entry"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "community": 11,
+      "norm_label": "settings.json",
+      "id": "claude_settings_json"
+    },
+    {
+      "label": "mcpServers",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "community": 11,
+      "norm_label": "mcpservers",
+      "id": "claude_settings_mcpservers"
+    },
+    {
+      "label": "token-optimizer",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "community": 11,
+      "norm_label": "token-optimizer",
+      "id": "claude_settings_mcpservers_token_optimizer"
+    },
+    {
+      "label": "command",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L4",
+      "community": 11,
+      "norm_label": "command",
+      "id": "claude_settings_token_optimizer_command"
+    },
+    {
+      "label": "args",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L5",
+      "community": 11,
+      "norm_label": "args",
+      "id": "claude_settings_token_optimizer_args"
+    },
+    {
+      "label": "env",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L6",
+      "community": 11,
+      "norm_label": "env",
+      "id": "claude_settings_token_optimizer_env"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L9",
+      "community": 11,
+      "norm_label": "hooks",
+      "id": "claude_settings_hooks"
+    },
+    {
+      "label": "PreToolUse",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L10",
+      "community": 11,
+      "norm_label": "pretooluse",
+      "id": "claude_settings_hooks_pretooluse"
+    },
+    {
+      "label": "UserPromptSubmit",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L42",
+      "community": 11,
+      "norm_label": "userpromptsubmit",
+      "id": "claude_settings_hooks_userpromptsubmit"
+    },
+    {
+      "label": "Stop",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L57",
+      "community": 11,
+      "norm_label": "stop",
+      "id": "claude_settings_hooks_stop"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "claude.md",
+      "id": "claude_md"
+    },
+    {
+      "label": "UFCD 10791 - Seguran\u00e7a Web com Java",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "ufcd 10791 - seguranca web com java",
+      "id": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java"
+    },
+    {
+      "label": "Session Start \u26a1 (~800 tokens)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "community": 13,
+      "norm_label": "session start \u26a1 (~800 tokens)",
+      "id": "tiago_mota_claude_session_start_800_tokens"
+    },
+    {
+      "label": "Key Rules",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L18",
+      "community": 13,
+      "norm_label": "key rules",
+      "id": "tiago_mota_claude_key_rules"
+    },
+    {
+      "label": "Never Auto-Load",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L26",
+      "community": 13,
+      "norm_label": "never auto-load",
+      "id": "tiago_mota_claude_never_auto_load"
+    },
+    {
+      "label": "Docs (load when needed)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L32",
+      "community": 13,
+      "norm_label": "docs (load when needed)",
+      "id": "tiago_mota_claude_docs_load_when_needed"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L38",
+      "community": 13,
+      "norm_label": "graphify",
+      "id": "tiago_mota_claude_graphify"
+    },
+    {
       "label": "angular.json",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L1",
-      "id": "angular_json",
       "community": 4,
-      "norm_label": "angular.json"
+      "norm_label": "angular.json",
+      "id": "angular_json"
     },
     {
       "label": "$schema",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L2",
-      "id": "tiago_mota_angular_schema",
       "community": 4,
-      "norm_label": "$schema"
+      "norm_label": "$schema",
+      "id": "tiago_mota_angular_schema"
     },
     {
       "label": "version",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L3",
-      "id": "tiago_mota_angular_version",
       "community": 4,
-      "norm_label": "version"
+      "norm_label": "version",
+      "id": "tiago_mota_angular_version"
     },
     {
       "label": "newProjectRoot",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L4",
-      "id": "tiago_mota_angular_newprojectroot",
       "community": 4,
-      "norm_label": "newprojectroot"
+      "norm_label": "newprojectroot",
+      "id": "tiago_mota_angular_newprojectroot"
     },
     {
       "label": "projects",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L5",
-      "id": "tiago_mota_angular_projects",
       "community": 4,
-      "norm_label": "projects"
+      "norm_label": "projects",
+      "id": "tiago_mota_angular_projects"
     },
     {
       "label": "app",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L6",
-      "id": "tiago_mota_angular_projects_app",
       "community": 4,
-      "norm_label": "app"
+      "norm_label": "app",
+      "id": "tiago_mota_angular_projects_app"
     },
     {
       "label": "projectType",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L7",
-      "id": "tiago_mota_angular_app_projecttype",
       "community": 4,
-      "norm_label": "projecttype"
+      "norm_label": "projecttype",
+      "id": "tiago_mota_angular_app_projecttype"
     },
     {
       "label": "root",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L8",
-      "id": "tiago_mota_angular_app_root",
       "community": 4,
-      "norm_label": "root"
+      "norm_label": "root",
+      "id": "tiago_mota_angular_app_root"
     },
     {
       "label": "sourceRoot",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L9",
-      "id": "tiago_mota_angular_app_sourceroot",
       "community": 4,
-      "norm_label": "sourceroot"
+      "norm_label": "sourceroot",
+      "id": "tiago_mota_angular_app_sourceroot"
     },
     {
       "label": "prefix",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L10",
-      "id": "tiago_mota_angular_app_prefix",
       "community": 4,
-      "norm_label": "prefix"
+      "norm_label": "prefix",
+      "id": "tiago_mota_angular_app_prefix"
     },
     {
       "label": "architect",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L11",
-      "id": "tiago_mota_angular_app_architect",
       "community": 1,
-      "norm_label": "architect"
+      "norm_label": "architect",
+      "id": "tiago_mota_angular_app_architect"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L12",
-      "id": "tiago_mota_angular_architect_build",
       "community": 1,
-      "norm_label": "build"
+      "norm_label": "build",
+      "id": "tiago_mota_angular_architect_build"
     },
     {
       "label": "builder",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L13",
-      "id": "tiago_mota_angular_build_builder",
       "community": 1,
-      "norm_label": "builder"
+      "norm_label": "builder",
+      "id": "tiago_mota_angular_build_builder"
     },
     {
       "label": "options",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L14",
-      "id": "tiago_mota_angular_build_options",
       "community": 6,
-      "norm_label": "options"
+      "norm_label": "options",
+      "id": "tiago_mota_angular_build_options"
     },
     {
       "label": "outputPath",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L15",
-      "id": "tiago_mota_angular_options_outputpath",
       "community": 6,
-      "norm_label": "outputpath"
+      "norm_label": "outputpath",
+      "id": "tiago_mota_angular_options_outputpath"
     },
     {
       "label": "base",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L16",
-      "id": "tiago_mota_angular_outputpath_base",
       "community": 6,
-      "norm_label": "base"
+      "norm_label": "base",
+      "id": "tiago_mota_angular_outputpath_base"
     },
     {
       "label": "browser",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L17",
-      "id": "tiago_mota_angular_outputpath_browser",
       "community": 6,
-      "norm_label": "browser"
+      "norm_label": "browser",
+      "id": "tiago_mota_angular_outputpath_browser"
     },
     {
       "label": "browser",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L19",
-      "id": "tiago_mota_angular_options_browser",
       "community": 6,
-      "norm_label": "browser"
+      "norm_label": "browser",
+      "id": "tiago_mota_angular_options_browser"
     },
     {
       "label": "tsConfig",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L20",
-      "id": "tiago_mota_angular_options_tsconfig",
       "community": 6,
-      "norm_label": "tsconfig"
+      "norm_label": "tsconfig",
+      "id": "tiago_mota_angular_options_tsconfig"
     },
     {
       "label": "configurations",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L22",
-      "id": "tiago_mota_angular_build_configurations",
       "community": 1,
-      "norm_label": "configurations"
+      "norm_label": "configurations",
+      "id": "tiago_mota_angular_build_configurations"
     },
     {
       "label": "production",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L23",
-      "id": "tiago_mota_angular_configurations_production",
       "community": 1,
-      "norm_label": "production"
+      "norm_label": "production",
+      "id": "tiago_mota_angular_configurations_production"
     },
     {
       "label": "outputHashing",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L24",
-      "id": "tiago_mota_angular_production_outputhashing",
       "community": 1,
-      "norm_label": "outputhashing"
+      "norm_label": "outputhashing",
+      "id": "tiago_mota_angular_production_outputhashing"
     },
     {
       "label": "development",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L26",
-      "id": "tiago_mota_angular_configurations_development",
       "community": 1,
-      "norm_label": "development"
+      "norm_label": "development",
+      "id": "tiago_mota_angular_configurations_development"
     },
     {
       "label": "optimization",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L27",
-      "id": "tiago_mota_angular_development_optimization",
       "community": 1,
-      "norm_label": "optimization"
+      "norm_label": "optimization",
+      "id": "tiago_mota_angular_development_optimization"
     },
     {
       "label": "extractLicenses",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L28",
-      "id": "tiago_mota_angular_development_extractlicenses",
       "community": 1,
-      "norm_label": "extractlicenses"
+      "norm_label": "extractlicenses",
+      "id": "tiago_mota_angular_development_extractlicenses"
     },
     {
       "label": "sourceMap",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L29",
-      "id": "tiago_mota_angular_development_sourcemap",
       "community": 1,
-      "norm_label": "sourcemap"
+      "norm_label": "sourcemap",
+      "id": "tiago_mota_angular_development_sourcemap"
     },
     {
       "label": "defaultConfiguration",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L32",
-      "id": "tiago_mota_angular_build_defaultconfiguration",
       "community": 1,
-      "norm_label": "defaultconfiguration"
+      "norm_label": "defaultconfiguration",
+      "id": "tiago_mota_angular_build_defaultconfiguration"
     },
     {
       "label": "serve",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L34",
-      "id": "tiago_mota_angular_architect_serve",
       "community": 1,
-      "norm_label": "serve"
+      "norm_label": "serve",
+      "id": "tiago_mota_angular_architect_serve"
     },
     {
       "label": "builder",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L35",
-      "id": "tiago_mota_angular_serve_builder",
       "community": 1,
-      "norm_label": "builder"
+      "norm_label": "builder",
+      "id": "tiago_mota_angular_serve_builder"
     },
     {
       "label": "options",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L36",
-      "id": "tiago_mota_angular_serve_options",
       "community": 1,
-      "norm_label": "options"
+      "norm_label": "options",
+      "id": "tiago_mota_angular_serve_options"
     },
     {
       "label": "port",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L37",
-      "id": "tiago_mota_angular_options_port",
       "community": 1,
-      "norm_label": "port"
+      "norm_label": "port",
+      "id": "tiago_mota_angular_options_port"
     },
     {
       "label": "configurations",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L39",
-      "id": "tiago_mota_angular_serve_configurations",
       "community": 1,
-      "norm_label": "configurations"
+      "norm_label": "configurations",
+      "id": "tiago_mota_angular_serve_configurations"
     },
     {
       "label": "buildTarget",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L41",
-      "id": "tiago_mota_angular_production_buildtarget",
       "community": 1,
-      "norm_label": "buildtarget"
+      "norm_label": "buildtarget",
+      "id": "tiago_mota_angular_production_buildtarget"
     },
     {
       "label": "buildTarget",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L44",
-      "id": "tiago_mota_angular_development_buildtarget",
       "community": 1,
-      "norm_label": "buildtarget"
+      "norm_label": "buildtarget",
+      "id": "tiago_mota_angular_development_buildtarget"
     },
     {
       "label": "defaultConfiguration",
       "file_type": "code",
       "source_file": "angular.json",
       "source_location": "L47",
-      "id": "tiago_mota_angular_serve_defaultconfiguration",
       "community": 1,
-      "norm_label": "defaultconfiguration"
+      "norm_label": "defaultconfiguration",
+      "id": "tiago_mota_angular_serve_defaultconfiguration"
     },
     {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L1",
-      "id": "package_json",
       "community": 3,
-      "norm_label": "package.json"
+      "norm_label": "package.json",
+      "id": "package_json"
     },
     {
       "label": "name",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L2",
-      "id": "tiago_mota_package_name",
       "community": 3,
-      "norm_label": "name"
+      "norm_label": "name",
+      "id": "tiago_mota_package_name"
     },
     {
       "label": "private",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L3",
-      "id": "tiago_mota_package_private",
       "community": 3,
-      "norm_label": "private"
+      "norm_label": "private",
+      "id": "tiago_mota_package_private"
     },
     {
       "label": "version",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L4",
-      "id": "tiago_mota_package_version",
       "community": 3,
-      "norm_label": "version"
+      "norm_label": "version",
+      "id": "tiago_mota_package_version"
     },
     {
       "label": "type",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L5",
-      "id": "tiago_mota_package_type",
       "community": 3,
-      "norm_label": "type"
+      "norm_label": "type",
+      "id": "tiago_mota_package_type"
     },
     {
       "label": "scripts",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L6",
-      "id": "tiago_mota_package_scripts",
       "community": 3,
-      "norm_label": "scripts"
+      "norm_label": "scripts",
+      "id": "tiago_mota_package_scripts"
     },
     {
       "label": "dev",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
-      "id": "tiago_mota_package_scripts_dev",
       "community": 3,
-      "norm_label": "dev"
+      "norm_label": "dev",
+      "id": "tiago_mota_package_scripts_dev"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L8",
-      "id": "tiago_mota_package_scripts_build",
       "community": 3,
-      "norm_label": "build"
+      "norm_label": "build",
+      "id": "tiago_mota_package_scripts_build"
     },
     {
       "label": "preview",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L9",
-      "id": "tiago_mota_package_scripts_preview",
       "community": 3,
-      "norm_label": "preview"
+      "norm_label": "preview",
+      "id": "tiago_mota_package_scripts_preview"
     },
     {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L11",
-      "id": "tiago_mota_package_dependencies",
-      "community": 5,
-      "norm_label": "dependencies"
+      "community": 3,
+      "norm_label": "dependencies",
+      "id": "tiago_mota_package_dependencies"
     },
     {
       "label": "rxjs",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
-      "id": "tiago_mota_package_dependencies_rxjs",
-      "community": 5,
-      "norm_label": "rxjs"
+      "community": 3,
+      "norm_label": "rxjs",
+      "id": "tiago_mota_package_dependencies_rxjs"
     },
     {
       "label": "@angular/compiler",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L13",
-      "id": "tiago_mota_package_dependencies_angular_compiler",
-      "community": 5,
-      "norm_label": "@angular/compiler"
+      "community": 3,
+      "norm_label": "@angular/compiler",
+      "id": "tiago_mota_package_dependencies_angular_compiler"
     },
     {
       "label": "@angular/platform-browser",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L14",
-      "id": "tiago_mota_package_dependencies_angular_platform_browser",
-      "community": 5,
-      "norm_label": "@angular/platform-browser"
+      "community": 3,
+      "norm_label": "@angular/platform-browser",
+      "id": "tiago_mota_package_dependencies_angular_platform_browser"
     },
     {
       "label": "@angular/core",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
-      "id": "tiago_mota_package_dependencies_angular_core",
-      "community": 5,
-      "norm_label": "@angular/core"
+      "community": 3,
+      "norm_label": "@angular/core",
+      "id": "tiago_mota_package_dependencies_angular_core"
     },
     {
       "label": "@angular/common",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
-      "id": "tiago_mota_package_dependencies_angular_common",
-      "community": 5,
-      "norm_label": "@angular/common"
+      "community": 3,
+      "norm_label": "@angular/common",
+      "id": "tiago_mota_package_dependencies_angular_common"
     },
     {
       "label": "@angular/build",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L17",
-      "id": "tiago_mota_package_dependencies_angular_build",
-      "community": 5,
-      "norm_label": "@angular/build"
+      "community": 3,
+      "norm_label": "@angular/build",
+      "id": "tiago_mota_package_dependencies_angular_build"
     },
     {
       "label": "@angular/cli",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L18",
-      "id": "tiago_mota_package_dependencies_angular_cli",
-      "community": 5,
-      "norm_label": "@angular/cli"
+      "community": 3,
+      "norm_label": "@angular/cli",
+      "id": "tiago_mota_package_dependencies_angular_cli"
     },
     {
       "label": "@angular/compiler-cli",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L19",
-      "id": "tiago_mota_package_dependencies_angular_compiler_cli",
-      "community": 5,
-      "norm_label": "@angular/compiler-cli"
+      "community": 3,
+      "norm_label": "@angular/compiler-cli",
+      "id": "tiago_mota_package_dependencies_angular_compiler_cli"
     },
     {
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L20",
-      "id": "tiago_mota_package_dependencies_tailwindcss",
-      "community": 5,
-      "norm_label": "tailwindcss"
+      "community": 3,
+      "norm_label": "tailwindcss",
+      "id": "tiago_mota_package_dependencies_tailwindcss"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L22",
-      "id": "tiago_mota_package_devdependencies",
       "community": 3,
-      "norm_label": "devdependencies"
+      "norm_label": "devdependencies",
+      "id": "tiago_mota_package_devdependencies"
     },
     {
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L23",
-      "id": "tiago_mota_package_devdependencies_types_node",
       "community": 3,
-      "norm_label": "@types/node"
+      "norm_label": "@types/node",
+      "id": "tiago_mota_package_devdependencies_types_node"
     },
     {
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L24",
-      "id": "tiago_mota_package_devdependencies_typescript",
       "community": 3,
-      "norm_label": "typescript"
+      "norm_label": "typescript",
+      "id": "tiago_mota_package_devdependencies_typescript"
     },
     {
       "label": "vite",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L25",
-      "id": "tiago_mota_package_devdependencies_vite",
       "community": 3,
-      "norm_label": "vite"
+      "norm_label": "vite",
+      "id": "tiago_mota_package_devdependencies_vite"
     },
     {
       "label": "metadata.json",
       "file_type": "code",
       "source_file": "metadata.json",
       "source_location": "L1",
-      "id": "metadata_json",
       "community": 8,
-      "norm_label": "metadata.json"
+      "norm_label": "metadata.json",
+      "id": "metadata_json"
     },
     {
       "label": "name",
       "file_type": "code",
       "source_file": "metadata.json",
       "source_location": "L2",
-      "id": "tiago_mota_metadata_name",
       "community": 8,
-      "norm_label": "name"
+      "norm_label": "name",
+      "id": "tiago_mota_metadata_name"
     },
     {
       "label": "description",
       "file_type": "code",
       "source_file": "metadata.json",
       "source_location": "L3",
-      "id": "tiago_mota_metadata_description",
       "community": 8,
-      "norm_label": "description"
+      "norm_label": "description",
+      "id": "tiago_mota_metadata_description"
     },
     {
       "label": "requestFramePermissions",
       "file_type": "code",
       "source_file": "metadata.json",
       "source_location": "L4",
-      "id": "tiago_mota_metadata_requestframepermissions",
       "community": 8,
-      "norm_label": "requestframepermissions"
+      "norm_label": "requestframepermissions",
+      "id": "tiago_mota_metadata_requestframepermissions"
     },
     {
       "label": "tsconfig.json",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L1",
-      "id": "tsconfig_json",
       "community": 2,
-      "norm_label": "tsconfig.json"
+      "norm_label": "tsconfig.json",
+      "id": "tsconfig_json"
     },
     {
       "label": "compilerOptions",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L2",
-      "id": "tiago_mota_tsconfig_compileroptions",
       "community": 2,
-      "norm_label": "compileroptions"
+      "norm_label": "compileroptions",
+      "id": "tiago_mota_tsconfig_compileroptions"
     },
     {
       "label": "target",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L3",
-      "id": "tiago_mota_tsconfig_compileroptions_target",
       "community": 2,
-      "norm_label": "target"
+      "norm_label": "target",
+      "id": "tiago_mota_tsconfig_compileroptions_target"
     },
     {
       "label": "experimentalDecorators",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L4",
-      "id": "tiago_mota_tsconfig_compileroptions_experimentaldecorators",
       "community": 2,
-      "norm_label": "experimentaldecorators"
+      "norm_label": "experimentaldecorators",
+      "id": "tiago_mota_tsconfig_compileroptions_experimentaldecorators"
     },
     {
       "label": "useDefineForClassFields",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L5",
-      "id": "tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
       "community": 2,
-      "norm_label": "usedefineforclassfields"
+      "norm_label": "usedefineforclassfields",
+      "id": "tiago_mota_tsconfig_compileroptions_usedefineforclassfields"
     },
     {
       "label": "module",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L6",
-      "id": "tiago_mota_tsconfig_compileroptions_module",
       "community": 2,
-      "norm_label": "module"
+      "norm_label": "module",
+      "id": "tiago_mota_tsconfig_compileroptions_module"
     },
     {
       "label": "lib",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L7",
-      "id": "tiago_mota_tsconfig_compileroptions_lib",
       "community": 2,
-      "norm_label": "lib"
+      "norm_label": "lib",
+      "id": "tiago_mota_tsconfig_compileroptions_lib"
     },
     {
       "label": "skipLibCheck",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L12",
-      "id": "tiago_mota_tsconfig_compileroptions_skiplibcheck",
       "community": 2,
-      "norm_label": "skiplibcheck"
+      "norm_label": "skiplibcheck",
+      "id": "tiago_mota_tsconfig_compileroptions_skiplibcheck"
     },
     {
       "label": "types",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L13",
-      "id": "tiago_mota_tsconfig_compileroptions_types",
       "community": 2,
-      "norm_label": "types"
+      "norm_label": "types",
+      "id": "tiago_mota_tsconfig_compileroptions_types"
     },
     {
       "label": "moduleResolution",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L16",
-      "id": "tiago_mota_tsconfig_compileroptions_moduleresolution",
       "community": 2,
-      "norm_label": "moduleresolution"
+      "norm_label": "moduleresolution",
+      "id": "tiago_mota_tsconfig_compileroptions_moduleresolution"
     },
     {
       "label": "isolatedModules",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L17",
-      "id": "tiago_mota_tsconfig_compileroptions_isolatedmodules",
       "community": 2,
-      "norm_label": "isolatedmodules"
+      "norm_label": "isolatedmodules",
+      "id": "tiago_mota_tsconfig_compileroptions_isolatedmodules"
     },
     {
       "label": "moduleDetection",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L18",
-      "id": "tiago_mota_tsconfig_compileroptions_moduledetection",
       "community": 2,
-      "norm_label": "moduledetection"
+      "norm_label": "moduledetection",
+      "id": "tiago_mota_tsconfig_compileroptions_moduledetection"
     },
     {
       "label": "allowJs",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L19",
-      "id": "tiago_mota_tsconfig_compileroptions_allowjs",
       "community": 2,
-      "norm_label": "allowjs"
+      "norm_label": "allowjs",
+      "id": "tiago_mota_tsconfig_compileroptions_allowjs"
     },
     {
       "label": "jsx",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L20",
-      "id": "tiago_mota_tsconfig_compileroptions_jsx",
       "community": 2,
-      "norm_label": "jsx"
+      "norm_label": "jsx",
+      "id": "tiago_mota_tsconfig_compileroptions_jsx"
     },
     {
       "label": "paths",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L21",
-      "id": "tiago_mota_tsconfig_compileroptions_paths",
       "community": 2,
-      "norm_label": "paths"
+      "norm_label": "paths",
+      "id": "tiago_mota_tsconfig_compileroptions_paths"
     },
     {
       "label": "@/*",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L22",
-      "id": "tiago_mota_tsconfig_paths",
       "community": 2,
-      "norm_label": "@/*"
+      "norm_label": "@/*",
+      "id": "tiago_mota_tsconfig_paths"
     },
     {
       "label": "files",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L27",
-      "id": "tiago_mota_tsconfig_files",
       "community": 2,
-      "norm_label": "files"
+      "norm_label": "files",
+      "id": "tiago_mota_tsconfig_files"
     },
     {
       "label": "angularCompilerOptions",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L30",
-      "id": "tiago_mota_tsconfig_angularcompileroptions",
       "community": 2,
-      "norm_label": "angularcompileroptions"
+      "norm_label": "angularcompileroptions",
+      "id": "tiago_mota_tsconfig_angularcompileroptions"
     },
     {
       "label": "disableTypeScriptVersionCheck",
       "file_type": "code",
       "source_file": "tsconfig.json",
       "source_location": "L31",
-      "id": "tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
       "community": 2,
-      "norm_label": "disabletypescriptversioncheck"
+      "norm_label": "disabletypescriptversioncheck",
+      "id": "tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck"
     },
     {
       "label": "index.tsx",
       "file_type": "code",
       "source_file": "index.tsx",
       "source_location": "L1",
-      "id": "index_tsx",
       "community": 0,
-      "norm_label": "index.tsx"
+      "norm_label": "index.tsx",
+      "id": "index_tsx"
     },
     {
       "label": "app.component.ts",
       "file_type": "code",
       "source_file": "src/app.component.ts",
       "source_location": "L1",
-      "id": "src_app_component_ts",
       "community": 0,
-      "norm_label": "app.component.ts"
+      "norm_label": "app.component.ts",
+      "id": "src_app_component_ts"
     },
     {
       "label": "SecurityTopic",
       "file_type": "code",
       "source_file": "src/app.component.ts",
       "source_location": "L4",
-      "id": "src_app_component_securitytopic",
       "community": 0,
-      "norm_label": "securitytopic"
+      "norm_label": "securitytopic",
+      "id": "src_app_component_securitytopic"
     },
     {
       "label": "AppComponent",
       "file_type": "code",
       "source_file": "src/app.component.ts",
       "source_location": "L30",
-      "id": "src_app_component_appcomponent",
       "community": 0,
-      "norm_label": "appcomponent"
+      "norm_label": "appcomponent",
+      "id": "src_app_component_appcomponent"
     },
     {
       "label": ".ngAfterViewInit()",
       "file_type": "code",
       "source_file": "src/app.component.ts",
       "source_location": "L349",
-      "id": "src_app_component_appcomponent_ngafterviewinit",
       "community": 0,
-      "norm_label": ".ngafterviewinit()"
+      "norm_label": ".ngafterviewinit()",
+      "id": "src_app_component_appcomponent_ngafterviewinit"
     },
     {
       "label": ".ngOnDestroy()",
       "file_type": "code",
       "source_file": "src/app.component.ts",
       "source_location": "L367",
-      "id": "src_app_component_appcomponent_ngondestroy",
       "community": 0,
-      "norm_label": ".ngondestroy()"
+      "norm_label": ".ngondestroy()",
+      "id": "src_app_component_appcomponent_ngondestroy"
     },
     {
       "label": ".selectTopic()",
       "file_type": "code",
       "source_file": "src/app.component.ts",
       "source_location": "L371",
-      "id": "src_app_component_appcomponent_selecttopic",
       "community": 0,
-      "norm_label": ".selecttopic()"
+      "norm_label": ".selecttopic()",
+      "id": "src_app_component_appcomponent_selecttopic"
     },
     {
       "label": "Angular Project Configuration (angular.json)",
@@ -855,9 +1273,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "angular_json_angularconfig",
       "community": 7,
-      "norm_label": "angular project configuration (angular.json)"
+      "norm_label": "angular project configuration (angular.json)",
+      "id": "angular_json_angularconfig"
     },
     {
       "label": "Package Configuration (package.json)",
@@ -868,9 +1286,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "package_json_packageconfig",
       "community": 7,
-      "norm_label": "package configuration (package.json)"
+      "norm_label": "package configuration (package.json)",
+      "id": "package_json_packageconfig"
     },
     {
       "label": "App Metadata (metadata.json)",
@@ -881,9 +1299,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "metadata_json_appmetadata",
       "community": 9,
-      "norm_label": "app metadata (metadata.json)"
+      "norm_label": "app metadata (metadata.json)",
+      "id": "metadata_json_appmetadata"
     },
     {
       "label": "TypeScript Configuration (tsconfig.json)",
@@ -894,9 +1312,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tsconfig_json_tsconfig",
       "community": 7,
-      "norm_label": "typescript configuration (tsconfig.json)"
+      "norm_label": "typescript configuration (tsconfig.json)",
+      "id": "tsconfig_json_tsconfig"
     },
     {
       "label": "Application Bootstrap Entry (index.tsx)",
@@ -907,9 +1325,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "index_tsx_bootstrapentry",
       "community": 7,
-      "norm_label": "application bootstrap entry (index.tsx)"
+      "norm_label": "application bootstrap entry (index.tsx)",
+      "id": "index_tsx_bootstrapentry"
     },
     {
       "label": "README - Run and Deploy AI Studio App",
@@ -920,9 +1338,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_md_readme",
       "community": 10,
-      "norm_label": "readme - run and deploy ai studio app"
+      "norm_label": "readme - run and deploy ai studio app",
+      "id": "readme_md_readme"
     },
     {
       "label": "HTML Shell (index.html)",
@@ -933,9 +1351,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "index_html_htmlshell",
       "community": 0,
-      "norm_label": "html shell (index.html)"
+      "norm_label": "html shell (index.html)",
+      "id": "index_html_htmlshell"
     },
     {
       "label": "AppComponent Template (app.component.html)",
@@ -946,9 +1364,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "src_app_component_html_template",
       "community": 0,
-      "norm_label": "appcomponent template (app.component.html)"
+      "norm_label": "appcomponent template (app.component.html)",
+      "id": "src_app_component_html_template"
     },
     {
       "label": "SQL Injection",
@@ -959,9 +1377,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_sql_injection",
       "community": 0,
-      "norm_label": "sql injection"
+      "norm_label": "sql injection",
+      "id": "concept_sql_injection"
     },
     {
       "label": "Cross-Site Scripting (XSS)",
@@ -972,9 +1390,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_xss",
       "community": 0,
-      "norm_label": "cross-site scripting (xss)"
+      "norm_label": "cross-site scripting (xss)",
+      "id": "concept_xss"
     },
     {
       "label": "Cross-Site Request Forgery (CSRF)",
@@ -985,9 +1403,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_csrf",
       "community": 0,
-      "norm_label": "cross-site request forgery (csrf)"
+      "norm_label": "cross-site request forgery (csrf)",
+      "id": "concept_csrf"
     },
     {
       "label": "Code Injection",
@@ -998,9 +1416,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_code_injection",
       "community": 0,
-      "norm_label": "code injection"
+      "norm_label": "code injection",
+      "id": "concept_code_injection"
     },
     {
       "label": "Session Hijacking and Authentication",
@@ -1011,9 +1429,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_session_hijacking",
       "community": 0,
-      "norm_label": "session hijacking and authentication"
+      "norm_label": "session hijacking and authentication",
+      "id": "concept_session_hijacking"
     },
     {
       "label": "Using Components with Known Vulnerabilities",
@@ -1024,9 +1442,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_known_vulnerabilities",
       "community": 0,
-      "norm_label": "using components with known vulnerabilities"
+      "norm_label": "using components with known vulnerabilities",
+      "id": "concept_known_vulnerabilities"
     },
     {
       "label": "Brute Force Attacks and Account Lockout",
@@ -1037,9 +1455,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_brute_force",
       "community": 0,
-      "norm_label": "brute force attacks and account lockout"
+      "norm_label": "brute force attacks and account lockout",
+      "id": "concept_brute_force"
     },
     {
       "label": "Security by Design",
@@ -1050,9 +1468,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_security_by_design",
       "community": 9,
-      "norm_label": "security by design"
+      "norm_label": "security by design",
+      "id": "concept_security_by_design"
     },
     {
       "label": "Prepared Statements (SQL Injection Defense)",
@@ -1063,9 +1481,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_prepared_statements",
       "community": 0,
-      "norm_label": "prepared statements (sql injection defense)"
+      "norm_label": "prepared statements (sql injection defense)",
+      "id": "concept_prepared_statements"
     },
     {
       "label": "Output Encoding and Input Validation (XSS Defense)",
@@ -1076,9 +1494,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_output_encoding",
       "community": 0,
-      "norm_label": "output encoding and input validation (xss defense)"
+      "norm_label": "output encoding and input validation (xss defense)",
+      "id": "concept_output_encoding"
     },
     {
       "label": "Anti-CSRF Tokens",
@@ -1089,9 +1507,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_csrf_tokens",
       "community": 0,
-      "norm_label": "anti-csrf tokens"
+      "norm_label": "anti-csrf tokens",
+      "id": "concept_csrf_tokens"
     },
     {
       "label": "Secure Cookies and HTTPS (Session Defense)",
@@ -1102,9 +1520,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_secure_cookies_https",
       "community": 0,
-      "norm_label": "secure cookies and https (session defense)"
+      "norm_label": "secure cookies and https (session defense)",
+      "id": "concept_secure_cookies_https"
     },
     {
       "label": "Active Dependency Management (OWASP Dependency-Check)",
@@ -1115,9 +1533,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_dependency_management",
       "community": 0,
-      "norm_label": "active dependency management (owasp dependency-check)"
+      "norm_label": "active dependency management (owasp dependency-check)",
+      "id": "concept_dependency_management"
     },
     {
       "label": "Rate Limiting and Account Lockout (Brute Force Defense)",
@@ -1128,9 +1546,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_rate_limiting",
       "community": 0,
-      "norm_label": "rate limiting and account lockout (brute force defense)"
+      "norm_label": "rate limiting and account lockout (brute force defense)",
+      "id": "concept_rate_limiting"
     },
     {
       "label": "Zoneless Change Detection (Angular 21)",
@@ -1141,9 +1559,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_zoneless_change_detection",
       "community": 7,
-      "norm_label": "zoneless change detection (angular 21)"
+      "norm_label": "zoneless change detection (angular 21)",
+      "id": "concept_zoneless_change_detection"
     },
     {
       "label": "IntersectionObserver for Scroll Animations",
@@ -1154,9 +1572,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_intersection_observer",
       "community": 0,
-      "norm_label": "intersectionobserver for scroll animations"
+      "norm_label": "intersectionobserver for scroll animations",
+      "id": "concept_intersection_observer"
     },
     {
       "label": "UFCD 10791 - Web Application Development in Java",
@@ -1167,21 +1585,351 @@
       "captured_at": null,
       "author": "Tiago Santos Mota",
       "contributor": null,
-      "id": "concept_ufcd10791",
       "community": 9,
-      "norm_label": "ufcd 10791 - web application development in java"
+      "norm_label": "ufcd 10791 - web application development in java",
+      "id": "concept_ufcd10791"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_sessions_snapshot_md",
+      "target": "sessions_snapshot_session_snapshot_2026_05_27_09_51",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_51",
+      "target": "sessions_snapshot_files_changed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_51",
+      "target": "sessions_snapshot_recent_commits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_51",
+      "target": "sessions_snapshot_token_estimate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_51",
+      "target": "sessions_snapshot_last_turn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/sessions/snapshot.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "sessions_snapshot_last_turn",
+      "target": "sessions_snapshot_otimiza\u00e7\u00e3o_total_estimada_88_95_menos_tokens_por_sess\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_md",
+      "target": "claude_architecture_map_architecture_map_ufcd_10791"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_architecture_map_ufcd_10791",
+      "target": "claude_architecture_map_file_tree"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_architecture_map_ufcd_10791",
+      "target": "claude_architecture_map_data_flow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_architecture_map_ufcd_10791",
+      "target": "claude_architecture_map_security_topics_ids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_architecture_map_ufcd_10791",
+      "target": "claude_architecture_map_key_patterns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_file_tree",
+      "target": "claude_architecture_map_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/ARCHITECTURE_MAP.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture_map_data_flow",
+      "target": "claude_architecture_map_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/pre-tool-bash-guard.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_pre_tool_bash_guard_sh",
+      "target": "home_user_tiago_mota_claude_hooks_pre_tool_bash_guard_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/pre-tool-read-guard.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_pre_tool_read_guard_sh",
+      "target": "home_user_tiago_mota_claude_hooks_pre_tool_read_guard_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/stop-session-snapshot.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_stop_session_snapshot_sh",
+      "target": "home_user_tiago_mota_claude_hooks_stop_session_snapshot_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/user-prompt-inject-context.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_user_prompt_inject_context_sh",
+      "target": "home_user_tiago_mota_claude_hooks_user_prompt_inject_context_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/user-prompt-inject-snapshot.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_user_prompt_inject_snapshot_sh",
+      "target": "home_user_tiago_mota_claude_hooks_user_prompt_inject_snapshot_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_json",
+      "target": "claude_settings_mcpservers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_json",
+      "target": "claude_settings_hooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_mcpservers",
+      "target": "claude_settings_mcpservers_token_optimizer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_mcpservers_token_optimizer",
+      "target": "claude_settings_token_optimizer_command"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_mcpservers_token_optimizer",
+      "target": "claude_settings_token_optimizer_args"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_mcpservers_token_optimizer",
+      "target": "claude_settings_token_optimizer_env"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_pretooluse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_userpromptsubmit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_stop"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_md",
+      "target": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java",
+      "target": "tiago_mota_claude_session_start_800_tokens"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java",
+      "target": "tiago_mota_claude_key_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java",
+      "target": "tiago_mota_claude_never_auto_load"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java",
+      "target": "tiago_mota_claude_docs_load_when_needed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tiago_mota_claude_ufcd_10791_seguran\u00e7a_web_com_java",
+      "target": "tiago_mota_claude_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "angular.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_json",
-      "target": "tiago_mota_angular_schema",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_schema"
     },
     {
       "relation": "contains",
@@ -1189,9 +1937,9 @@
       "source_file": "angular.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_json",
-      "target": "tiago_mota_angular_version",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_version"
     },
     {
       "relation": "contains",
@@ -1199,9 +1947,9 @@
       "source_file": "angular.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_json",
-      "target": "tiago_mota_angular_newprojectroot",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_newprojectroot"
     },
     {
       "relation": "contains",
@@ -1209,9 +1957,9 @@
       "source_file": "angular.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "angular_json",
-      "target": "tiago_mota_angular_projects",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_projects"
     },
     {
       "relation": "contains",
@@ -1219,9 +1967,9 @@
       "source_file": "angular.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_projects",
-      "target": "tiago_mota_angular_projects_app",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_projects_app"
     },
     {
       "relation": "contains",
@@ -1229,9 +1977,9 @@
       "source_file": "angular.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_projects_app",
-      "target": "tiago_mota_angular_app_projecttype",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_app_projecttype"
     },
     {
       "relation": "contains",
@@ -1239,9 +1987,9 @@
       "source_file": "angular.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_projects_app",
-      "target": "tiago_mota_angular_app_root",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_app_root"
     },
     {
       "relation": "contains",
@@ -1249,9 +1997,9 @@
       "source_file": "angular.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_projects_app",
-      "target": "tiago_mota_angular_app_sourceroot",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_app_sourceroot"
     },
     {
       "relation": "contains",
@@ -1259,9 +2007,9 @@
       "source_file": "angular.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_projects_app",
-      "target": "tiago_mota_angular_app_prefix",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_app_prefix"
     },
     {
       "relation": "contains",
@@ -1269,9 +2017,9 @@
       "source_file": "angular.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_projects_app",
-      "target": "tiago_mota_angular_app_architect",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_app_architect"
     },
     {
       "relation": "contains",
@@ -1279,9 +2027,9 @@
       "source_file": "angular.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_app_architect",
-      "target": "tiago_mota_angular_architect_build",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_architect_build"
     },
     {
       "relation": "contains",
@@ -1289,9 +2037,9 @@
       "source_file": "angular.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_app_architect",
-      "target": "tiago_mota_angular_architect_serve",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_architect_serve"
     },
     {
       "relation": "contains",
@@ -1299,9 +2047,9 @@
       "source_file": "angular.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_build",
-      "target": "tiago_mota_angular_build_builder",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_build_builder"
     },
     {
       "relation": "contains",
@@ -1309,9 +2057,9 @@
       "source_file": "angular.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_build",
-      "target": "tiago_mota_angular_build_options",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_build_options"
     },
     {
       "relation": "contains",
@@ -1319,9 +2067,9 @@
       "source_file": "angular.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_build",
-      "target": "tiago_mota_angular_build_configurations",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_build_configurations"
     },
     {
       "relation": "contains",
@@ -1329,9 +2077,9 @@
       "source_file": "angular.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_build",
-      "target": "tiago_mota_angular_build_defaultconfiguration",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_build_defaultconfiguration"
     },
     {
       "relation": "contains",
@@ -1339,9 +2087,9 @@
       "source_file": "angular.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_build_options",
-      "target": "tiago_mota_angular_options_outputpath",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_options_outputpath"
     },
     {
       "relation": "contains",
@@ -1349,9 +2097,9 @@
       "source_file": "angular.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_build_options",
-      "target": "tiago_mota_angular_options_browser",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_options_browser"
     },
     {
       "relation": "contains",
@@ -1359,9 +2107,9 @@
       "source_file": "angular.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_build_options",
-      "target": "tiago_mota_angular_options_tsconfig",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_options_tsconfig"
     },
     {
       "relation": "contains",
@@ -1369,9 +2117,9 @@
       "source_file": "angular.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_options_outputpath",
-      "target": "tiago_mota_angular_outputpath_base",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_outputpath_base"
     },
     {
       "relation": "contains",
@@ -1379,9 +2127,9 @@
       "source_file": "angular.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_options_outputpath",
-      "target": "tiago_mota_angular_outputpath_browser",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_outputpath_browser"
     },
     {
       "relation": "contains",
@@ -1389,9 +2137,9 @@
       "source_file": "angular.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_build_configurations",
-      "target": "tiago_mota_angular_configurations_production",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_configurations_production"
     },
     {
       "relation": "contains",
@@ -1399,9 +2147,9 @@
       "source_file": "angular.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_build_configurations",
-      "target": "tiago_mota_angular_configurations_development",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_configurations_development"
     },
     {
       "relation": "contains",
@@ -1409,9 +2157,9 @@
       "source_file": "angular.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_configurations_production",
-      "target": "tiago_mota_angular_production_outputhashing",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_production_outputhashing"
     },
     {
       "relation": "contains",
@@ -1419,9 +2167,9 @@
       "source_file": "angular.json",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_serve_configurations",
-      "target": "tiago_mota_angular_configurations_production",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_configurations_production"
     },
     {
       "relation": "contains",
@@ -1429,9 +2177,9 @@
       "source_file": "angular.json",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_configurations_production",
-      "target": "tiago_mota_angular_production_buildtarget",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_production_buildtarget"
     },
     {
       "relation": "contains",
@@ -1439,9 +2187,9 @@
       "source_file": "angular.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_configurations_development",
-      "target": "tiago_mota_angular_development_optimization",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_development_optimization"
     },
     {
       "relation": "contains",
@@ -1449,9 +2197,9 @@
       "source_file": "angular.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_configurations_development",
-      "target": "tiago_mota_angular_development_extractlicenses",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_development_extractlicenses"
     },
     {
       "relation": "contains",
@@ -1459,9 +2207,9 @@
       "source_file": "angular.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_configurations_development",
-      "target": "tiago_mota_angular_development_sourcemap",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_development_sourcemap"
     },
     {
       "relation": "contains",
@@ -1469,9 +2217,9 @@
       "source_file": "angular.json",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_serve_configurations",
-      "target": "tiago_mota_angular_configurations_development",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_configurations_development"
     },
     {
       "relation": "contains",
@@ -1479,9 +2227,9 @@
       "source_file": "angular.json",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_configurations_development",
-      "target": "tiago_mota_angular_development_buildtarget",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_development_buildtarget"
     },
     {
       "relation": "contains",
@@ -1489,9 +2237,9 @@
       "source_file": "angular.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_serve",
-      "target": "tiago_mota_angular_serve_builder",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_serve_builder"
     },
     {
       "relation": "contains",
@@ -1499,9 +2247,9 @@
       "source_file": "angular.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_serve",
-      "target": "tiago_mota_angular_serve_options",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_serve_options"
     },
     {
       "relation": "contains",
@@ -1509,9 +2257,9 @@
       "source_file": "angular.json",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_serve",
-      "target": "tiago_mota_angular_serve_configurations",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_serve_configurations"
     },
     {
       "relation": "contains",
@@ -1519,9 +2267,9 @@
       "source_file": "angular.json",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_architect_serve",
-      "target": "tiago_mota_angular_serve_defaultconfiguration",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_serve_defaultconfiguration"
     },
     {
       "relation": "contains",
@@ -1529,9 +2277,9 @@
       "source_file": "angular.json",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_angular_serve_options",
-      "target": "tiago_mota_angular_options_port",
-      "confidence_score": 1.0
+      "target": "tiago_mota_angular_options_port"
     },
     {
       "relation": "contains",
@@ -1539,9 +2287,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_name",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_name"
     },
     {
       "relation": "contains",
@@ -1549,9 +2297,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_private",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_private"
     },
     {
       "relation": "contains",
@@ -1559,9 +2307,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_version",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_version"
     },
     {
       "relation": "contains",
@@ -1569,9 +2317,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_type",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_type"
     },
     {
       "relation": "contains",
@@ -1579,9 +2327,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_scripts",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_scripts"
     },
     {
       "relation": "contains",
@@ -1589,9 +2337,9 @@
       "source_file": "package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_dependencies",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies"
     },
     {
       "relation": "contains",
@@ -1599,9 +2347,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "tiago_mota_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1609,9 +2357,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_scripts",
-      "target": "tiago_mota_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1619,9 +2367,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_scripts",
-      "target": "tiago_mota_package_scripts_build",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1629,9 +2377,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_scripts",
-      "target": "tiago_mota_package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -1639,9 +2387,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_rxjs",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_rxjs"
     },
     {
       "relation": "contains",
@@ -1649,9 +2397,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_compiler",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_compiler"
     },
     {
       "relation": "contains",
@@ -1659,9 +2407,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_platform_browser",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_platform_browser"
     },
     {
       "relation": "contains",
@@ -1669,9 +2417,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_core",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_core"
     },
     {
       "relation": "contains",
@@ -1679,9 +2427,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_common",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_common"
     },
     {
       "relation": "contains",
@@ -1689,9 +2437,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_build",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_build"
     },
     {
       "relation": "contains",
@@ -1699,9 +2447,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_cli",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_cli"
     },
     {
       "relation": "contains",
@@ -1709,9 +2457,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_angular_compiler_cli",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_angular_compiler_cli"
     },
     {
       "relation": "contains",
@@ -1719,9 +2467,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_dependencies",
-      "target": "tiago_mota_package_dependencies_tailwindcss",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_dependencies_tailwindcss"
     },
     {
       "relation": "contains",
@@ -1729,9 +2477,9 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_devdependencies",
-      "target": "tiago_mota_package_devdependencies_types_node",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_devdependencies_types_node"
     },
     {
       "relation": "contains",
@@ -1739,9 +2487,9 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_devdependencies",
-      "target": "tiago_mota_package_devdependencies_typescript",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_devdependencies_typescript"
     },
     {
       "relation": "contains",
@@ -1749,9 +2497,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_package_devdependencies",
-      "target": "tiago_mota_package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "tiago_mota_package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -1759,9 +2507,9 @@
       "source_file": "metadata.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "metadata_json",
-      "target": "tiago_mota_metadata_name",
-      "confidence_score": 1.0
+      "target": "tiago_mota_metadata_name"
     },
     {
       "relation": "contains",
@@ -1769,9 +2517,9 @@
       "source_file": "metadata.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "metadata_json",
-      "target": "tiago_mota_metadata_description",
-      "confidence_score": 1.0
+      "target": "tiago_mota_metadata_description"
     },
     {
       "relation": "contains",
@@ -1779,9 +2527,9 @@
       "source_file": "metadata.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "metadata_json",
-      "target": "tiago_mota_metadata_requestframepermissions",
-      "confidence_score": 1.0
+      "target": "tiago_mota_metadata_requestframepermissions"
     },
     {
       "relation": "contains",
@@ -1789,9 +2537,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_json",
-      "target": "tiago_mota_tsconfig_compileroptions",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions"
     },
     {
       "relation": "contains",
@@ -1799,9 +2547,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_json",
-      "target": "tiago_mota_tsconfig_files",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_files"
     },
     {
       "relation": "contains",
@@ -1809,9 +2557,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_json",
-      "target": "tiago_mota_tsconfig_angularcompileroptions",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_angularcompileroptions"
     },
     {
       "relation": "contains",
@@ -1819,9 +2567,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_target",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_target"
     },
     {
       "relation": "contains",
@@ -1829,9 +2577,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_experimentaldecorators",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_experimentaldecorators"
     },
     {
       "relation": "contains",
@@ -1839,9 +2587,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_usedefineforclassfields"
     },
     {
       "relation": "contains",
@@ -1849,9 +2597,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_module",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_module"
     },
     {
       "relation": "contains",
@@ -1859,9 +2607,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_lib",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_lib"
     },
     {
       "relation": "contains",
@@ -1869,9 +2617,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_skiplibcheck",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_skiplibcheck"
     },
     {
       "relation": "contains",
@@ -1879,9 +2627,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_types",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_types"
     },
     {
       "relation": "contains",
@@ -1889,9 +2637,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_moduleresolution",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_moduleresolution"
     },
     {
       "relation": "contains",
@@ -1899,9 +2647,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_isolatedmodules",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_isolatedmodules"
     },
     {
       "relation": "contains",
@@ -1909,9 +2657,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_moduledetection",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_moduledetection"
     },
     {
       "relation": "contains",
@@ -1919,9 +2667,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_allowjs",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_allowjs"
     },
     {
       "relation": "contains",
@@ -1929,9 +2677,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_jsx",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_jsx"
     },
     {
       "relation": "contains",
@@ -1939,9 +2687,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions",
-      "target": "tiago_mota_tsconfig_compileroptions_paths",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_compileroptions_paths"
     },
     {
       "relation": "contains",
@@ -1949,9 +2697,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_compileroptions_paths",
-      "target": "tiago_mota_tsconfig_paths",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_paths"
     },
     {
       "relation": "contains",
@@ -1959,9 +2707,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tiago_mota_tsconfig_angularcompileroptions",
-      "target": "tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
-      "confidence_score": 1.0
+      "target": "tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck"
     },
     {
       "relation": "imports_from",
@@ -1970,9 +2718,9 @@
       "source_file": "index.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "index_tsx",
-      "target": "src_app_component_ts",
-      "confidence_score": 1.0
+      "target": "src_app_component_ts"
     },
     {
       "relation": "imports",
@@ -1981,9 +2729,9 @@
       "source_file": "index.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "index_tsx",
-      "target": "src_app_component_appcomponent",
-      "confidence_score": 1.0
+      "target": "src_app_component_appcomponent"
     },
     {
       "relation": "contains",
@@ -1991,9 +2739,9 @@
       "source_file": "src/app.component.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_component_ts",
-      "target": "src_app_component_securitytopic",
-      "confidence_score": 1.0
+      "target": "src_app_component_securitytopic"
     },
     {
       "relation": "contains",
@@ -2001,9 +2749,9 @@
       "source_file": "src/app.component.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_component_ts",
-      "target": "src_app_component_appcomponent",
-      "confidence_score": 1.0
+      "target": "src_app_component_appcomponent"
     },
     {
       "relation": "references",
@@ -2021,9 +2769,9 @@
       "source_file": "src/app.component.ts",
       "source_location": "L349",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_component_appcomponent",
-      "target": "src_app_component_appcomponent_ngafterviewinit",
-      "confidence_score": 1.0
+      "target": "src_app_component_appcomponent_ngafterviewinit"
     },
     {
       "relation": "method",
@@ -2031,9 +2779,9 @@
       "source_file": "src/app.component.ts",
       "source_location": "L367",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_component_appcomponent",
-      "target": "src_app_component_appcomponent_ngondestroy",
-      "confidence_score": 1.0
+      "target": "src_app_component_appcomponent_ngondestroy"
     },
     {
       "relation": "method",
@@ -2041,9 +2789,9 @@
       "source_file": "src/app.component.ts",
       "source_location": "L371",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_component_appcomponent",
-      "target": "src_app_component_appcomponent_selecttopic",
-      "confidence_score": 1.0
+      "target": "src_app_component_appcomponent_selecttopic"
     },
     {
       "relation": "references",
@@ -2366,5 +3114,5 @@
       "source_file": "src/app.component.ts"
     }
   ],
-  "built_at_commit": "706c7cd1757d8b095e3d15c2020e4b13654f20b8"
+  "built_at_commit": "2d59202d36ab9937918f3239e303d1a4a05db4b8"
 }
