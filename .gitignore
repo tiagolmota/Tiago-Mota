@@ -28,3 +28,4 @@ dist-ssr
 graphify-out/graph.html
 graphify-out/.graphify_*
 graphify-out/cost.json
+graphify-out/.rebuild.lock
