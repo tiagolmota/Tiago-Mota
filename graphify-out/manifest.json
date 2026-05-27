@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "/home/user/Tiago-Mota/.claude/settings.json": {
-    "mtime": 1779875467.7339551,
-    "ast_hash": "3679dbf2fe320e8779e3cd7fbe137b3a",
+    "mtime": 1779875651.0379577,
+    "ast_hash": "3aca3c0bd4df555831290edd50dba890",
     "semantic_hash": ""
   },
   "/home/user/Tiago-Mota/.claude/hooks/pre-tool-read-guard.sh": {
@@ -17120,8 +17120,18 @@
     "semantic_hash": ""
   },
   "/home/user/Tiago-Mota/.claude/sessions/snapshot.md": {
-    "mtime": 1779875508.3576343,
-    "ast_hash": "1b5fea511b68f148777bc5a8d89083ac",
+    "mtime": 1779875529.3896265,
+    "ast_hash": "c6789f8c9f5e61ee209236d58d2903f6",
+    "semantic_hash": ""
+  },
+  "/home/user/Tiago-Mota/.claude/hooks/user-prompt-validate-claude-md.sh": {
+    "mtime": 1779875628.3663857,
+    "ast_hash": "841dcab328cc90d38a04eb12a67ae9fd",
+    "semantic_hash": ""
+  },
+  "/home/user/Tiago-Mota/.claude/hooks/user-prompt-ghost-scanner.sh": {
+    "mtime": 1779875629.3628643,
+    "ast_hash": "8c8f6f4e05cc9a03c4a1ada46cb4cbb6",
     "semantic_hash": ""
   }
 }
