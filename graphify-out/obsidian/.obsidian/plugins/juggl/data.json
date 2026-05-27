@@ -1,0 +1,46 @@
+{
+  "layoutSettings": {
+    "name": "cola",
+    "animate": true,
+    "fit": true,
+    "padding": 30,
+    "nodeDimensionsIncludeLabels": true,
+    "flow": { "axis": "y", "minSeparation": 30 },
+    "alignment": null
+  },
+  "globalStyleGroups": [
+    {
+      "filter": "path:AppComponent.md",
+      "color": "#f59e0b",
+      "size": 2.5,
+      "shape": "ellipse",
+      "icon": "brain"
+    },
+    {
+      "filter": "tag:#security",
+      "color": "#ef4444",
+      "size": 1.5
+    },
+    {
+      "filter": "tag:#angular",
+      "color": "#8b5cf6",
+      "size": 1.2
+    },
+    {
+      "filter": "tag:#community",
+      "color": "#06b6d4",
+      "size": 1.8,
+      "shape": "roundrectangle"
+    }
+  ],
+  "defaultView": "workspace",
+  "toolbar": true,
+  "autoAddNodes": true,
+  "renderArrows": true,
+  "hoverEdges": true,
+  "fdgdLayout": false,
+  "concentricLayout": true,
+  "concentricMinNodeSpacing": 40,
+  "hierarchicalLayout": false,
+  "gridLayout": false
+}
