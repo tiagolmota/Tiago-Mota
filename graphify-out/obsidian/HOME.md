@@ -27,6 +27,25 @@ tags: [moc, home, brain]
 - [[_COMMUNITY_Angular Build Architecture]] — build pipeline
 - [[_COMMUNITY_Angular Runtime Dependencies]] — CDN deps
 
+## NotebookLM
+
+- [[NotebookLM_INDEX]] — 87 notebooks organizados por área
+- [[NLM_cybersecurity_incidents]] — Cybersecurity Incident Case Studies (232 fontes)
+- [[NLM_protocolo_seguranca_digital]] — Protocolo de Segurança Digital para Alunos
+- [[NLM_seguranet]] — Seguranet (literacia digital)
+- [[NLM_windows_server_security]] — Windows Server 2012 R2 Security
+
+## Notas UFCD 10791
+
+- [[UFCD_intro]] — Introdução à Segurança
+- [[UFCD_sql_injection]] — SQL Injection
+- [[UFCD_xss]] — Cross-Site Scripting
+- [[UFCD_csrf]] — CSRF
+- [[UFCD_code_injection]] — Injeção de Código
+- [[UFCD_auth]] — Autenticação e Sessões
+- [[UFCD_known_vulnerabilities]] — Componentes Vulneráveis
+- [[UFCD_brute_force]] — Força Bruta
+
 ## Queries Úteis
 ```dataview
 TABLE file.mtime as "Modificado"
