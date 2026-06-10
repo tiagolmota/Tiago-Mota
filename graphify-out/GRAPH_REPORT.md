@@ -1,7 +1,7 @@
-# Graph Report - Tiago-Mota  (2026-05-27)
+# Graph Report - Tiago-Mota  (2026-06-10)
 
 ## Corpus Check
-- 3425 files · ~2,091,351 words
+- 3425 files · ~2,091,350 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6cdd9038`
+- Built from commit: `7546edda`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,7 +44,7 @@
 4. `UFCD 10791 - Segurança Web com Java` - 6 edges
 5. `app` - 6 edges
 6. `development` - 6 edges
-7. `Session Snapshot — 2026-05-27 09:54` - 5 edges
+7. `Session Snapshot — 2026-06-10 21:28` - 5 edges
 8. `Architecture Map — UFCD 10791` - 5 edges
 9. `build` - 5 edges
 10. `serve` - 5 edges
@@ -90,7 +90,7 @@ Nodes (9): prefix, projectType, root, sourceRoot, newProjectRoot, projects, app,
 
 ### Community 5 - "Angular Runtime Dependencies"
 Cohesion: 0.33
-Nodes (5): Files Changed, Last Turn, Recent Commits, Session Snapshot — 2026-05-27 09:54, Token Estimate
+Nodes (5): Files Changed, Last Turn, Recent Commits, Session Snapshot — 2026-06-10 21:28, Token Estimate
 
 ### Community 6 - "Build Output Options"
 Cohesion: 0.33

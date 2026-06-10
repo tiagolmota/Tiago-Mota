@@ -64,13 +64,13 @@
       "norm_label": "snapshot.md"
     },
     {
-      "label": "Session Snapshot \u2014 2026-05-27 09:54",
+      "label": "Session Snapshot \u2014 2026-06-10 21:28",
       "file_type": "document",
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L1",
-      "id": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
+      "id": "sessions_snapshot_session_snapshot_2026_06_10_21_28",
       "community": 5,
-      "norm_label": "session snapshot \u2014 2026-05-27 09:54"
+      "norm_label": "session snapshot \u2014 2026-06-10 21:28"
     },
     {
       "label": "Files Changed",
@@ -85,7 +85,7 @@
       "label": "Recent Commits",
       "file_type": "document",
       "source_file": ".claude/sessions/snapshot.md",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "sessions_snapshot_recent_commits",
       "community": 5,
       "norm_label": "recent commits"
@@ -94,7 +94,7 @@
       "label": "Token Estimate",
       "file_type": "document",
       "source_file": ".claude/sessions/snapshot.md",
-      "source_location": "L17",
+      "source_location": "L19",
       "id": "sessions_snapshot_token_estimate",
       "community": 5,
       "norm_label": "token estimate"
@@ -103,7 +103,7 @@
       "label": "Last Turn",
       "file_type": "document",
       "source_file": ".claude/sessions/snapshot.md",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "sessions_snapshot_last_turn",
       "community": 5,
       "norm_label": "last turn"
@@ -1659,7 +1659,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "claude_sessions_snapshot_md",
-      "target": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
+      "target": "sessions_snapshot_session_snapshot_2026_06_10_21_28",
       "confidence_score": 1.0
     },
     {
@@ -1668,7 +1668,7 @@
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
+      "source": "sessions_snapshot_session_snapshot_2026_06_10_21_28",
       "target": "sessions_snapshot_files_changed",
       "confidence_score": 1.0
     },
@@ -1676,9 +1676,9 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/sessions/snapshot.md",
-      "source_location": "L10",
+      "source_location": "L12",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
+      "source": "sessions_snapshot_session_snapshot_2026_06_10_21_28",
       "target": "sessions_snapshot_recent_commits",
       "confidence_score": 1.0
     },
@@ -1686,9 +1686,9 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/sessions/snapshot.md",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
+      "source": "sessions_snapshot_session_snapshot_2026_06_10_21_28",
       "target": "sessions_snapshot_token_estimate",
       "confidence_score": 1.0
     },
@@ -1696,9 +1696,9 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/sessions/snapshot.md",
-      "source_location": "L20",
+      "source_location": "L22",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
+      "source": "sessions_snapshot_session_snapshot_2026_06_10_21_28",
       "target": "sessions_snapshot_last_turn",
       "confidence_score": 1.0
     },
@@ -3205,5 +3205,5 @@
       "source_file": "src/app.component.ts"
     }
   ],
-  "built_at_commit": "6cdd9038e4d46ec270a7fca5588983344fd73f5b"
+  "built_at_commit": "7546edda024d18535e98be7491077ad0cfa841eb"
 }
