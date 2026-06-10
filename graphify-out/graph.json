@@ -55,58 +55,6 @@
   },
   "nodes": [
     {
-      "label": "user-prompt-ghost-scanner.sh",
-      "file_type": "code",
-      "source_file": ".claude/hooks/user-prompt-ghost-scanner.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "id": "claude_hooks_user_prompt_ghost_scanner_sh",
-      "community": 19,
-      "norm_label": "user-prompt-ghost-scanner.sh"
-    },
-    {
-      "label": "user-prompt-ghost-scanner.sh script",
-      "file_type": "code",
-      "source_file": ".claude/hooks/user-prompt-ghost-scanner.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "id": "home_user_tiago_mota_claude_hooks_user_prompt_ghost_scanner_sh__entry",
-      "community": 19,
-      "norm_label": "user-prompt-ghost-scanner.sh script"
-    },
-    {
-      "label": "user-prompt-validate-claude-md.sh",
-      "file_type": "code",
-      "source_file": ".claude/hooks/user-prompt-validate-claude-md.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "id": "claude_hooks_user_prompt_validate_claude_md_sh",
-      "community": 20,
-      "norm_label": "user-prompt-validate-claude-md.sh"
-    },
-    {
-      "label": "user-prompt-validate-claude-md.sh script",
-      "file_type": "code",
-      "source_file": ".claude/hooks/user-prompt-validate-claude-md.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "id": "home_user_tiago_mota_claude_hooks_user_prompt_validate_claude_md_sh__entry",
-      "community": 20,
-      "norm_label": "user-prompt-validate-claude-md.sh script"
-    },
-    {
       "label": "snapshot.md",
       "file_type": "document",
       "source_file": ".claude/sessions/snapshot.md",
@@ -116,13 +64,13 @@
       "norm_label": "snapshot.md"
     },
     {
-      "label": "Session Snapshot \u2014 2026-05-27 09:52",
+      "label": "Session Snapshot \u2014 2026-05-27 09:54",
       "file_type": "document",
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L1",
-      "id": "sessions_snapshot_session_snapshot_2026_05_27_09_52",
+      "id": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
       "community": 5,
-      "norm_label": "session snapshot \u2014 2026-05-27 09:52"
+      "norm_label": "session snapshot \u2014 2026-05-27 09:54"
     },
     {
       "label": "Files Changed",
@@ -161,112 +109,164 @@
       "norm_label": "last turn"
     },
     {
+      "label": "user-prompt-ghost-scanner.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-ghost-scanner.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 19,
+      "norm_label": "user-prompt-ghost-scanner.sh",
+      "id": "claude_hooks_user_prompt_ghost_scanner_sh"
+    },
+    {
+      "label": "user-prompt-ghost-scanner.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-ghost-scanner.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 19,
+      "norm_label": "user-prompt-ghost-scanner.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_user_prompt_ghost_scanner_sh__entry"
+    },
+    {
+      "label": "user-prompt-validate-claude-md.sh",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-validate-claude-md.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "community": 20,
+      "norm_label": "user-prompt-validate-claude-md.sh",
+      "id": "claude_hooks_user_prompt_validate_claude_md_sh"
+    },
+    {
+      "label": "user-prompt-validate-claude-md.sh script",
+      "file_type": "code",
+      "source_file": ".claude/hooks/user-prompt-validate-claude-md.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "community": 20,
+      "norm_label": "user-prompt-validate-claude-md.sh script",
+      "id": "home_user_tiago_mota_claude_hooks_user_prompt_validate_claude_md_sh__entry"
+    },
+    {
       "label": "settings.json",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L1",
-      "id": "claude_settings_json",
       "community": 11,
-      "norm_label": "settings.json"
+      "norm_label": "settings.json",
+      "id": "claude_settings_json"
     },
     {
       "label": "mcpServers",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L2",
-      "id": "claude_settings_mcpservers",
       "community": 11,
-      "norm_label": "mcpservers"
+      "norm_label": "mcpservers",
+      "id": "claude_settings_mcpservers"
     },
     {
       "label": "token-optimizer",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L3",
-      "id": "claude_settings_mcpservers_token_optimizer",
       "community": 11,
-      "norm_label": "token-optimizer"
+      "norm_label": "token-optimizer",
+      "id": "claude_settings_mcpservers_token_optimizer"
     },
     {
       "label": "command",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L4",
-      "id": "claude_settings_token_optimizer_command",
       "community": 11,
-      "norm_label": "command"
+      "norm_label": "command",
+      "id": "claude_settings_token_optimizer_command"
     },
     {
       "label": "args",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L5",
-      "id": "claude_settings_token_optimizer_args",
       "community": 11,
-      "norm_label": "args"
+      "norm_label": "args",
+      "id": "claude_settings_token_optimizer_args"
     },
     {
       "label": "env",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L6",
-      "id": "claude_settings_token_optimizer_env",
       "community": 11,
-      "norm_label": "env"
+      "norm_label": "env",
+      "id": "claude_settings_token_optimizer_env"
     },
     {
       "label": "hooks",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L9",
-      "id": "claude_settings_hooks",
       "community": 11,
-      "norm_label": "hooks"
+      "norm_label": "hooks",
+      "id": "claude_settings_hooks"
     },
     {
       "label": "Notification",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L10",
-      "id": "claude_settings_hooks_notification",
       "community": 11,
-      "norm_label": "notification"
+      "norm_label": "notification",
+      "id": "claude_settings_hooks_notification"
     },
     {
       "label": "PreToolUse",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L18",
-      "id": "claude_settings_hooks_pretooluse",
       "community": 11,
-      "norm_label": "pretooluse"
+      "norm_label": "pretooluse",
+      "id": "claude_settings_hooks_pretooluse"
     },
     {
       "label": "PostToolUse",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L35",
-      "id": "claude_settings_hooks_posttooluse",
       "community": 11,
-      "norm_label": "posttooluse"
+      "norm_label": "posttooluse",
+      "id": "claude_settings_hooks_posttooluse"
     },
     {
       "label": "UserPromptSubmit",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L43",
-      "id": "claude_settings_hooks_userpromptsubmit",
       "community": 11,
-      "norm_label": "userpromptsubmit"
+      "norm_label": "userpromptsubmit",
+      "id": "claude_settings_hooks_userpromptsubmit"
     },
     {
       "label": "Stop",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L54",
-      "id": "claude_settings_hooks_stop",
       "community": 11,
-      "norm_label": "stop"
+      "norm_label": "stop",
+      "id": "claude_settings_hooks_stop"
     },
     {
       "label": "ARCHITECTURE_MAP.md",
@@ -1655,31 +1655,11 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/hooks/user-prompt-ghost-scanner.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_hooks_user_prompt_ghost_scanner_sh",
-      "target": "home_user_tiago_mota_claude_hooks_user_prompt_ghost_scanner_sh__entry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/hooks/user-prompt-validate-claude-md.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_hooks_user_prompt_validate_claude_md_sh",
-      "target": "home_user_tiago_mota_claude_hooks_user_prompt_validate_claude_md_sh__entry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L1",
       "weight": 1.0,
       "source": "claude_sessions_snapshot_md",
-      "target": "sessions_snapshot_session_snapshot_2026_05_27_09_52",
+      "target": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
       "confidence_score": 1.0
     },
     {
@@ -1688,7 +1668,7 @@
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_52",
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
       "target": "sessions_snapshot_files_changed",
       "confidence_score": 1.0
     },
@@ -1698,7 +1678,7 @@
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L10",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_52",
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
       "target": "sessions_snapshot_recent_commits",
       "confidence_score": 1.0
     },
@@ -1708,7 +1688,7 @@
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L17",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_52",
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
       "target": "sessions_snapshot_token_estimate",
       "confidence_score": 1.0
     },
@@ -1718,9 +1698,29 @@
       "source_file": ".claude/sessions/snapshot.md",
       "source_location": "L20",
       "weight": 1.0,
-      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_52",
+      "source": "sessions_snapshot_session_snapshot_2026_05_27_09_54",
       "target": "sessions_snapshot_last_turn",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/user-prompt-ghost-scanner.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_user_prompt_ghost_scanner_sh",
+      "target": "home_user_tiago_mota_claude_hooks_user_prompt_ghost_scanner_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/hooks/user-prompt-validate-claude-md.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_hooks_user_prompt_validate_claude_md_sh",
+      "target": "home_user_tiago_mota_claude_hooks_user_prompt_validate_claude_md_sh__entry"
     },
     {
       "relation": "contains",
@@ -1788,9 +1788,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings_hooks",
-      "target": "claude_settings_hooks_notification",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks_notification"
     },
     {
       "relation": "contains",
@@ -1808,9 +1808,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings_hooks",
-      "target": "claude_settings_hooks_posttooluse",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks_posttooluse"
     },
     {
       "relation": "contains",
@@ -3205,5 +3205,5 @@
       "source_file": "src/app.component.ts"
     }
   ],
-  "built_at_commit": "3ce3799236a17248c6ab21107e4baa4df27692be"
+  "built_at_commit": "6cdd9038e4d46ec270a7fca5588983344fd73f5b"
 }

@@ -1,7 +1,7 @@
 # Graph Report - Tiago-Mota  (2026-05-27)
 
 ## Corpus Check
-- 3425 files · ~2,091,341 words
+- 3425 files · ~2,091,351 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3ce37992`
+- Built from commit: `6cdd9038`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,7 +44,7 @@
 4. `UFCD 10791 - Segurança Web com Java` - 6 edges
 5. `app` - 6 edges
 6. `development` - 6 edges
-7. `Session Snapshot — 2026-05-27 09:52` - 5 edges
+7. `Session Snapshot — 2026-05-27 09:54` - 5 edges
 8. `Architecture Map — UFCD 10791` - 5 edges
 9. `build` - 5 edges
 10. `serve` - 5 edges
@@ -90,7 +90,7 @@ Nodes (9): prefix, projectType, root, sourceRoot, newProjectRoot, projects, app,
 
 ### Community 5 - "Angular Runtime Dependencies"
 Cohesion: 0.33
-Nodes (5): Files Changed, Last Turn, Recent Commits, Session Snapshot — 2026-05-27 09:52, Token Estimate
+Nodes (5): Files Changed, Last Turn, Recent Commits, Session Snapshot — 2026-05-27 09:54, Token Estimate
 
 ### Community 6 - "Build Output Options"
 Cohesion: 0.33
@@ -121,7 +121,7 @@ Cohesion: 0.29
 Nodes (6): Docs (load when needed), graphify, Key Rules, Never Auto-Load, Session Start ⚡ (~800 tokens), UFCD 10791 - Segurança Web com Java
 
 ## Knowledge Gaps
-- **92 isolated node(s):** `user-prompt-ghost-scanner.sh script`, `user-prompt-validate-claude-md.sh script`, `Files Changed`, `Recent Commits`, `Token Estimate` (+87 more)
+- **92 isolated node(s):** `Files Changed`, `Recent Commits`, `Token Estimate`, `Last Turn`, `user-prompt-ghost-scanner.sh script` (+87 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -134,7 +134,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **Why does `build` connect `Angular Build Architecture` to `Build Output Options`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **What connects `user-prompt-ghost-scanner.sh script`, `user-prompt-validate-claude-md.sh script`, `Files Changed` to the rest of the system?**
+- **What connects `Files Changed`, `Recent Commits`, `Token Estimate` to the rest of the system?**
   _101 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Security Vulnerabilities` be split into smaller, more focused modules?**
   _Cohesion score 0.1067193675889328 - nodes in this community are weakly interconnected._
