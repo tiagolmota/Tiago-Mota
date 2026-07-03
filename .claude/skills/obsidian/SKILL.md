@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, daily notes, and a shared "memory" folder of durable notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, manage tags/properties, work with Obsidian-flavored markdown syntax, connect Claude to a vault via MCP, or use Obsidian notes as persistent memory across sessions/LLMs. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, a folder of .md files with [[double bracket]] links between them, or wants Claude to "remember" things across sessions using Obsidian.
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, daily notes, and a shared "memory" folder of durable notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, analyze or optimize the note graph/link structure so every note is connected, manage tags/properties, work with Obsidian-flavored markdown syntax, connect Claude to a vault via MCP, or use Obsidian notes as persistent memory across sessions/LLMs. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, a folder of .md files with [[double bracket]] links between them, or wants Claude to "remember" things across sessions using Obsidian.
 ---
 
 # Obsidian
@@ -80,6 +80,28 @@ the new name, preserving aliases/headings/embed markers. Run it with no vault wr
 
 Both scripts skip the `.obsidian/` folder and any path the user names with
 `--exclude`.
+
+## Optimizing the link graph
+
+A vault's value as a knowledge graph comes from being one connected web, not a
+pile of isolated islands that happen to share a folder. `scripts/graph_report.py`
+treats every wikilink as an edge, finds the connected components with a
+union-find over the whole vault, and — for every component that isn't part of
+the largest one — looks for a note in the main component sharing a tag, so it
+can suggest a concrete link to fold that cluster back in:
+
+```bash
+python3 scripts/graph_report.py <vault_path>
+```
+
+Read the output as a to-do list, not something to apply blindly: for each
+suggestion, open both notes and add a real `[[link]]` where it makes sense in
+the prose (not just an appended reference) — a tag match tells you two notes
+are *plausibly* related, not that a link there is meaningful. Where a note
+shares no tags with anything (reported explicitly rather than silently
+skipped), that's a signal it needs a human decision about where it belongs,
+not a script guessing from thin evidence. Re-run the report after linking to
+confirm the component count actually dropped.
 
 ## Connecting live via MCP (optional)
 
