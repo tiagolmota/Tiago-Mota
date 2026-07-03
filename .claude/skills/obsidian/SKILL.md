@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, daily notes, and a shared "memory" folder of durable notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, analyze or optimize the note graph/link structure so every note is connected, manage tags/properties, work with Obsidian-flavored markdown syntax, connect Claude to a vault via MCP, or use Obsidian notes as persistent memory across sessions/LLMs. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, a folder of .md files with [[double bracket]] links between them, or wants Claude to "remember" things across sessions using Obsidian.
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, daily notes, and a shared "memory" folder of durable notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, analyze or optimize the note graph/link structure so every note is connected, restyle/skin the Graph View's appearance, manage tags/properties, work with Obsidian-flavored markdown syntax, connect Claude to a vault via MCP, or use Obsidian notes as persistent memory across sessions/LLMs. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, a folder of .md files with [[double bracket]] links between them, or wants Claude to "remember" things across sessions using Obsidian.
 ---
 
 # Obsidian
@@ -102,6 +102,29 @@ shares no tags with anything (reported explicitly rather than silently
 skipped), that's a signal it needs a human decision about where it belongs,
 not a script guessing from thin evidence. Re-run the report after linking to
 confirm the component count actually dropped.
+
+## Graph view skin ("brain" theme)
+
+`assets/brain-graph-skin.css` restyles the Graph View (global and local) to
+look like a neural network — warm coral nodes on a dark tissue-toned
+background, with a synapse-yellow glow on hover — using Obsidian's documented
+`color-*` bridge classes (the graph itself renders via WebGL/canvas, so
+individual nodes can't be styled with arbitrary CSS; only these classes and
+the pane background are reachable).
+
+To install it, copy the file into the vault and enable it — this touches the
+`.obsidian/` folder, which is normally off-limits, but CSS snippets are the
+one thing users add there themselves, so it's expected:
+
+```bash
+mkdir -p <vault_path>/.obsidian/snippets
+cp assets/brain-graph-skin.css <vault_path>/.obsidian/snippets/
+```
+
+Then in Obsidian: `Settings → Appearance → CSS snippets` → enable
+`brain-graph-skin`. This last toggle can only happen inside the running app —
+there's no file-level equivalent, so tell the user to flip it themselves if
+you can't drive the UI.
 
 ## Connecting live via MCP (optional)
 
