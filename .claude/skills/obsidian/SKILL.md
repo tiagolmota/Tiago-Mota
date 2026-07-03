@@ -113,7 +113,10 @@ own private, incompatible copy.
   each note atomic (one fact/decision per note) so it stays easy to skim,
   update, or supersede later.
 - Don't invent a new memory folder name if the vault already has one; match
-  whatever's there.
+  whatever's there. If none exists and the user wants to start one, copy
+  `assets/memory-template/` into the vault as `Memory/` rather than designing
+  the structure from scratch — it comes with an index note explaining the
+  convention plus two example notes to replace or delete.
 
 ## General editing guidance
 

@@ -19,20 +19,16 @@ para fazeres isso localmente.
    **Local REST API**.
 2. Nas definições do plugin, copia a **API key** gerada e confirma a porta
    (por omissão `27124` para HTTPS local).
-3. Configura o servidor MCP `mcp-obsidian` (community, corre via `uvx`) no
-   teu cliente:
+3. Regista o servidor MCP `mcp-obsidian` (community, corre via `uvx`) no teu
+   cliente. Duas formas de fazer isto:
 
-   **Claude Code** (`claude mcp add`):
-   ```bash
-   claude mcp add obsidian -- uvx mcp-obsidian
-   ```
-   depois define as variáveis de ambiente pedidas (`OBSIDIAN_API_KEY`,
-   `OBSIDIAN_HOST` se não for o valor por omissão) — ou usa
-   `references/mcp-config.example.json` como referência para as adicionar
-   directamente num `.mcp.json` de projeto.
-
-   **Claude Desktop** (`claude_desktop_config.json`): usa o mesmo bloco de
-   `references/mcp-config.example.json` dentro de `"mcpServers"`.
+   - **Automático (Claude Code)**: corre `scripts/setup_mcp.sh` — pede a API
+     key e o host/porta interativamente e trata do `claude mcp add` por ti.
+   - **Manual**: `claude mcp add obsidian -e OBSIDIAN_API_KEY=... -e
+     OBSIDIAN_HOST=127.0.0.1 -e OBSIDIAN_PORT=27124 -- uvx mcp-obsidian`, ou
+     para o Claude Desktop copia o bloco de
+     `references/mcp-config.example.json` para dentro de `"mcpServers"` no
+     `claude_desktop_config.json`.
 4. Reinicia o cliente. Devem aparecer ferramentas como `list_files_in_vault`,
    `get_file_contents`, `search`, `patch_content`, `append_content`,
    `delete_file`.
