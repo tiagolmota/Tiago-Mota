@@ -296,68 +296,8 @@ See [references/excalidraw-schema.md](references/excalidraw-schema.md) for all e
 - 不需要手动列出所有文本内容
 
 ### 坐标与布局
-- **坐标系统**：左上角为原点 (0,0)
-- **推荐范围**：所有元素在 0-1200 x 0-800 像素范围内
+- **坐标系统**：左上角为原点 (0,0)，参见上方 Layout & Design 与 Element Template 的字段定义
 - **元素 ID**：每个元素需要唯一的 `id`（可以是字符串，如「title」「box1」等）
-
-### Required Fields for All Elements
-
-**IMPORTANT**: Do NOT include `frameId`, `index`, `versionNonce`, or `rawText` fields. Use `boundElements: null` (not `[]`), and `updated: 1` (not timestamps).
-
-```json
-{
-  "id": "unique-identifier",
-  "type": "rectangle|text|arrow|ellipse|diamond",
-  "x": 100, "y": 100,
-  "width": 200, "height": 50,
-  "angle": 0,
-  "strokeColor": "#color-hex",
-  "backgroundColor": "transparent|#color-hex",
-  "fillStyle": "solid",
-  "strokeWidth": 2,
-  "strokeStyle": "solid|dashed|dotted",
-  "roughness": 1,
-  "opacity": 100,
-  "groupIds": [],
-  "roundness": {"type": 3},
-  "seed": 123456789,
-  "version": 1,
-  "isDeleted": false,
-  "boundElements": null,
-  "updated": 1,
-  "link": null,
-  "locked": false
-}
-```
-
-### Text-Specific Properties
-文本元素 (type: "text") 需要额外属性（do NOT include `rawText`）：
-```json
-{
-  "text": "显示文本",
-  "fontSize": 20,
-  "fontFamily": 5,
-  "textAlign": "center",
-  "verticalAlign": "middle",
-  "containerId": null,
-  "originalText": "显示文本",
-  "autoResize": true,
-  "lineHeight": 1.25
-}
-```
-
-### appState 配置
-```json
-"appState": {
-  "gridSize": null,
-  "viewBackgroundColor": "#ffffff"
-}
-```
-
-### files 字段
-```json
-"files": {}
-```
 
 ## Common Mistakes to Avoid
 

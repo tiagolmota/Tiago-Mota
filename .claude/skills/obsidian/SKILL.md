@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, daily notes, and a shared "memory" folder of durable notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, analyze or optimize the note graph/link structure so every note is connected, restyle/skin the Graph View's appearance, manage tags/properties, work with Obsidian-flavored markdown syntax, connect Claude to a vault via MCP, or use Obsidian notes as persistent memory across sessions/LLMs. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, a folder of .md files with [[double bracket]] links between them, or wants Claude to "remember" things across sessions using Obsidian.
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], frontmatter, tags, embeds, callouts, daily notes, graph connectivity/Graph View styling, MCP-based live vault access, and a shared cross-LLM "memory" folder. Use whenever the user references an Obsidian vault or notes, a folder of linked .md files, backlinks, orphan notes, graph optimization, or wants Claude to remember things persistently via Obsidian.
 ---
 
 # Obsidian
