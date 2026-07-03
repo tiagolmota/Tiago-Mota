@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, and daily notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, manage tags/properties, or work with Obsidian-flavored markdown syntax. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, or a folder of .md files with [[double bracket]] links between them.
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], YAML frontmatter properties, tags, embeds, callouts, daily notes, and a shared "memory" folder of durable notes. Use this whenever the user asks to create, edit, organize, rename, link, or search notes in an Obsidian vault, fix or trace backlinks, find orphan notes, manage tags/properties, work with Obsidian-flavored markdown syntax, connect Claude to a vault via MCP, or use Obsidian notes as persistent memory across sessions/LLMs. Make sure to use this skill whenever the user mentions "my vault", "my notes" in an Obsidian context, a folder of .md files with [[double bracket]] links between them, or wants Claude to "remember" things across sessions using Obsidian.
 ---
 
 # Obsidian
@@ -80,6 +80,40 @@ the new name, preserving aliases/headings/embed markers. Run it with no vault wr
 
 Both scripts skip the `.obsidian/` folder and any path the user names with
 `--exclude`.
+
+## Connecting live via MCP (optional)
+
+If tools named `mcp__obsidian__*` (or similarly named) are already available in
+this session, an MCP server is bridging Claude to the vault directly — prefer
+those tools over the scripts above for reads/writes, since they don't require
+re-passing the vault path on every call and reflect the live state Obsidian
+itself sees. The scripts remain the fallback for sessions with only filesystem
+access (e.g. a remote/headless session that can't reach the user's machine).
+Setting up that MCP connection has to happen on the user's own machine, next to
+their running Obsidian — see `references/mcp-setup.md` for how, and don't
+attempt it from a session that only has filesystem access to a checked-out vault.
+
+## Shared memory notes
+
+Some vaults dedicate a folder (commonly named `Memory`, `Memoria`, or
+`Second Brain`) to small, durable notes — facts, preferences, decisions — meant
+to be read back at the start of a session rather than re-derived every time.
+The point of keeping this in the vault instead of a model's own memory feature
+is that it's plain markdown: any LLM or client with access to the vault (via
+MCP or the filesystem) shares the same memory, instead of each tool keeping its
+own private, incompatible copy.
+
+- Before starting non-trivial work in a vault, check whether such a folder
+  exists and skim it for relevant context. Use `scripts/memory_digest.py
+  <vault_path>` to pull all notes in that folder (or one named with `--folder`)
+  into a single digest instead of opening each file individually.
+- When you learn something durable worth remembering — a stated preference, a
+  recurring convention, a decision — write or update a small note in that
+  folder rather than letting it live only in the current conversation. Keep
+  each note atomic (one fact/decision per note) so it stays easy to skim,
+  update, or supersede later.
+- Don't invent a new memory folder name if the vault already has one; match
+  whatever's there.
 
 ## General editing guidance
 
