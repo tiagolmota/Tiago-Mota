@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], frontmatter, tags, embeds, callouts, daily notes, graph connectivity/Graph View styling, MCP-based live vault access, and a shared cross-LLM "memory" folder. Use whenever the user references an Obsidian vault or notes, a folder of linked .md files, backlinks, orphan notes, graph optimization, or wants Claude to remember things persistently via Obsidian.
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], frontmatter, tags, embeds, callouts, daily notes, graph connectivity/Graph View styling, MCP-based live vault access, bulk-importing existing files/folders as notes, and a shared cross-LLM "memory" folder. Use whenever the user references an Obsidian vault or notes, a folder of linked .md files, backlinks, orphan notes, graph optimization, importing documents into a vault, or wants Claude to remember things persistently via Obsidian.
 ---
 
 # Obsidian
@@ -125,6 +125,39 @@ Then in Obsidian: `Settings → Appearance → CSS snippets` → enable
 `brain-graph-skin`. This last toggle can only happen inside the running app —
 there's no file-level equivalent, so tell the user to flip it themselves if
 you can't drive the UI.
+
+## Bulk-importing files into a vault
+
+To pull an existing folder of documents into a vault so its content becomes
+part of the linkable, searchable graph (instead of sitting outside Obsidian in
+formats it can't touch), use `scripts/ingest_folder.py`:
+
+```bash
+python3 scripts/ingest_folder.py <source_root> <vault_path> --dry-run
+```
+
+It walks `source_root`, and for each file with an extension worth importing
+(`.txt`, `.md`, `.csv`, `.json`, `.html`, `.pdf` via `pdftotext`, `.docx` via
+`python-docx` if installed — anything else is skipped, not guessed at) writes
+one note into `<vault_path>/Imported/`, mirroring the source folder structure,
+with frontmatter recording where it came from (`source:`, `imported:`) and a
+tag from its top-level source folder. By default it skips junk/system
+directories (`node_modules`, `.git`, `Windows`, `Program Files`, `AppData`,
+recycle bins, etc.) and anything over 20 MB — override with `--exclude-dir`
+and `--max-size-mb` if the defaults are wrong for a given source. Run the
+`--dry-run` first and check the file count looks sane before writing for real.
+
+**Point this at a specific, deliberate folder — not an entire drive.** "Import
+everything on D:\" almost never means what it sounds like: a drive holds
+installed programs, system files, videos, archives — not a useful vault of
+knowledge. Ask the user which folder(s) actually hold the documents they mean
+(their Documents folder, a specific project folder, a downloads folder they
+want to clear out) rather than pointing this at a drive root, even though
+nothing stops you technically. This has to run locally, with filesystem access
+to the source folder — it can't be driven from a remote/headless session that
+only has the vault checked out. After importing, run `graph_report.py` (above)
+to find tag-based links between the newly imported notes and the rest of the
+vault, since imported notes start out disconnected from everything else.
 
 ## Connecting live via MCP (optional)
 
