@@ -1,5 +1,6 @@
-import { Component, ChangeDetectionStrategy, signal, AfterViewInit, ViewChildren, ElementRef, QueryList, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, signal, AfterViewInit, ViewChildren, ElementRef, QueryList, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 interface SecurityTopic {
   id: string;
@@ -31,6 +32,14 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   @ViewChildren('topicSection') topicSections!: QueryList<ElementRef<HTMLElement>>;
 
   private observer?: IntersectionObserver;
+  private sanitizer = inject(DomSanitizer);
+
+  safeHtml(text: string): SafeHtml {
+    const html = text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code>$1</code>');
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
   
   readonly topics = signal<SecurityTopic[]>([
     {
@@ -362,6 +371,11 @@ private boolean isAccountLocked(String username) {
     this.topicSections.forEach((section) => {
       this.observer?.observe(section.nativeElement);
     });
+
+    setTimeout(() => {
+      const Prism = (window as any).Prism;
+      if (Prism) Prism.highlightAll();
+    }, 50);
   }
 
   ngOnDestroy() {
