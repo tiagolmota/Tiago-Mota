@@ -147,6 +147,17 @@ recycle bins, etc.) and anything over 20 MB — override with `--exclude-dir`
 and `--max-size-mb` if the defaults are wrong for a given source. Run the
 `--dry-run` first and check the file count looks sane before writing for real.
 
+On Windows, `scripts/run-ingest.ps1` wraps this for a user who doesn't have
+Python scripts set up already: it locates `python`/`python3`, downloads
+`ingest_folder.py` from this skill's GitHub source, warns if PDFs are present
+without `pdftotext` on PATH, and defaults to a dry run:
+
+```powershell
+.\run-ingest.ps1 -SourcePath "D:\Documentos" -VaultPath "C:\Users\you\MyVault"
+# once the dry-run counts look right:
+.\run-ingest.ps1 -SourcePath "D:\Documentos" -VaultPath "C:\Users\you\MyVault" -Apply
+```
+
 **Point this at a specific, deliberate folder — not an entire drive.** "Import
 everything on D:\" almost never means what it sounds like: a drive holds
 installed programs, system files, videos, archives — not a useful vault of
