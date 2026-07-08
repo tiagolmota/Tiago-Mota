@@ -13,6 +13,10 @@
   .\run-ingest.ps1 -SourcePath "D:\Documentos" -VaultPath "C:\Users\you\MyVault"
 
 .EXAMPLE
+  # Skip specific folders (repeatable):
+  .\run-ingest.ps1 -SourcePath "D:\" -VaultPath "C:\Users\you\MyVault" -ExcludeDir "IRS","CV"
+
+.EXAMPLE
   # After checking the dry-run counts look right, actually write the notes:
   .\run-ingest.ps1 -SourcePath "D:\Documentos" -VaultPath "C:\Users\you\MyVault" -Apply
 #>
@@ -20,6 +24,9 @@ param(
     [Parameter(Mandatory = $true)][string]$SourcePath,
     [Parameter(Mandatory = $true)][string]$VaultPath,
     [switch]$Apply,
+    # Directory names to skip, on top of the script's built-in defaults
+    # (node_modules, .git, Windows, Program Files, AppData, recycle bins, etc.)
+    [string[]]$ExcludeDir = @(),
     # Branch/ref to download ingest_folder.py from. Once PR #3 merges, switch
     # this to "main".
     [string]$Ref = "claude/obsidian-skills-plugin-6dredp"
@@ -62,7 +69,8 @@ if ($hasPdfs -and -not (Get-Command pdftotext -ErrorAction SilentlyContinue)) {
 
 # 5. Run it -- dry run unless -Apply was passed.
 $extraArgs = @()
-if (-not $Apply) { $extraArgs = @("--dry-run") }
+if (-not $Apply) { $extraArgs += "--dry-run" }
+foreach ($dir in $ExcludeDir) { $extraArgs += "--exclude-dir"; $extraArgs += $dir }
 
 Write-Host ""
 Write-Host "Running ingest_folder.py $(if ($Apply) { '(APPLYING CHANGES)' } else { '(dry run)' })..." -ForegroundColor Cyan
