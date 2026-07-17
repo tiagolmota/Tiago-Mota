@@ -30,6 +30,10 @@
     {
       "query": "tag:moc OR path:HOME OR path:Index",
       "color": { "a": 1, "rgb": 16753920 }
+    },
+    {
+      "query": "path:_graphify_raw",
+      "color": { "a": 0.35, "rgb": 2171954 }
     }
   ],
   "collapse-display": false,

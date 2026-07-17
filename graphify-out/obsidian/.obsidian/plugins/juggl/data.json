@@ -61,6 +61,12 @@
       "size": 2.2,
       "shape": "ellipse",
       "icon": "map"
+    },
+    {
+      "filter": "path:_graphify_raw",
+      "color": "#2a2a4a",
+      "size": 0.6,
+      "shape": "ellipse"
     }
   ],
   "defaultView": "workspace",

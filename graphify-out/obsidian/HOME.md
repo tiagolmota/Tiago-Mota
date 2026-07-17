@@ -4,7 +4,7 @@ tags: [moc, home, brain]
 
 # 🧠 UFCD 10791 — Knowledge Brain
 
-> Mapa de conteúdo central. Abre `graph.canvas` para o grafo de cérebro completo.
+> Mapa de conteúdo central. Ver [[Index]] para navegação tabular. Abre `graph.canvas` para o grafo de cérebro completo.
 
 ## God Node
 - [[AppComponent]] — 17 ligações (hub central)
