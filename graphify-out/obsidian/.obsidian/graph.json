@@ -7,21 +7,41 @@
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
-    { "query": "path:AppComponent", "color": { "a": 1, "rgb": 16750848 } },
-    { "query": "tag:#security", "color": { "a": 1, "rgb": 16720932 } },
-    { "query": "tag:#angular", "color": { "a": 1, "rgb": 9699539 } },
-    { "query": "path:_COMMUNITY", "color": { "a": 1, "rgb": 1682175 } }
+    {
+      "query": "path:AppComponent OR path:HOME",
+      "color": { "a": 1, "rgb": 16766720 }
+    },
+    {
+      "query": "tag:ufcd10791",
+      "color": { "a": 1, "rgb": 5164484 }
+    },
+    {
+      "query": "tag:segurança OR tag:ciberseg",
+      "color": { "a": 1, "rgb": 16729440 }
+    },
+    {
+      "query": "tag:notebooklm",
+      "color": { "a": 1, "rgb": 54442 }
+    },
+    {
+      "query": "path:_COMMUNITY",
+      "color": { "a": 1, "rgb": 10181046 }
+    },
+    {
+      "query": "tag:moc OR path:HOME OR path:Index",
+      "color": { "a": 1, "rgb": 16753920 }
+    }
   ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.4,
-  "lineSizeMultiplier": 1,
+  "nodeSizeMultiplier": 1.8,
+  "lineSizeMultiplier": 0.7,
   "collapse-forces": false,
-  "centerStrength": 0.8,
-  "repelStrength": 14,
-  "linkStrength": 1,
-  "linkDistance": 80,
+  "centerStrength": 0.5,
+  "repelStrength": 20,
+  "linkStrength": 0.7,
+  "linkDistance": 60,
   "scale": 1,
   "close": false
 }
