@@ -35,6 +35,15 @@ Read in order:
 - `.claude/COMMON_MISTAKES.md` — Angular CDN gotchas
 - `graphify-out/GRAPH_REPORT.md` — codebase knowledge graph
 
+## Workflows
+
+**Código (Angular/Java/Python):** `docs/learnings/` injeta contexto automaticamente por palavra-chave.
+- `angular-cdn.md` — CDN, signals, OnPush, inject()
+- `java-security.md` — OWASP Top 10, PreparedStatements, Spring Security
+- `python.md` — type hints, pathlib, subprocess seguro
+
+**Escrita científica:** usa `docs/learnings/scientific-writing.md` (IMRaD, IEEE/APA, registo académico). Notebooks relevantes no NotebookLM: "Metodologias de Investigação" e "Scientific Article Development".
+
 ## graphify
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.

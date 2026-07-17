@@ -29,11 +29,18 @@ tags: [moc, home, brain]
 
 ## NotebookLM
 
-- [[NotebookLM_INDEX]] — 87 notebooks organizados por área
+- [[NotebookLM_INDEX]] — 86 notebooks organizados por área
 - [[NLM_cybersecurity_incidents]] — Cybersecurity Incident Case Studies (232 fontes)
 - [[NLM_protocolo_seguranca_digital]] — Protocolo de Segurança Digital para Alunos
 - [[NLM_seguranet]] — Seguranet (literacia digital)
 - [[NLM_windows_server_security]] — Windows Server 2012 R2 Security
+
+## Escrita Científica
+
+- **Guia de Metodologias de Investigação e Gestão de Projetos** (47 fontes) — em NotebookLM
+- **Scientific Article Development and Evaluation Directory** — em NotebookLM
+- **Mastering NotebookLM and AI Optimization for Academic Success** (96 fontes) — em NotebookLM
+- `docs/learnings/scientific-writing.md` — convenções IMRaD, IEEE/APA, registo académico
 
 ## Notas UFCD 10791
 

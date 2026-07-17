@@ -32,14 +32,7 @@
         ]
       }
     ],
-    "PostToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/session-end-token-report.sh" }
-        ]
-      }
-    ],
+    "PostToolUse": [],
     "UserPromptSubmit": [
       {
         "matcher": "",
@@ -55,7 +48,8 @@
       {
         "matcher": "",
         "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/stop-session-snapshot.sh" }
+          { "type": "command", "command": "bash .claude/hooks/stop-session-snapshot.sh" },
+          { "type": "command", "command": "bash .claude/hooks/session-end-token-report.sh" }
         ]
       }
     ]
