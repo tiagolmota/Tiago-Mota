@@ -1,12 +1,16 @@
 ---
 tags: [segurança, java, ufcd10791, sql_injection]
-aliases: ["SQL Injection"]
+aliases: ["SQL Injection UFCD", "Injeção SQL"]
 owasp: "A03:2021 — Injection"
 severidade: "Crítica"
-relacionado:
-  - "[[Injeção de Código]]"
+type: "ufcd-study"
+related:
+  - "[[SQL Injection]]"
+  - "[[Prepared Statements (SQL Injection Defense)]]"
+  - "[[Code Injection]]"
   - "[[Cross-Site Scripting (XSS)]]"
-  - "[[Utilização de Componentes com Vulnerabilidades Conhecidas]]"
+  - "[[Using Components with Known Vulnerabilities]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # SQL Injection
@@ -49,12 +53,15 @@ ResultSet rs = pstmt.executeQuery();
 
 ## Tópicos Relacionados
 
-- [[Injeção de Código]]
-- [[Cross-Site Scripting (XSS)]]
-- [[Utilização de Componentes com Vulnerabilidades Conhecidas]]
+- [[Code Injection]] — categoria-mãe da SQL Injection
+- [[Cross-Site Scripting (XSS)]] — outra forma de injeção
+- [[Using Components with Known Vulnerabilities]] — drivers JDBC desatualizados
 
-## Referências
+## Ligações
 
-- [A03:2021 — Injection](https://owasp.org/Top10/A03_2021-Injection/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Conceito: [[SQL Injection]]
+- Defesa detalhada: [[Prepared Statements (SQL Injection Defense)]]
+- Categoria: [[Code Injection]]
+- Mapa: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[HOME]]

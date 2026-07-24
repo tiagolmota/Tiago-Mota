@@ -1,12 +1,17 @@
 ---
 tags: [segurança, java, ufcd10791, auth]
-aliases: ["Autenticação e Sessões"]
+aliases: ["Autenticação e Sessões", "Session Hijacking UFCD"]
 owasp: "A07:2021 — Identification & Auth Failures"
 severidade: "Alta"
-relacionado:
+type: "ufcd-study"
+related:
+  - "[[Session Hijacking and Authentication]]"
+  - "[[Secure Cookies and HTTPS (Session Defense)]]"
   - "[[Cross-Site Scripting (XSS)]]"
   - "[[Cross-Site Request Forgery (CSRF)]]"
-  - "[[Ataques de Força Bruta e Bloqueio de Conta]]"
+  - "[[Brute Force Attacks and Account Lockout]]"
+  - "[[Anti-CSRF Tokens]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # Autenticação e Sessões
@@ -22,7 +27,7 @@ O **Sequestro de Sessão (Session Hijacking)** é um ataque no qual um ator mali
 
 ## ❌ Má Prática — Roubo de Cookies de Sessão via XSS
 
-Se a aplicação for vulnerável a XSS, um atacante pode injetar um script que rouba o cookie de sessão da vítima e o envia para um servidor controlado pelo atacante. Com este cookie, o atacante pode aceder à sessão da vítima.
+Se a aplicação for vulnerável a XSS, um atacante pode injetar um script que rouba o cookie de sessão da vítima e o envia para um servidor controlado pelo atacante.
 
 ```java
 // Atacante injeta este 'comentário' numa página vulnerável a XSS:
@@ -35,29 +40,26 @@ out.println("<p>" + maliciousComment + "</p>");
 
 ---
 
-## ✅ Boa Prática — Usar Cookies Seguros e Forçar Comunicação via HTTPS
+## ✅ Boa Prática — Usar Cookies Seguros e Forçar HTTPS
 
-Uma defesa robusta combina várias camadas. Além de proteger os cookies com os atributos `HttpOnly` e `Secure`, é **obrigatório** que toda a comunicação ocorra sobre HTTPS (HTTP sobre TLS/SSL). O HTTPS encripta todos os dados em trânsito, incluindo os cookies de sessão, protegendo-os contra ataques de interceção de rede (Man-in-the-Middle). A validação de um certificado digital válido, emitido por uma autoridade de certificação (CA), garante que o cliente está a comunicar com o servidor autêntico e não com um impostor.
+Uma defesa robusta combina várias camadas: cookies com atributos `HttpOnly` e `Secure`, e comunicação obrigatória sobre HTTPS.
 
 ```xml
-<!-- Em web.xml (Configuração standard de Java EE) -->
-
-<!-- 1. Configurar Cookies Seguros -->
+<!-- Em web.xml (Java EE) -->
 <session-config>
     <cookie-config>
-        <http-only>true</http-only>
-        <secure>true</secure>
+        <http-only>true</http-only>   <!-- sem acesso JS -->
+        <secure>true</secure>          <!-- apenas HTTPS -->
     </cookie-config>
 </session-config>
 
-<!-- 2. Forçar o uso de HTTPS em toda a aplicação -->
+<!-- Forçar HTTPS em toda a aplicação -->
 <security-constraint>
     <web-resource-collection>
         <web-resource-name>Toda a aplicação</web-resource-name>
         <url-pattern>/*</url-pattern>
     </web-resource-collection>
     <user-data-constraint>
-        <!-- CONFIDENTIAL significa que a comunicação deve ser encriptada (HTTPS) -->
         <transport-guarantee>CONFIDENTIAL</transport-guarantee>
     </user-data-constraint>
 </security-constraint>
@@ -67,12 +69,16 @@ Uma defesa robusta combina várias camadas. Além de proteger os cookies com os 
 
 ## Tópicos Relacionados
 
-- [[Cross-Site Scripting (XSS)]]
-- [[Cross-Site Request Forgery (CSRF)]]
-- [[Ataques de Força Bruta e Bloqueio de Conta]]
+- [[Cross-Site Scripting (XSS)]] — vetor principal de roubo de sessão
+- [[Cross-Site Request Forgery (CSRF)]] — explora sessões ativas
+- [[Brute Force Attacks and Account Lockout]] — outro vetor de comprometer autenticação
 
-## Referências
+## Ligações
 
-- [A07:2021 — Identification & Auth Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Conceito: [[Session Hijacking and Authentication]]
+- Defesa detalhada: [[Secure Cookies and HTTPS (Session Defense)]]
+- Defesa complementar: [[Anti-CSRF Tokens]]
+- Relacionado: [[Cross-Site Scripting (XSS)]] · [[Brute Force Attacks and Account Lockout]]
+- Mapa: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[HOME]]

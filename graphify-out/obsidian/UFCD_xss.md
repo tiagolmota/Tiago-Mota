@@ -1,12 +1,16 @@
 ---
 tags: [segurança, java, ufcd10791, xss]
-aliases: ["Cross-Site Scripting (XSS)"]
+aliases: ["XSS UFCD", "Cross-Site Scripting UFCD"]
 owasp: "A03:2021 — Injection"
 severidade: "Alta"
-relacionado:
+type: "ufcd-study"
+related:
+  - "[[Cross-Site Scripting (XSS)]]"
+  - "[[Output Encoding and Input Validation (XSS Defense)]]"
   - "[[Cross-Site Request Forgery (CSRF)]]"
-  - "[[Autenticação e Sessões]]"
+  - "[[Session Hijacking and Authentication]]"
   - "[[SQL Injection]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # Cross-Site Scripting (XSS)
@@ -22,7 +26,7 @@ Uma vulnerabilidade que permite a um atacante injetar scripts maliciosos (normal
 
 ## ❌ Má Prática — Apresentar Dados do Utilizador Diretamente no HTML
 
-Se um comentário ou nome de utilizador que contém código HTML ou script é guardado e depois apresentado numa página sem qualquer tratamento, o navegador (browser) irá interpretá-lo e executá-lo.
+Se um comentário ou nome de utilizador que contém código HTML ou script é guardado e depois apresentado numa página sem qualquer tratamento, o navegador irá interpretá-lo e executá-lo.
 
 ```java
 // JSP (JavaServer Pages) Exemplo
@@ -35,21 +39,18 @@ out.println("<p>" + comment + "</p>");
 
 ## ✅ Boa Prática — Validar Inputs e Codificar Outputs (Defense in Depth)
 
-A defesa mais eficaz contra XSS combina duas camadas. Primeiro, a **validação de input** para garantir que os dados recebidos estão no formato esperado (ex: apenas letras e números). Depois, e mais importante, o **output encoding** para garantir que quaisquer dados apresentados ao utilizador são tratados como texto pelo browser, e não como código executável.
+A defesa mais eficaz contra XSS combina duas camadas. Primeiro, a **validação de input** para garantir que os dados recebidos estão no formato esperado. Depois, e mais importante, o **output encoding** para garantir que quaisquer dados apresentados ao utilizador são tratados como texto pelo browser, e não como código executável.
 
 ```java
-// 1. Validar o input (exemplo para um nome de utilizador)
+// 1. Validar o input (whitelist)
 String username = request.getParameter("username");
 if (!username.matches("^[a-zA-Z0-9]+$")) {
-    // Rejeitar o input inválido
     throw new SecurityException("Input de utilizador inválido.");
 }
 
-// 2. Codificar o output antes de o apresentar (defesa principal)
-// Usando uma biblioteca como OWASP Java Encoder
+// 2. Codificar o output (defesa principal — OWASP Java Encoder)
+import org.owasp.encoder.Encode;
 String safeUsername = Encode.forHtml(username);
-
-// O username validado e codificado é agora seguro para ser apresentado
 out.println("<h1>Bem-vindo, " + safeUsername + "!</h1>");
 ```
 
@@ -57,12 +58,15 @@ out.println("<h1>Bem-vindo, " + safeUsername + "!</h1>");
 
 ## Tópicos Relacionados
 
-- [[Cross-Site Request Forgery (CSRF)]]
-- [[Autenticação e Sessões]]
-- [[SQL Injection]]
+- [[Cross-Site Request Forgery (CSRF)]] — XSS pode bypassar proteções CSRF
+- [[Session Hijacking and Authentication]] — roubo de cookies via XSS
+- [[SQL Injection]] — outra forma de injeção
 
-## Referências
+## Ligações
 
-- [A03:2021 — Injection](https://owasp.org/Top10/A03_2021-Injection/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Conceito: [[Cross-Site Scripting (XSS)]]
+- Defesa detalhada: [[Output Encoding and Input Validation (XSS Defense)]]
+- Relacionado: [[Cross-Site Request Forgery (CSRF)]] · [[Session Hijacking and Authentication]]
+- Mapa: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[HOME]]

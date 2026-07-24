@@ -1,13 +1,17 @@
 ---
 tags: [segurança, java, ufcd10791, intro]
-aliases: ["Introdução à Segurança"]
+aliases: ["Introdução à Segurança", "Security by Design Intro"]
 owasp: "Security by Design"
 severidade: "Info"
-relacionado:
+type: "ufcd-study"
+related:
+  - "[[Security by Design]]"
+  - "[[OWASP_Top10]]"
   - "[[SQL Injection]]"
   - "[[Cross-Site Scripting (XSS)]]"
   - "[[Cross-Site Request Forgery (CSRF)]]"
-  - "[[Injeção de Código]]"
+  - "[[Code Injection]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # Introdução à Segurança
@@ -21,9 +25,7 @@ A segurança em aplicações web não é um extra, mas sim um requisito fundamen
 
 ---
 
-## ❌ Má Prática — 
-
-
+## ❌ Má Prática
 
 ```plaintext
 // 1. Desenvolver toda a funcionalidade.
@@ -35,9 +37,7 @@ A segurança em aplicações web não é um extra, mas sim um requisito fundamen
 
 ---
 
-## ✅ Boa Prática — 
-
-
+## ✅ Boa Prática
 
 ```plaintext
 // 1. Análise de requisitos de segurança.
@@ -49,15 +49,30 @@ A segurança em aplicações web não é um extra, mas sim um requisito fundamen
 
 ---
 
+## Custo da Segurança por Fase
+
+| Fase | Custo Relativo |
+|---|---|
+| Design | 1× |
+| Desenvolvimento | 10× |
+| Testes | 30× |
+| Produção | 100× |
+
+Corrigir vulnerabilidades em produção é **100× mais caro** que no design.
+
+---
+
 ## Tópicos Relacionados
 
-- [[SQL Injection]]
-- [[Cross-Site Scripting (XSS)]]
-- [[Cross-Site Request Forgery (CSRF)]]
-- [[Injeção de Código]]
+- [[SQL Injection]] — injeção de código SQL
+- [[Cross-Site Scripting (XSS)]] — injeção de scripts
+- [[Cross-Site Request Forgery (CSRF)]] — pedidos forjados
+- [[Code Injection]] — categoria-mãe de injeções
 
-## Referências
+## Ligações
 
-- [Security by Design](https://owasp.org/www-project-proactive-controls/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Filosofia expandida: [[Security by Design]]
+- Mapa OWASP: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[Angular Architecture (UFCD 10791)]]
+- Início: [[HOME]]

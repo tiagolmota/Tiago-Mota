@@ -1,10 +1,15 @@
 ---
 tags: [segurança, java, ufcd10791, brute_force]
-aliases: ["Ataques de Força Bruta e Bloqueio de Conta"]
+aliases: ["Ataques de Força Bruta e Bloqueio de Conta", "Brute Force UFCD"]
 owasp: "A07:2021 — Identification & Auth Failures"
 severidade: "Média"
-relacionado:
-  - "[[Autenticação e Sessões]]"
+type: "ufcd-study"
+related:
+  - "[[Brute Force Attacks and Account Lockout]]"
+  - "[[Rate Limiting and Account Lockout (Brute Force Defense)]]"
+  - "[[Session Hijacking and Authentication]]"
+  - "[[Secure Cookies and HTTPS (Session Defense)]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # Ataques de Força Bruta e Bloqueio de Conta
@@ -14,23 +19,21 @@ relacionado:
 
 ## Descrição
 
-Um ataque de força bruta consiste em tentar sistematicamente todas as combinações possíveis de passwords até encontrar a correta. Variantes modernas como o "Credential Stuffing" usam listas de credenciais roubadas de outras fugas de informação para tentar aceder a contas noutros serviços, explorando a reutilização de passwords pelos utilizadores.
+Um ataque de força bruta consiste em tentar sistematicamente todas as combinações possíveis de passwords até encontrar a correta. Variantes modernas como o "Credential Stuffing" usam listas de credenciais roubadas de outras fugas de informação.
 
 ---
 
 ## ❌ Má Prática — Ausência de Limites de Tentativas de Login
 
-Um formulário de login que não limita o número de tentativas falhadas permite que um atacante use scripts automatizados para testar milhões de combinações de passwords em pouco tempo, tornando a descoberta de uma password fraca apenas uma questão de tempo.
+Um formulário de login que não limita o número de tentativas falhadas permite que um atacante use scripts automatizados para testar milhões de combinações.
 
 ```java
-// Endpoint de login vulnerável
 @PostMapping("/login")
 public ResponseEntity<String> login(String username, String password) {
     if (authService.credentialsAreValid(username, password)) {
-        // ... Iniciar sessão do utilizador
         return ResponseEntity.ok("Login bem-sucedido!");
     } else {
-        // Nenhuma penalização por tentativa falhada
+        // VULNERÁVEL — nenhuma penalização por tentativa falhada
         return ResponseEntity.status(401).body("Credenciais inválidas.");
     }
 }
@@ -40,10 +43,7 @@ public ResponseEntity<String> login(String username, String password) {
 
 ## ✅ Boa Prática — Implementar Rate Limiting e Bloqueio de Conta
 
-A mitigação eficaz envolve detetar e bloquear tentativas excessivas de login. Isto pode ser feito limitando o número de pedidos por IP (Rate Limiting) ou bloqueando temporariamente uma conta após um certo número de tentativas falhadas, tornando os ataques automatizados impraticáveis.
-
 ```java
-// Lógica conceptual para um serviço de login
 private final Map<String, Integer> failedAttempts = new ConcurrentHashMap<>();
 private final Map<String, Long> lockedAccounts = new ConcurrentHashMap<>();
 private static final int MAX_ATTEMPTS = 5;
@@ -55,15 +55,13 @@ public void handleLoginAttempt(String username, boolean success) {
     }
 
     if (success) {
-        failedAttempts.remove(username); // Reset no sucesso
+        failedAttempts.remove(username);
     } else {
         int attempts = failedAttempts.getOrDefault(username, 0) + 1;
         failedAttempts.put(username, attempts);
-
         if (attempts >= MAX_ATTEMPTS) {
             lockedAccounts.put(username, System.currentTimeMillis() + LOCKOUT_DURATION_MS);
             failedAttempts.remove(username);
-            // Opcional: Notificar o utilizador sobre o bloqueio da conta
         }
     }
 }
@@ -71,9 +69,8 @@ public void handleLoginAttempt(String username, boolean success) {
 private boolean isAccountLocked(String username) {
     Long lockoutTime = lockedAccounts.get(username);
     if (lockoutTime == null) return false;
-    
     if (System.currentTimeMillis() > lockoutTime) {
-        lockedAccounts.remove(username); // O bloqueio expirou
+        lockedAccounts.remove(username);
         return false;
     }
     return true;
@@ -84,10 +81,13 @@ private boolean isAccountLocked(String username) {
 
 ## Tópicos Relacionados
 
-- [[Autenticação e Sessões]]
+- [[Session Hijacking and Authentication]] — força bruta compromete autenticação
 
-## Referências
+## Ligações
 
-- [A07:2021 — Identification & Auth Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Conceito: [[Brute Force Attacks and Account Lockout]]
+- Defesa detalhada: [[Rate Limiting and Account Lockout (Brute Force Defense)]]
+- Relacionado: [[Session Hijacking and Authentication]] · [[Secure Cookies and HTTPS (Session Defense)]]
+- Mapa: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[HOME]]

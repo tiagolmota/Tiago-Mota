@@ -1,11 +1,16 @@
 ---
 tags: [segurança, java, ufcd10791, known_vulnerabilities]
-aliases: ["Utilização de Componentes com Vulnerabilidades Conhecidas"]
+aliases: ["Utilização de Componentes com Vulnerabilidades Conhecidas", "Known Vulnerabilities UFCD"]
 owasp: "A06:2021 — Vulnerable & Outdated Components"
 severidade: "Alta"
-relacionado:
+type: "ufcd-study"
+related:
+  - "[[Using Components with Known Vulnerabilities]]"
+  - "[[Active Dependency Management (OWASP Dependency-Check)]]"
   - "[[SQL Injection]]"
-  - "[[Autenticação e Sessões]]"
+  - "[[Session Hijacking and Authentication]]"
+  - "[[Code Injection]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # Utilização de Componentes com Vulnerabilidades Conhecidas
@@ -15,13 +20,11 @@ relacionado:
 
 ## Descrição
 
-As aplicações modernas dependem largamente de componentes e bibliotecas de terceiros (open-source ou comerciais). Se um destes componentes tiver uma falha de segurança conhecida, a sua aplicação herda essa vulnerabilidade, tornando-se um alvo fácil para ataques que exploram essas falhas.
+As aplicações modernas dependem largamente de componentes e bibliotecas de terceiros. Se um destes componentes tiver uma falha de segurança conhecida, a sua aplicação herda essa vulnerabilidade — mesmo que o código próprio seja perfeito.
 
 ---
 
 ## ❌ Má Prática — Dependências Desatualizadas e Não Geridas
-
-Incluir uma biblioteca num projeto e nunca mais a atualizar é uma prática de risco. Vulnerabilidades são descobertas constantemente, e usar uma versão antiga de uma biblioteca, como o Log4j, pode expor a aplicação a ataques críticos como o Log4Shell.
 
 ```xml
 <!-- pom.xml -->
@@ -29,7 +32,7 @@ Incluir uma biblioteca num projeto e nunca mais a atualizar é uma prática de r
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <!-- Versão criticamente vulnerável (Log4Shell) -->
+        <!-- Versão criticamente vulnerável (Log4Shell — CVE-2021-44228) -->
         <version>2.14.1</version>
     </dependency>
 </dependencies>
@@ -39,32 +42,41 @@ Incluir uma biblioteca num projeto e nunca mais a atualizar é uma prática de r
 
 ## ✅ Boa Prática — Gestão Ativa e Análise de Dependências
 
-Utilize ferramentas de gestão de dependências (como o Maven ou Gradle) e integre scanners de segurança (OWASP Dependency-Check, Snyk, Dependabot) no seu ciclo de desenvolvimento. Mantenha as bibliotecas atualizadas para as versões mais recentes e estáveis.
+```xml
+<!-- pom.xml — versão corrigida -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.17.1</version>
+</dependency>
+```
 
-```plaintext
-<!-- pom.xml -->
-<dependencies>
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <!-- Versão corrigida e segura -->
-        <version>2.17.1</version> <!-- Ou mais recente -->
-    </dependency>
-</dependencies>
-
-// Recomenda-se executar regularmente:
-// mvn org.owasp:dependency-check-maven:check
+```bash
+# Executar regularmente:
+mvn org.owasp:dependency-check-maven:check
+# Relatório em target/dependency-check-report/
 ```
 
 ---
 
+## CVEs de Referência
+
+| CVE | Componente | CVSS | Impacto |
+|---|---|---|---|
+| CVE-2021-44228 | Log4j 2 (Log4Shell) | 10.0 | RCE remoto |
+| CVE-2022-22965 | Spring (Spring4Shell) | 9.8 | RCE |
+| CVE-2017-5638 | Struts (Equifax) | 10.0 | 147M registos |
+
 ## Tópicos Relacionados
 
-- [[SQL Injection]]
-- [[Autenticação e Sessões]]
+- [[SQL Injection]] — drivers JDBC desatualizados podem ter CVEs
+- [[Session Hijacking and Authentication]] — bibliotecas de auth vulneráveis
 
-## Referências
+## Ligações
 
-- [A06:2021 — Vulnerable & Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Conceito: [[Using Components with Known Vulnerabilities]]
+- Defesa detalhada: [[Active Dependency Management (OWASP Dependency-Check)]]
+- Relacionado: [[Code Injection]] (Log4Shell é um tipo de injeção)
+- Mapa: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[HOME]]

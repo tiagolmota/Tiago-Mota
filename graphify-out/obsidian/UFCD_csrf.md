@@ -1,11 +1,16 @@
 ---
 tags: [segurança, java, ufcd10791, csrf]
-aliases: ["Cross-Site Request Forgery (CSRF)"]
+aliases: ["CSRF UFCD", "Cross-Site Request Forgery UFCD"]
 owasp: "A01:2021 — Broken Access Control"
 severidade: "Média"
-relacionado:
+type: "ufcd-study"
+related:
+  - "[[Cross-Site Request Forgery (CSRF)]]"
+  - "[[Anti-CSRF Tokens]]"
   - "[[Cross-Site Scripting (XSS)]]"
-  - "[[Autenticação e Sessões]]"
+  - "[[Session Hijacking and Authentication]]"
+  - "[[Secure Cookies and HTTPS (Session Defense)]]"
+  - "[[UFCD 10791 - Web Application Development in Java]]"
 ---
 
 # Cross-Site Request Forgery (CSRF)
@@ -21,14 +26,13 @@ Esta técnica engana um utilizador autenticado, levando-o a executar uma ação 
 
 ## ❌ Má Prática — Confiar Apenas nos Cookies de Sessão
 
-Se uma ação (ex: transferir dinheiro, apagar conta) é validada apenas com o cookie de sessão, um pedido forjado a partir de outro site será executado com sucesso porque o navegador envia os cookies automaticamente.
+Se uma ação é validada apenas com o cookie de sessão, um pedido forjado a partir de outro site será executado com sucesso porque o navegador envia os cookies automaticamente.
 
 ```java
-// Um formulário simples para alterar a password
-// Este pedido pode ser forjado por um atacante noutro site.
 @PostMapping("/user/change-password")
 public void changePassword(String newPassword) {
     // ... lógica para alterar a password do user autenticado
+    // VULNERÁVEL — qualquer site pode forjar este pedido
 }
 ```
 
@@ -52,6 +56,7 @@ public void changePassword(HttpServletRequest request, String newPassword) {
         // Token válido, processar o pedido
     } else {
         // Token inválido, rejeitar o pedido
+        throw new SecurityException("CSRF token inválido");
     }
 }
 ```
@@ -60,11 +65,15 @@ public void changePassword(HttpServletRequest request, String newPassword) {
 
 ## Tópicos Relacionados
 
-- [[Cross-Site Scripting (XSS)]]
-- [[Autenticação e Sessões]]
+- [[Cross-Site Scripting (XSS)]] — XSS bypassa tokens CSRF
+- [[Session Hijacking and Authentication]] — CSRF usa sessões ativas
 
-## Referências
+## Ligações
 
-- [A01:2021 — Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
-- [[AppComponent]] — implementação na app UFCD 10791
-- [[HOME]] — voltar ao mapa central
+- Conceito: [[Cross-Site Request Forgery (CSRF)]]
+- Defesa detalhada: [[Anti-CSRF Tokens]]
+- Defesa complementar: [[Secure Cookies and HTTPS (Session Defense)]] (SameSite=Strict)
+- Relacionado: [[Cross-Site Scripting (XSS)]] · [[Session Hijacking and Authentication]]
+- Mapa: [[OWASP_Top10]]
+- Curso: [[UFCD 10791 - Web Application Development in Java]]
+- Implementação: [[AppComponent]] · [[HOME]]
