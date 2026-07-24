@@ -76,6 +76,26 @@ tags: [moc, index, ufcd10791]
 
 ---
 
+---
+
+## Setup & Integrações
+
+| Nota | Descrição |
+|---|---|
+| [[SETUP_Smart_Connect]] | Corrigir CLI REST 127.0.0.1:27125 (4 soluções) |
+| [[SETUP_MarkItDown]] | Importar PDF / Word / slides / URLs → vault |
+
+### Scripts disponíveis
+
+```bash
+python scripts/vault-import.py file.pdf --tag ufcd10791
+bash scripts/prepare-llm.sh           # → .claude/sessions/vault-context.md
+bash scripts/obsidian-vault-sync.sh ~/Meu\ volt
+bash scripts/smart-connect-fix.sh     # diagnóstico porta 27125
+```
+
+---
+
 ## Queries Dataview
 
 ```dataview

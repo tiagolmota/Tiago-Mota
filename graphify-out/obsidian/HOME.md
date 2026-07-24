@@ -6,6 +6,10 @@ tags: [moc, home, brain]
 
 > Mapa de conteúdo central. Ver [[Index]] para navegação tabular. Abre `graph.canvas` para o grafo de cérebro completo.
 
+## Setup & Integrações
+- [[SETUP_Smart_Connect]] — Corrigir CLI REST 127.0.0.1:27125
+- [[SETUP_MarkItDown]] — Importar PDFs, Word, slides, URLs para o vault
+
 ## God Node
 - [[AppComponent]] — 17 ligações (hub central)
 

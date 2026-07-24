@@ -5,10 +5,21 @@
 # Output: .claude/sessions/vault-context.md  (≤4000 tokens)
 
 VAULT="${VAULT_PATH:-graphify-out/obsidian}"
+IMPORT_DROP="${IMPORT_DROP:-graphify-out/obsidian/_imports}"
 OUT=".claude/sessions/vault-context.md"
 MAX_WORDS="${MAX_WORDS:-3000}"
 
 mkdir -p ".claude/sessions"
+
+# Auto-import any non-Markdown files dropped in _imports/
+if [ -d "$IMPORT_DROP" ] && command -v python3 >/dev/null 2>&1; then
+  shopt -s nullglob
+  for f in "$IMPORT_DROP"/*.{pdf,docx,pptx,xlsx,xls,html,csv,json,xml}; do
+    echo "📥 Auto-importing: $f" >&2
+    python3 scripts/vault-import.py "$f" --vault "$VAULT" --folder "_markitdown" --tag markitdown/auto 2>&1 >&2 && rm "$f"
+  done
+  shopt -u nullglob
+fi
 
 # Priority notes to always include
 PRIORITY=(
