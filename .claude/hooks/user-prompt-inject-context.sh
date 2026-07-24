@@ -16,8 +16,9 @@
 #   CTO_MAX_INJECT_WORDS — max total words to inject (default: 1500, ~2000 tokens)
 
 LEARNINGS_DIR="${CTO_LEARNINGS_DIR:-docs/learnings}"
+VAULT_DIR="${CTO_VAULT_DIR:-graphify-out/obsidian}"
 MAX_FILES="${CTO_MAX_INJECT_FILES:-3}"
-MAX_WORDS="${CTO_MAX_INJECT_WORDS:-1500}"
+MAX_WORDS="${CTO_MAX_INJECT_WORDS:-1800}"
 
 # Read stdin JSON to get the user prompt
 STDIN_JSON=$(cat)
@@ -30,18 +31,19 @@ except:
     pass
 " 2>/dev/null)
 
-if [ -z "$PROMPT" ] || [ ! -d "$LEARNINGS_DIR" ]; then
+if [ -z "$PROMPT" ]; then
   exit 0
 fi
 
 # Find matching topic files using Python for robust matching
-INJECTED=$(python3 - "$LEARNINGS_DIR" "$MAX_FILES" "$MAX_WORDS" "$PROMPT" <<'PYEOF'
+INJECTED=$(python3 - "$LEARNINGS_DIR" "$VAULT_DIR" "$MAX_FILES" "$MAX_WORDS" "$PROMPT" <<'PYEOF'
 import sys, os, re
 
 learnings_dir = sys.argv[1]
-max_files = int(sys.argv[2])
-max_words = int(sys.argv[3])
-prompt = sys.argv[4].lower()
+vault_dir = sys.argv[2]
+max_files = int(sys.argv[3])
+max_words = int(sys.argv[4])
+prompt = sys.argv[5].lower()
 
 # Extract meaningful words from prompt (>4 chars, skip stop words)
 stop = {'this','that','with','from','have','will','been','they','what',
@@ -52,31 +54,44 @@ words = set(w for w in re.findall(r'[a-z][a-z0-9_-]{3,}', prompt) if w not in st
 if not words:
     sys.exit(0)
 
-# Find .md files in learnings dir
+# Find .md files in learnings dir + key vault notes (UFCD_*.md, NLM_*.md)
+sources = []
 try:
-    files = [f for f in os.listdir(learnings_dir) if f.endswith('.md')]
+    for f in os.listdir(learnings_dir):
+        if f.endswith('.md'):
+            sources.append((learnings_dir, f))
 except:
+    pass
+
+vault_prefixes = ('UFCD_', 'NLM_', 'Security by Design', 'Zoneless', 'AppComponent')
+try:
+    for f in os.listdir(vault_dir):
+        if f.endswith('.md') and any(f.startswith(p) for p in vault_prefixes):
+            sources.append((vault_dir, f))
+except:
+    pass
+
+if not sources:
     sys.exit(0)
 
 # Score each file by how many prompt words appear in its stem
 def score(filename):
     stem = re.sub(r'\.md$', '', filename).lower().replace('-', ' ').replace('_', ' ')
     stem_words = set(stem.split())
-    # Also check individual chars for abbreviations (e.g. "db" matches "database")
     return sum(1 for w in words if w in stem or any(w.startswith(sw) for sw in stem_words))
 
-scored = [(score(f), f) for f in files]
-scored = [(s, f) for s, f in scored if s > 0]
+scored = [(score(f), d, f) for d, f in sources]
+scored = [(s, d, f) for s, d, f in scored if s > 0]
 scored.sort(key=lambda x: -x[0])
-matches = [f for _, f in scored[:max_files]]
+matches = [(d, f) for _, d, f in scored[:max_files]]
 
 if not matches:
     sys.exit(0)
 
 total_words = 0
 injected = []
-for fname in matches:
-    path = os.path.join(learnings_dir, fname)
+for dirpath, fname in matches:
+    path = os.path.join(dirpath, fname)
     try:
         content = open(path).read()
         wcount = len(content.split())
@@ -88,22 +103,24 @@ for fname in matches:
                 break
             content = ' '.join(words_list[:available]) + '\n\n[... truncated to fit token budget]'
             wcount = available
-        injected.append((fname, path, content, wcount))
+        injected.append((fname, dirpath, path, content, wcount))
         total_words += wcount
     except:
         continue
 
-for fname, path, content, wcount in injected:
-    print(f'--- Context loaded from {learnings_dir}/{fname} ---')
+for fname, dirpath, path, content, wcount in injected:
+    rel = os.path.join(dirpath, fname)
+    print(f'--- Context loaded from {rel} ---')
     print(content)
     print(f'--- End of {fname} ---')
     print()
 
 # Stderr notice (user sees this, not Claude)
 import sys as _sys
-for fname, path, content, wcount in injected:
+for fname, dirpath, path, content, wcount in injected:
     approx_tokens = int(wcount * 1.3)
-    print(f'💡 Auto-loaded: {learnings_dir}/{fname} (~{approx_tokens} tokens)', file=_sys.stderr)
+    rel = os.path.join(dirpath, fname)
+    print(f'💡 Auto-loaded: {rel} (~{approx_tokens} tokens)', file=_sys.stderr)
 PYEOF
 )
 
