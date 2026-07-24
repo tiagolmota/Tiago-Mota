@@ -1,0 +1,57 @@
+{
+  "mcpServers": {
+    "token-optimizer": {
+      "command": "token-optimizer-mcp",
+      "args": [],
+      "env": {}
+    }
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/notification-token-display.sh" }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/pre-tool-bash-guard.sh" },
+          { "type": "command", "command": "bash .claude/hooks/pre-tool-read-guard.sh" },
+          { "type": "command", "command": "bash .claude/hooks/pre-tool-token-guard.sh" },
+          { "type": "command", "command": "CMD=$(python3 -c \"import json,sys; d=json.load(sys.stdin); print(d.get('tool_input',d).get('command',''))\" 2>/dev/null || true); case \"$CMD\" in *grep*|*rg\\ *|*ripgrep*|*find\\ *|*fd\\ *|*ack\\ *|*ag\\ *)   [ -f graphify-out/graph.json ] &&   echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"additionalContext\":\"graphify: knowledge graph at graphify-out/. Run graphify query instead of grepping.\"}}'   || true ;; esac" }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/pre-tool-read-guard.sh" }
+        ]
+      }
+    ],
+    "PostToolUse": [],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/user-prompt-validate-claude-md.sh" },
+          { "type": "command", "command": "bash .claude/hooks/user-prompt-ghost-scanner.sh" },
+          { "type": "command", "command": "bash .claude/hooks/user-prompt-inject-context.sh" },
+          { "type": "command", "command": "bash .claude/hooks/user-prompt-inject-snapshot.sh" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/stop-session-snapshot.sh" },
+          { "type": "command", "command": "bash .claude/hooks/session-end-token-report.sh" }
+        ]
+      }
+    ]
+  }
+}

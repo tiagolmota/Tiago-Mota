@@ -1,5 +1,5 @@
-import { Component, ChangeDetectionStrategy, signal, AfterViewInit, ViewChildren, ElementRef, QueryList, OnDestroy } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ChangeDetectionStrategy, signal, AfterViewInit, ViewChildren, ElementRef, QueryList, OnDestroy, inject, afterNextRender } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 interface SecurityTopic {
   id: string;
@@ -25,12 +25,27 @@ interface SecurityTopic {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CommonModule]
+  imports: []
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
   @ViewChildren('topicSection') topicSections!: QueryList<ElementRef<HTMLElement>>;
 
   private observer?: IntersectionObserver;
+  private sanitizer = inject(DomSanitizer);
+
+  constructor() {
+    afterNextRender(() => {
+      const Prism = (window as any).Prism;
+      if (Prism) Prism.highlightAll();
+    });
+  }
+
+  safeHtml(text: string): SafeHtml {
+    const html = text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.*?)`/g, '<code>$1</code>');
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
   
   readonly topics = signal<SecurityTopic[]>([
     {

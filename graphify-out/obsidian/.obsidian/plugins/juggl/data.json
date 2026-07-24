@@ -1,0 +1,82 @@
+{
+  "layoutSettings": {
+    "name": "cose-bilkent",
+    "animate": true,
+    "fit": true,
+    "padding": 40,
+    "nodeDimensionsIncludeLabels": true,
+    "randomize": true,
+    "componentSpacing": 80,
+    "nodeRepulsion": 8000,
+    "nodeOverlap": 20,
+    "idealEdgeLength": 80,
+    "edgeElasticity": 0.45,
+    "nestingFactor": 0.1,
+    "gravity": 0.25,
+    "numIter": 2500,
+    "tile": true,
+    "tilingPaddingVertical": 10,
+    "tilingPaddingHorizontal": 10,
+    "gravityRangeCompound": 1.5,
+    "gravityCompound": 1.0,
+    "gravityRange": 3.8,
+    "initialEnergyOnIncremental": 0.5
+  },
+  "globalStyleGroups": [
+    {
+      "filter": "path:AppComponent.md OR path:HOME.md",
+      "color": "#FFD700",
+      "size": 3.0,
+      "shape": "ellipse",
+      "icon": "brain"
+    },
+    {
+      "filter": "tag:#ufcd10791",
+      "color": "#4ECDC4",
+      "size": 1.6,
+      "shape": "ellipse"
+    },
+    {
+      "filter": "tag:#segurança OR tag:#cibersegurança",
+      "color": "#FF4560",
+      "size": 1.6,
+      "shape": "ellipse"
+    },
+    {
+      "filter": "tag:#notebooklm",
+      "color": "#00D4AA",
+      "size": 1.4,
+      "shape": "roundrectangle"
+    },
+    {
+      "filter": "path:_COMMUNITY",
+      "color": "#9B59B6",
+      "size": 2.0,
+      "shape": "roundrectangle",
+      "icon": "network"
+    },
+    {
+      "filter": "tag:#moc",
+      "color": "#FFA500",
+      "size": 2.2,
+      "shape": "ellipse",
+      "icon": "map"
+    },
+    {
+      "filter": "path:_graphify_raw",
+      "color": "#2a2a4a",
+      "size": 0.6,
+      "shape": "ellipse"
+    }
+  ],
+  "defaultView": "workspace",
+  "toolbar": true,
+  "autoAddNodes": true,
+  "renderArrows": true,
+  "hoverEdges": true,
+  "fdgdLayout": true,
+  "concentricLayout": false,
+  "concentricMinNodeSpacing": 40,
+  "hierarchicalLayout": false,
+  "gridLayout": false
+}
