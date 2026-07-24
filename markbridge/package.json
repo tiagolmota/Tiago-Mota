@@ -1,0 +1,71 @@
+{
+  "name": "markbridge",
+  "productName": "MarkBridge",
+  "version": "1.0.0",
+  "description": "Converte PDF, Word, PowerPoint, Excel, HTML e URLs em Markdown para Claude, NotebookLM e ChatGPT",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win --x64",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build": "electron-builder --win --linux"
+  },
+  "build": {
+    "appId": "com.tiagomota.markbridge",
+    "productName": "MarkBridge",
+    "copyright": "© 2026 Tiago Santos Mota",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "python/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "MarkBridge"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png",
+      "category": "Utility"
+    },
+    "extraResources": [
+      {
+        "from": "python/",
+        "to": "python/",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'">
+<title>MarkBridge</title>
+<style>
+  :root {
+    --bg:       #0D0D1A;
+    --surface:  #14142A;
+    --surface2: #1C1C38;
+    --border:   #252545;
+    --accent:   #5B6FFF;
+    --success:  #00D4AA;
+    --danger:   #FF4560;
+    --warn:     #FFB830;
+    --text:     #C8D0FF;
+    --muted:    #6B7AAA;
+    --dim:      #3D4A7A;
+    --mono:     'Cascadia Code', 'Fira Code', Consolas, monospace;
+    --radius:   10px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; user-select: none; }
+
+  /* ── Titlebar ── */
+  #titlebar {
+    height: 36px; background: var(--surface2); border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; padding: 0 16px; gap: 10px;
+    -webkit-app-region: drag; flex-shrink: 0;
+  }
+  #titlebar .logo { display: flex; align-items: center; gap: 8px; }
+  #titlebar .logo-mark {
+    width: 22px; height: 22px; background: var(--accent); border-radius: 5px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  #titlebar .logo-mark svg { width: 12px; height: 12px; fill: white; }
+  #titlebar .app-name { font-weight: 700; font-size: 13px; letter-spacing: -0.01em; }
+  #titlebar .spacer { flex: 1; }
+  #titlebar .winctrls { display: flex; gap: 6px; -webkit-app-region: no-drag; }
+  #titlebar .wbtn {
+    width: 28px; height: 22px; border: none; background: transparent; border-radius: 5px;
+    cursor: pointer; color: var(--muted); font-size: 14px; display: flex; align-items: center; justify-content: center;
+  }
+  #titlebar .wbtn:hover { background: rgba(255,255,255,.08); color: var(--text); }
+  #titlebar .wbtn.close:hover { background: var(--danger); color: #fff; }
+  #py-status { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 5px; }
+  #py-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--dim); }
+  #py-dot.ok { background: var(--success); box-shadow: 0 0 5px var(--success); animation: pulse 2s infinite; }
+  #py-dot.err { background: var(--danger); }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+  /* ── Layout ── */
+  #app { display: flex; height: calc(100vh - 36px); }
+
+  /* ── Sidebar ── */
+  #sidebar {
+    width: 210px; flex-shrink: 0; border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; padding: 14px 10px; gap: 3px; overflow-y: auto;
+  }
+  .sb-label { font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--dim);
+    padding: 10px 10px 4px; }
+  .radio-item { display: flex; align-items: center; gap: 8px; padding: 6px 10px;
+    border-radius: 7px; cursor: pointer; transition: background .1s; }
+  .radio-item:hover { background: rgba(255,255,255,.04); }
+  .radio-item input { accent-color: var(--accent); cursor: pointer; }
+  .radio-item label { cursor: pointer; }
+
+  .sb-sep { height: 1px; background: var(--border); margin: 8px 0; }
+
+  .folder-row { display: flex; flex-direction: column; gap: 4px; padding: 0 4px; }
+  .folder-row label { font-size: 10px; color: var(--muted); }
+  .folder-input-wrap { display: flex; gap: 4px; }
+  .folder-input {
+    flex: 1; background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 6px; padding: 5px 8px; color: var(--text); font-size: 11px;
+    font-family: var(--mono); outline: none; min-width: 0;
+  }
+  .folder-input:focus { border-color: var(--accent); }
+  .icon-btn {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 6px;
+    color: var(--text); padding: 4px 7px; cursor: pointer; font-size: 13px;
+    display: flex; align-items: center; transition: background .1s;
+  }
+  .icon-btn:hover { background: var(--border); }
+
+  .sb-spacer { flex: 1; }
+
+  #stats { padding: 8px 10px; border-top: 1px solid var(--border); display: flex; gap: 12px; }
+  .stat { font-size: 11px; color: var(--muted); }
+  .stat strong { color: var(--text); font-variant-numeric: tabular-nums; }
+
+  /* ── Main ── */
+  #main { flex: 1; display: flex; flex-direction: column; padding: 14px; gap: 10px; min-width: 0; overflow: hidden; }
+
+  /* URL bar */
+  #url-bar { display: flex; gap: 6px; }
+  #url-input {
+    flex: 1; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 12px; color: var(--text); font-size: 12px; outline: none;
+  }
+  #url-input::placeholder { color: var(--dim); }
+  #url-input:focus { border-color: var(--accent); }
+  .btn {
+    padding: 7px 16px; border-radius: 8px; border: none; cursor: pointer;
+    font-size: 12px; font-weight: 600; transition: opacity .15s;
+  }
+  .btn:hover { opacity: .85; }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+
+  /* Drop zone */
+  #dropzone {
+    border: 1.5px dashed var(--dim); border-radius: var(--radius);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 6px; min-height: 130px; cursor: pointer;
+    background: rgba(91,111,255,.03); transition: border-color .15s, background .15s;
+  }
+  #dropzone.over { border-color: var(--accent); background: rgba(91,111,255,.09); }
+  #dropzone .dz-icon { font-size: 26px; }
+  #dropzone .dz-title { font-size: 13px; font-weight: 600; }
+  #dropzone .dz-sub   { font-size: 11px; color: var(--muted); }
+  #dropzone .fmt-row  { display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; margin-top: 4px; }
+  .fmt-pill {
+    padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 700;
+    background: var(--surface2); color: var(--muted); border: 1px solid var(--border);
+    letter-spacing: .03em;
+  }
+
+  /* Log */
+  #log-header { font-size: 10px; color: var(--dim); letter-spacing: .07em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 8px; }
+  #log-header::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  #log {
+    flex: 1; overflow-y: auto; background: var(--surface2);
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px;
+    font-family: var(--mono); font-size: 11px; line-height: 1.75;
+  }
+  #log::-webkit-scrollbar { width: 4px; }
+  #log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .log-line { display: flex; gap: 10px; }
+  .log-ts   { color: var(--dim); flex-shrink: 0; }
+  .c-ok   { color: var(--success); }
+  .c-err  { color: var(--danger); }
+  .c-info { color: var(--muted); }
+  .c-acc  { color: var(--accent); }
+  .c-warn { color: var(--warn); }
+
+  /* Converting spinner */
+  .spinning::after { content: ' ⟳'; display: inline-block; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- Titlebar -->
+<div id="titlebar">
+  <div class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6C4.9 2 4 2.9 4 4v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 14H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+    </div>
+    <span class="app-name">MarkBridge</span>
+  </div>
+  <div id="py-status">
+    <div id="py-dot"></div>
+    <span id="py-label">A iniciar…</span>
+  </div>
+  <div class="spacer"></div>
+  <div class="winctrls">
+    <button class="wbtn" onclick="window.mb.minimize()" title="Minimizar">—</button>
+    <button class="wbtn close" onclick="window.mb.close()" title="Fechar para bandeja">✕</button>
+  </div>
+</div>
+
+<!-- App body -->
+<div id="app">
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="sb-label">Perfil de IA</div>
+    <div class="radio-item"><input type="radio" name="ai" id="ai-claude" value="Claude" checked><label for="ai-claude">Claude</label></div>
+    <div class="radio-item"><input type="radio" name="ai" id="ai-nlm"    value="NotebookLM"><label for="ai-nlm">NotebookLM</label></div>
+    <div class="radio-item"><input type="radio" name="ai" id="ai-gpt"    value="ChatGPT"><label for="ai-gpt">ChatGPT</label></div>
+    <div class="radio-item"><input type="radio" name="ai" id="ai-gen"    value="Generic"><label for="ai-gen">Genérico</label></div>
+
+    <div class="sb-sep"></div>
+
+    <div class="folder-row">
+      <label>Pasta de saída</label>
+      <div class="folder-input-wrap">
+        <input id="dest-input" class="folder-input" type="text" readonly placeholder="Escolher pasta…">
+        <button class="icon-btn" onclick="pickDest()" title="Escolher pasta">📁</button>
+        <button class="icon-btn" onclick="openDest()" title="Abrir pasta">↗</button>
+      </div>
+    </div>
+
+    <div class="sb-sep"></div>
+
+    <div class="sb-label">Opções</div>
+    <div class="radio-item">
+      <input type="checkbox" id="opt-obsidian">
+      <label for="opt-obsidian">Destino: vault Obsidian</label>
+    </div>
+    <div class="radio-item">
+      <input type="checkbox" id="opt-notify" checked>
+      <label for="opt-notify">Notificar após conversão</label>
+    </div>
+
+    <div class="sb-spacer"></div>
+
+    <div id="stats">
+      <div class="stat"><strong id="cnt-ok">0</strong> OK</div>
+      <div class="stat"><strong id="cnt-err">0</strong> Erros</div>
+    </div>
+  </div>
+
+  <!-- Main panel -->
+  <div id="main">
+
+    <!-- URL bar -->
+    <div id="url-bar">
+      <input id="url-input" type="text" placeholder="Cola URL ou link YouTube e pressiona Enter ou clica Converter">
+      <button class="btn btn-primary" onclick="convertUrl()">Converter URL</button>
+      <button class="btn btn-secondary" onclick="pickFiles()">Selecionar ficheiros</button>
+    </div>
+
+    <!-- Drop zone -->
+    <div id="dropzone"
+      ondragover="dzOver(event)" ondragleave="dzLeave(event)" ondrop="dzDrop(event)"
+      onclick="pickFiles()">
+      <div class="dz-icon">⬇</div>
+      <div class="dz-title">Arrasta ficheiros aqui ou clica para selecionar</div>
+      <div class="dz-sub">Converte automaticamente para Markdown</div>
+      <div class="fmt-row">
+        <span class="fmt-pill">PDF</span><span class="fmt-pill">DOCX</span>
+        <span class="fmt-pill">PPTX</span><span class="fmt-pill">XLSX</span>
+        <span class="fmt-pill">HTML</span><span class="fmt-pill">CSV</span>
+        <span class="fmt-pill">JSON</span><span class="fmt-pill">XML</span>
+        <span class="fmt-pill">URL</span><span class="fmt-pill">YouTube</span>
+      </div>
+    </div>
+
+    <!-- Log -->
+    <div id="log-header">Log de conversão</div>
+    <div id="log"></div>
+
+  </div>
+</div>
+
+<script>
+  let cntOk = 0, cntErr = 0
+  const dest = () => document.getElementById('dest-input').value || (require ? null : null)
+  const aiProfile = () => document.querySelector('input[name=ai]:checked')?.value || 'Claude'
+
+  // ── Startup ──
+  async function init() {
+    const res = await window.mb.pingPython().catch(e => ({ ok: false, error: e.message }))
+    const dot = document.getElementById('py-dot')
+    const lbl = document.getElementById('py-label')
+    if (res.pong) {
+      dot.className = 'ok'; lbl.textContent = `MarkItDown ${res.version} · pronto`
+      log('info', `MarkBridge iniciado · MarkItDown ${res.version}`)
+    } else {
+      dot.className = 'err'
+      lbl.textContent = 'Python não encontrado'
+      log('err', 'Python ou markitdown não instalado. Corre: pip install markitdown[pdf,docx,pptx,xlsx]')
+    }
+
+    // Default dest
+    const home = process?.env?.USERPROFILE || process?.env?.HOME || ''
+    if (home && !document.getElementById('dest-input').value) {
+      document.getElementById('dest-input').value = home + '\\Documents\\MarkBridge\\output'
+    }
+
+    log('info', `Perfil ativo: ${aiProfile()}`)
+  }
+
+  // ── Log ──
+  function ts() { return new Date().toTimeString().slice(0,8) }
+  function log(level, msg) {
+    const el = document.getElementById('log')
+    const cls = {ok:'c-ok', err:'c-err', info:'c-info', acc:'c-acc', warn:'c-warn'}[level] || 'c-info'
+    el.innerHTML += `<div class="log-line"><span class="log-ts">${ts()}</span><span class="${cls}">${msg}</span></div>`
+    el.scrollTop = el.scrollHeight
+  }
+
+  // ── Conversion ──
+  async function runConvert(source) {
+    const d = document.getElementById('dest-input').value
+    if (!d) { log('warn', 'Define primeiro a pasta de saída.'); return }
+
+    const label = source.length > 60 ? '…' + source.slice(-40) : source
+    log('acc', `↳ A converter: ${label}`)
+
+    const res = await window.mb.convert({ source, dest: d, profile: aiProfile(), tags: [] })
+
+    if (res.ok) {
+      cntOk++
+      document.getElementById('cnt-ok').textContent = cntOk
+      const kb = Math.ceil(res.bytes / 1024)
+      const fname = res.out.split(/[\\/]/).pop()
+      log('ok', `✓ ${fname}  (${kb} KB) → ${d}`)
+    } else {
+      cntErr++
+      document.getElementById('cnt-err').textContent = cntErr
+      log('err', `✗ ${label}: ${res.error}`)
+    }
+  }
+
+  async function convertUrl() {
+    const url = document.getElementById('url-input').value.trim()
+    if (!url) return
+    document.getElementById('url-input').value = ''
+    await runConvert(url)
+  }
+
+  async function pickFiles() {
+    const files = await window.mb.pickFiles()
+    for (const f of files) await runConvert(f)
+  }
+
+  async function pickDest() {
+    const folder = await window.mb.pickFolder()
+    if (folder) document.getElementById('dest-input').value = folder
+  }
+
+  function openDest() {
+    const d = document.getElementById('dest-input').value
+    if (d) window.mb.openFolder(d)
+  }
+
+  // ── Drag & drop ──
+  function dzOver(e)  { e.preventDefault(); document.getElementById('dropzone').classList.add('over') }
+  function dzLeave(e) { document.getElementById('dropzone').classList.remove('over') }
+  async function dzDrop(e) {
+    e.preventDefault(); dzLeave(e)
+    const items = [...(e.dataTransfer?.files || [])]
+    for (const f of items) {
+      if (f.path) await runConvert(f.path)
+    }
+  }
+
+  // ── Enter key on URL input ──
+  document.getElementById('url-input').addEventListener('keydown', e => { if (e.key === 'Enter') convertUrl() })
+
+  // ── Init ──
+  init()
+</script>
+</body>
+</html>

@@ -33,6 +33,10 @@ graphify-out/cache/
 graphify-out/2*/
 .claude/sessions/
 
+# Electron build output
+markbridge/dist/
+markbridge/node_modules/
+
 # Python
 **/__pycache__/
 *.pyc
