@@ -32,3 +32,8 @@ graphify-out/.rebuild.lock
 graphify-out/cache/
 graphify-out/2*/
 .claude/sessions/
+
+# Python
+**/__pycache__/
+*.pyc
+*.spec
