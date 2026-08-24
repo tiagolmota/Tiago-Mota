@@ -1,0 +1,241 @@
+---
+name: obsidian
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], frontmatter, tags, embeds, callouts, daily notes, graph connectivity/Graph View styling, MCP-based live vault access, bulk-importing existing files/folders as notes, a shared cross-LLM "memory" folder, and vault-level SOUL.md/CLAUDE.md identity conventions. Use whenever the user references an Obsidian vault or notes, a folder of linked .md files, backlinks, orphan notes, graph optimization, importing documents into a vault, or wants Claude to remember things or behave consistently across sessions via Obsidian.
+---
+
+# Obsidian
+
+An Obsidian vault is just a folder of plain markdown files (`.md`), plus a hidden
+`.obsidian/` config folder Obsidian itself manages — don't touch that folder unless
+asked. Everything else here is regular text, so you can read, write, and grep it
+like any other markdown, with a few Obsidian-specific conventions layered on top.
+
+## Core syntax to recognize
+
+- **Wikilinks**: `[[Note Name]]` links to a note by its filename (without `.md`).
+  Variants: `[[Note Name|Display Text]]` (alias), `[[Note Name#Heading]]` (link to a
+  heading), `[[Note Name#^block-id]]` (link to a block).
+- **Embeds**: `![[Note Name]]` transcludes the whole note; `![[image.png]]` embeds an
+  image. Same heading/block syntax applies for partial embeds.
+- **Tags**: `#tag-name` inline, or a `tags:` list in frontmatter. Nested tags use
+  `#parent/child`.
+- **Frontmatter (properties)**: a YAML block at the very top of the file between
+  `---` lines, e.g. `status: draft`, `tags: [project, urgent]`, `aliases: [...]`.
+- **Callouts**: `> [!note]`, `> [!warning]`, etc. — blockquotes with a type marker.
+- **Dataview queries** (only if the Dataview plugin is in use — check for
+  ` ```dataview ` blocks or `.md` files referencing it): a query language embedded
+  in code fences. Treat these as data queries over frontmatter properties across the
+  vault, not as regular code.
+
+## Working with notes
+
+- Note identity is the **filename**, not the path — Obsidian resolves `[[Note Name]]`
+  by matching filename anywhere in the vault (unless the link includes a path).
+  Two notes can't share a filename even in different folders without breaking links.
+- When creating a note, check whether the vault has a templates folder (look for a
+  `templates:` setting in `.obsidian/` or a folder literally named `Templates`) and
+  follow its conventions (frontmatter fields, heading structure) rather than
+  inventing a new layout.
+- Daily notes typically live in a `Daily Notes/` or similarly named folder with
+  filenames like `2026-07-01.md`. Check existing daily notes for the date format and
+  frontmatter in use before creating a new one.
+- Keep frontmatter valid YAML — list syntax (`tags: [a, b]` or a `-` list) must stay
+  consistent with what the rest of the vault uses.
+
+## Renaming or moving a note
+
+This is the one operation where Obsidian's own file-rename tracking doesn't apply,
+because you're editing files directly rather than through the app: **renaming a note's
+file does not update the `[[old name]]` links inside other notes.** Every wikilink,
+alias link, and embed pointing at the old name will silently break unless you update
+them too.
+
+Use `scripts/rename_note.py` to do both atomically:
+
+```bash
+python3 scripts/rename_note.py <vault_path> "<Old Note Name>" "<New Note Name>"
+```
+
+It renames the file and rewrites every `[[Old Note Name]]`, `[[Old Note Name|alias]]`,
+`[[Old Note Name#Heading]]`, and `![[Old Note Name]]` reference across the vault to
+the new name, preserving aliases/headings/embed markers. Run it with no vault writes
+(`--dry-run`) first if the user wants to review the diff before applying it.
+
+## Finding backlinks and orphan notes
+
+- To find every note that links to a given note, use `scripts/find_backlinks.py`
+  rather than grepping by hand — it correctly matches all the link variants above
+  (aliases, headings, embeds) instead of just a literal substring:
+
+  ```bash
+  python3 scripts/find_backlinks.py <vault_path> "<Note Name>"
+  ```
+
+- To find notes with no incoming or outgoing links (candidates for cleanup or
+  linking into the graph), use `scripts/list_orphans.py`:
+
+  ```bash
+  python3 scripts/list_orphans.py <vault_path>
+  ```
+
+Both scripts skip the `.obsidian/` folder and any path the user names with
+`--exclude`.
+
+## Optimizing the link graph
+
+A vault's value as a knowledge graph comes from being one connected web, not a
+pile of isolated islands that happen to share a folder. `scripts/graph_report.py`
+treats every wikilink as an edge, finds the connected components with a
+union-find over the whole vault, and — for every component that isn't part of
+the largest one — looks for a note in the main component sharing a tag, so it
+can suggest a concrete link to fold that cluster back in:
+
+```bash
+python3 scripts/graph_report.py <vault_path>
+```
+
+Read the output as a to-do list, not something to apply blindly: for each
+suggestion, open both notes and add a real `[[link]]` where it makes sense in
+the prose (not just an appended reference) — a tag match tells you two notes
+are *plausibly* related, not that a link there is meaningful. Where a note
+shares no tags with anything (reported explicitly rather than silently
+skipped), that's a signal it needs a human decision about where it belongs,
+not a script guessing from thin evidence. Re-run the report after linking to
+confirm the component count actually dropped.
+
+## Graph view skin ("brain" theme)
+
+`assets/brain-graph-skin.css` restyles the Graph View (global and local) to
+look like a neural network — warm coral nodes on a dark tissue-toned
+background, with a synapse-yellow glow on hover — using Obsidian's documented
+`color-*` bridge classes (the graph itself renders via WebGL/canvas, so
+individual nodes can't be styled with arbitrary CSS; only these classes and
+the pane background are reachable).
+
+To install it, copy the file into the vault and enable it — this touches the
+`.obsidian/` folder, which is normally off-limits, but CSS snippets are the
+one thing users add there themselves, so it's expected:
+
+```bash
+mkdir -p <vault_path>/.obsidian/snippets
+cp assets/brain-graph-skin.css <vault_path>/.obsidian/snippets/
+```
+
+Then in Obsidian: `Settings → Appearance → CSS snippets` → enable
+`brain-graph-skin`. This last toggle can only happen inside the running app —
+there's no file-level equivalent, so tell the user to flip it themselves if
+you can't drive the UI.
+
+## Bulk-importing files into a vault
+
+To pull an existing folder of documents into a vault so its content becomes
+part of the linkable, searchable graph (instead of sitting outside Obsidian in
+formats it can't touch), use `scripts/ingest_folder.py`:
+
+```bash
+python3 scripts/ingest_folder.py <source_root> <vault_path> --dry-run
+```
+
+It walks `source_root`, and for each file with an extension worth importing
+(`.txt`, `.md`, `.csv`, `.json`, `.html`, `.pdf` via `pdftotext`, `.docx` via
+`python-docx` if installed — anything else is skipped, not guessed at) writes
+one note into `<vault_path>/Imported/`, mirroring the source folder structure,
+with frontmatter recording where it came from (`source:`, `imported:`) and a
+tag from its top-level source folder. By default it skips junk/system
+directories (`node_modules`, `.git`, `Windows`, `Program Files`, `AppData`,
+recycle bins, etc.) and anything over 20 MB — override with `--exclude-dir`
+and `--max-size-mb` if the defaults are wrong for a given source. Run the
+`--dry-run` first and check the file count looks sane before writing for real.
+
+On Windows, `scripts/run-ingest.ps1` wraps this for a user who doesn't have
+Python scripts set up already: it locates `python`/`python3`, downloads
+`ingest_folder.py` from this skill's GitHub source, warns if PDFs are present
+without `pdftotext` on PATH, and defaults to a dry run:
+
+```powershell
+.\run-ingest.ps1 -SourcePath "D:\Documentos" -VaultPath "C:\Users\you\MyVault"
+# once the dry-run counts look right:
+.\run-ingest.ps1 -SourcePath "D:\Documentos" -VaultPath "C:\Users\you\MyVault" -Apply
+```
+
+**Point this at a specific, deliberate folder — not an entire drive.** "Import
+everything on D:\" almost never means what it sounds like: a drive holds
+installed programs, system files, videos, archives — not a useful vault of
+knowledge. Ask the user which folder(s) actually hold the documents they mean
+(their Documents folder, a specific project folder, a downloads folder they
+want to clear out) rather than pointing this at a drive root, even though
+nothing stops you technically. This has to run locally, with filesystem access
+to the source folder — it can't be driven from a remote/headless session that
+only has the vault checked out. After importing, run `graph_report.py` (above)
+to find tag-based links between the newly imported notes and the rest of the
+vault, since imported notes start out disconnected from everything else.
+
+## Connecting live via MCP (optional)
+
+If tools named `mcp__obsidian__*` (or similarly named) are already available in
+this session, an MCP server is bridging Claude to the vault directly — prefer
+those tools over the scripts above for reads/writes, since they don't require
+re-passing the vault path on every call and reflect the live state Obsidian
+itself sees. The scripts remain the fallback for sessions with only filesystem
+access (e.g. a remote/headless session that can't reach the user's machine).
+Setting up that MCP connection has to happen on the user's own machine, next to
+their running Obsidian — see `references/mcp-setup.md` for how, and don't
+attempt it from a session that only has filesystem access to a checked-out vault.
+
+## Shared memory notes
+
+Some vaults dedicate a folder (commonly named `Memory`, `Memoria`, or
+`Second Brain`) to small, durable notes — facts, preferences, decisions — meant
+to be read back at the start of a session rather than re-derived every time.
+The point of keeping this in the vault instead of a model's own memory feature
+is that it's plain markdown: any LLM or client with access to the vault (via
+MCP or the filesystem) shares the same memory, instead of each tool keeping its
+own private, incompatible copy.
+
+- Before starting non-trivial work in a vault, check whether such a folder
+  exists and skim it for relevant context. Use `scripts/memory_digest.py
+  <vault_path>` to pull all notes in that folder (or one named with `--folder`)
+  into a single digest instead of opening each file individually.
+- When you learn something durable worth remembering — a stated preference, a
+  recurring convention, a decision — write or update a small note in that
+  folder rather than letting it live only in the current conversation. Keep
+  each note atomic (one fact/decision per note) so it stays easy to skim,
+  update, or supersede later.
+- Don't invent a new memory folder name if the vault already has one; match
+  whatever's there. If none exists and the user wants to start one, copy
+  `assets/memory-template/` into the vault as `Memory/` rather than designing
+  the structure from scratch — it comes with an index note explaining the
+  convention plus two example notes to replace or delete.
+
+## Vault-level identity and instructions (SOUL.md / CLAUDE.md)
+
+Some vaults keep two files at their root: `SOUL.md` — the attitude, tone, and
+values an assistant should bring to this specific vault — and `CLAUDE.md` —
+concrete instructions about its structure, conventions, and hard rules (in
+the same spirit as a repo's own `CLAUDE.md`). Together with `Memory/`, these
+are what a vault owner uses to make any MCP- or filesystem-connected LLM
+behave consistently, instead of re-explaining the same context every session.
+
+- If both files exist, read them **before** doing non-trivial work in the
+  vault — they take precedence over this skill's generic defaults for
+  anything they specify (e.g. a tagging convention, a folder layout, a "never
+  delete X" rule).
+- If the user wants to start using this convention and neither file exists
+  yet, copy `assets/vault-identity-template/` into the vault root rather than
+  inventing the structure — it has placeholder sections for both files that
+  the user fills in with their own preferences.
+- Don't rewrite either file without being explicitly asked to — they're a
+  statement of the user's preferences, not something to "improve" as a side
+  effect of other work.
+
+## General editing guidance
+
+- Preserve existing frontmatter fields you're not asked to change — don't reformat
+  someone's property schema as a side effect of an unrelated edit.
+- When adding links between notes, prefer `[[Note Name]]` over relative markdown
+  links (`[text](path.md)`) unless the vault's existing notes clearly favor the
+  latter — match whatever convention is already there.
+- If asked to reorganize notes into folders, remember that's a rename in Obsidian's
+  eyes only if the filename changes; moving a file to a new folder without renaming
+  it does not break wikilinks (Obsidian resolves by filename), so no link rewriting
+  is needed for a pure move.
