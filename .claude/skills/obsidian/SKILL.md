@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], frontmatter, tags, embeds, callouts, daily notes, graph connectivity/Graph View styling, MCP-based live vault access, bulk-importing existing files/folders as notes, and a shared cross-LLM "memory" folder. Use whenever the user references an Obsidian vault or notes, a folder of linked .md files, backlinks, orphan notes, graph optimization, importing documents into a vault, or wants Claude to remember things persistently via Obsidian.
+description: Work with Obsidian vaults — folders of markdown notes linked via [[wikilinks]], frontmatter, tags, embeds, callouts, daily notes, graph connectivity/Graph View styling, MCP-based live vault access, bulk-importing existing files/folders as notes, a shared cross-LLM "memory" folder, and vault-level SOUL.md/CLAUDE.md identity conventions. Use whenever the user references an Obsidian vault or notes, a folder of linked .md files, backlinks, orphan notes, graph optimization, importing documents into a vault, or wants Claude to remember things or behave consistently across sessions via Obsidian.
 ---
 
 # Obsidian
@@ -206,6 +206,27 @@ own private, incompatible copy.
   `assets/memory-template/` into the vault as `Memory/` rather than designing
   the structure from scratch — it comes with an index note explaining the
   convention plus two example notes to replace or delete.
+
+## Vault-level identity and instructions (SOUL.md / CLAUDE.md)
+
+Some vaults keep two files at their root: `SOUL.md` — the attitude, tone, and
+values an assistant should bring to this specific vault — and `CLAUDE.md` —
+concrete instructions about its structure, conventions, and hard rules (in
+the same spirit as a repo's own `CLAUDE.md`). Together with `Memory/`, these
+are what a vault owner uses to make any MCP- or filesystem-connected LLM
+behave consistently, instead of re-explaining the same context every session.
+
+- If both files exist, read them **before** doing non-trivial work in the
+  vault — they take precedence over this skill's generic defaults for
+  anything they specify (e.g. a tagging convention, a folder layout, a "never
+  delete X" rule).
+- If the user wants to start using this convention and neither file exists
+  yet, copy `assets/vault-identity-template/` into the vault root rather than
+  inventing the structure — it has placeholder sections for both files that
+  the user fills in with their own preferences.
+- Don't rewrite either file without being explicitly asked to — they're a
+  statement of the user's preferences, not something to "improve" as a side
+  effect of other work.
 
 ## General editing guidance
 
