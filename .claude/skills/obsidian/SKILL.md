@@ -195,7 +195,8 @@ own private, incompatible copy.
 - Before starting non-trivial work in a vault, check whether such a folder
   exists and skim it for relevant context. Use `scripts/memory_digest.py
   <vault_path>` to pull all notes in that folder (or one named with `--folder`)
-  into a single digest instead of opening each file individually.
+  into a single digest instead of opening each file individually — or, better,
+  use `scripts/vault_context.py` below, which includes this digest already.
 - When you learn something durable worth remembering — a stated preference, a
   recurring convention, a decision — write or update a small note in that
   folder rather than letting it live only in the current conversation. Keep
@@ -227,6 +228,22 @@ behave consistently, instead of re-explaining the same context every session.
 - Don't rewrite either file without being explicitly asked to — they're a
   statement of the user's preferences, not something to "improve" as a side
   effect of other work.
+
+### Loading all of it in one call
+
+Reading `SOUL.md`, `CLAUDE.md`, and the `Memory/` digest separately costs
+three tool round-trips before any real work starts. `scripts/vault_context.py`
+combines all three into one call and one consistently-formatted block:
+
+```bash
+python3 scripts/vault_context.py <vault_path>
+```
+
+It reports plainly when a piece is missing (e.g. `_Not present in this
+vault._`) rather than erroring, so it's safe to run unconditionally at the
+start of a session, even against a vault that hasn't adopted any of these
+conventions yet. Prefer this over the three separate reads/scripts whenever
+you're about to do non-trivial work in a vault.
 
 ## General editing guidance
 
