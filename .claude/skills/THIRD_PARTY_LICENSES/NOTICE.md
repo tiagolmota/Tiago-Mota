@@ -16,3 +16,12 @@ license.
   [slavingia/skills](https://github.com/slavingia/skills), MIT License
   (declared in the upstream repo's `plugin.json`). See
   `minimalist-entrepreneur-skills-LICENSE`.
+- `sop-creator/`, `cro-optimization/`, `viral-hook-creator/`,
+  `lead-magnet-generator/`, `strategic-planning/`, `go-to-market-plan/`,
+  `x-writer/`, `linkedin-writer/`, `outreach-specialist/`,
+  `competitor-intel/`, `brand-copywriter/`, `pricing-strategist/`,
+  `prd-generator/`, `product-hunt-launch-plan/`, `marketing-ideas/` —
+  founder/marketing/product skills from
+  [ognjengt/founder-skills](https://github.com/ognjengt/founder-skills),
+  MIT License (Copyright (c) 2026 Ognjen Gatalo). See
+  `founder-skills-LICENSE`.
