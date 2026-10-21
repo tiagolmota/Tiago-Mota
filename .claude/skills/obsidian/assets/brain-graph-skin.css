@@ -1,0 +1,78 @@
+/*
+Brain Graph Skin for Obsidian
+
+Restyles the Graph View (global and local) to look like a neural network
+inside brain tissue: warm coral "neuron" nodes on a dark red-tissue
+background, with a soft glow and a bright synapse-yellow flash on hover.
+
+Install:
+  1. Copy this file into <vault>/.obsidian/snippets/brain-graph-skin.css
+  2. Settings -> Appearance -> CSS snippets -> enable "brain-graph-skin"
+  3. Open the Graph View (or a note's local graph) to see it applied.
+
+Uses only Obsidian's documented graph CSS bridge classes (the graph itself is
+WebGL/canvas, so styling has to go through these color-* classes rather than
+arbitrary CSS on individual nodes).
+*/
+
+/* Pane background: two overlapping warm gradients suggest brain hemispheres,
+   a fine repeating gradient suggests cortical folds. */
+.workspace-leaf-content[data-type="graph"] .view-content,
+.workspace-leaf-content[data-type="localgraph"] .view-content {
+  background:
+    repeating-radial-gradient(circle at 35% 45%, rgba(255, 138, 128, 0.05) 0px, rgba(255, 138, 128, 0.05) 2px, transparent 3px, transparent 8px),
+    repeating-radial-gradient(circle at 65% 55%, rgba(255, 138, 128, 0.05) 0px, rgba(255, 138, 128, 0.05) 2px, transparent 3px, transparent 8px),
+    radial-gradient(ellipse 55% 70% at 35% 50%, hsl(355deg 55% 18%) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 70% at 65% 50%, hsl(355deg 55% 18%) 0%, transparent 70%),
+    hsl(0deg 30% 6%);
+}
+
+/* Faint bloom over the whole canvas, like bioluminescent tissue. */
+.workspace-leaf-content[data-type="graph"] canvas,
+.workspace-leaf-content[data-type="localgraph"] canvas {
+  filter: drop-shadow(0 0 6px rgba(255, 179, 123, 0.25));
+}
+
+/* Nodes: coral cell body at rest, hot synapse-yellow when hovered/active. */
+.graph-view.color-fill,
+.localgraph.color-fill {
+  color: #ff8a80;
+}
+.graph-view.color-fill-highlight,
+.localgraph.color-fill-highlight {
+  color: #fff6a5;
+}
+.graph-view.color-fill-tag,
+.localgraph.color-fill-tag {
+  color: #ffb37b;
+}
+.graph-view.color-fill-attachment,
+.localgraph.color-fill-attachment {
+  color: #b98cff;
+}
+.graph-view.color-fill-unresolved,
+.localgraph.color-fill-unresolved {
+  color: #5c3b3b;
+}
+
+/* Links: dim rose axons, bright highlight tracing an active firing path. */
+.graph-view.color-line,
+.localgraph.color-line {
+  color: rgba(255, 138, 128, 0.25);
+}
+.graph-view.color-line-highlight,
+.localgraph.color-line-highlight {
+  color: #fff6a5;
+}
+.graph-view.color-circle,
+.localgraph.color-circle {
+  color: rgba(255, 246, 165, 0.6);
+}
+.graph-view.color-text,
+.localgraph.color-text {
+  color: #ffe0d6;
+}
+.graph-view.color-arrow,
+.localgraph.color-arrow {
+  color: #ffb37b;
+}
