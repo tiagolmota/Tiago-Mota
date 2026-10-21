@@ -9,3 +9,10 @@ license.
 - `tutor-setup/`, `tutor/` — from
   [bevibing/tutor-skills](https://github.com/bevibing/tutor-skills), MIT
   License (Copyright (c) 2026 tak). See `tutor-skills-LICENSE`.
+- `find-community/`, `validate-idea/`, `mvp/`, `processize/`,
+  `first-customers/`, `pricing/`, `marketing-plan/`, `grow-sustainably/`,
+  `company-values/`, `minimalist-review/` — founder/business-building
+  skills based on *The Minimalist Entrepreneur* by Sahil Lavingia, from
+  [slavingia/skills](https://github.com/slavingia/skills), MIT License
+  (declared in the upstream repo's `plugin.json`). See
+  `minimalist-entrepreneur-skills-LICENSE`.
