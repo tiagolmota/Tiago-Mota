@@ -54,7 +54,7 @@
           </header>
 
           <section class="mb-12">
-            <p class="text-gray-300 leading-relaxed text-lg">{{ topic.description }}</p>
+            <p class="text-gray-300 leading-relaxed text-lg desc-html" [innerHTML]="safeHtml(topic.description)"></p>
           </section>
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -67,7 +67,7 @@
                   </svg>
                   <span>{{ topic.badPractice.title }}</span>
                 </h3>
-                <p class="text-sm text-gray-400 mt-2 ml-9">{{ topic.badPractice.description }}</p>
+                <p class="text-sm text-gray-400 mt-2 ml-9 desc-html" [innerHTML]="safeHtml(topic.badPractice.description)"></p>
               </div>
               <div class="px-5 pb-5">
                   <div class="bg-black/30 rounded-lg p-4 text-sm font-mono overflow-x-auto">
@@ -85,7 +85,7 @@
                   </svg>
                   <span>{{ topic.goodPractice.title }}</span>
                 </h3>
-                <p class="text-sm text-gray-400 mt-2 ml-9">{{ topic.goodPractice.description }}</p>
+                <p class="text-sm text-gray-400 mt-2 ml-9 desc-html" [innerHTML]="safeHtml(topic.goodPractice.description)"></p>
               </div>
               <div class="px-5 pb-5">
                   <div class="bg-black/30 rounded-lg p-4 text-sm font-mono overflow-x-auto">
@@ -98,7 +98,7 @@
       }
 
       <footer class="mt-24 pt-8 border-t border-zinc-800 text-center text-sm text-gray-500">
-        <p>&copy; 2024 Tiago Santos Mota. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Tiago Santos Mota. Todos os direitos reservados.</p>
         <p class="mt-2">Material de apoio para a UFCD 10791 - Desenvolvimento de Aplicações Web em JAVA.</p>
       </footer>
     </div>

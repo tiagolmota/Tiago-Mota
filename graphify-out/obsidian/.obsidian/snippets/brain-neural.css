@@ -1,0 +1,118 @@
+/* ============================================================
+   BRAIN NEURAL THEME — Obsidian Graph View
+   Fundo de espaço profundo + nós bioluminescentes + sinapses.
+   Baseado nos .graph-view.color-* reais do Obsidian (WebGL).
+   ============================================================ */
+
+/* ── Cores dos nós no canvas WebGL ─────────────────────────
+   Obsidian lê estas propriedades CSS e passa-as ao renderer.
+   ─────────────────────────────────────────────────────────── */
+.graph-view.color-fill            { color: #7b8fff; }  /* neurónio padrão — azul eléctrico */
+.graph-view.color-fill-focused    { color: #00ffcc; }  /* nó seleccionado — ciano neural */
+.graph-view.color-fill-tag        { color: #ff6ef7; }  /* tag — rosa sináptico */
+.graph-view.color-fill-attachment { color: #ffaa44; }  /* anexos — âmbar */
+.graph-view.color-fill-unresolved { color: #2a3a5e; }  /* links mortos — azul escuro */
+.graph-view.color-fill-highlight  { color: #ffffff; }  /* hover — branco puro */
+.graph-view.color-circle          { color: #4a4aaa; }  /* contorno do nó — índigo */
+.graph-view.color-line            { color: #1e2a5c; }  /* sinapses — índigo escuro */
+.graph-view.color-line-highlight  { color: #00ffcc; }  /* sinapse activa — ciano */
+.graph-view.color-text            { color: #8899cc; }  /* labels — azul acinzentado */
+.graph-view.color-arrow           { color: #4aff88; }  /* setas — verde neural */
+
+/* ── Fundo do grafo ──────────────────────────────────────── */
+.workspace-leaf-content[data-type="graph"] .view-content,
+.workspace-leaf-content[data-type="localgraph"] .view-content {
+  background: radial-gradient(ellipse at 50% 40%,
+    #0d0d2b 0%,
+    #07071a 55%,
+    #030310 100%
+  ) !important;
+}
+
+/* ── Painel de controlos ─────────────────────────────────── */
+.graph-controls {
+  background: rgba(8, 8, 30, 0.94) !important;
+  border: 1px solid rgba(78, 120, 255, 0.18) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow:
+    0 0 24px rgba(78, 120, 255, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.04) !important;
+}
+
+.graph-controls .setting-item {
+  border-bottom-color: rgba(78, 120, 255, 0.08) !important;
+}
+
+.graph-controls input[type="range"] {
+  accent-color: #6366f1 !important;
+}
+
+.graph-controls .graph-control-section-title {
+  color: rgba(148, 163, 255, 0.65) !important;
+  letter-spacing: 0.08em !important;
+  font-size: 0.7em !important;
+  text-transform: uppercase !important;
+}
+
+/* ── Barra de título da folha ────────────────────────────── */
+.mod-graph .view-header,
+.mod-local-graph .view-header {
+  background: rgba(5, 5, 20, 0.96) !important;
+  border-bottom: 1px solid rgba(78, 120, 255, 0.15) !important;
+}
+
+.mod-graph .view-header-title,
+.mod-local-graph .view-header-title {
+  color: rgba(180, 190, 255, 0.85) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
+}
+
+/* ── Ícones / botões ─────────────────────────────────────── */
+.mod-graph .clickable-icon:hover,
+.mod-local-graph .clickable-icon:hover {
+  color: #818cf8 !important;
+  background: rgba(78, 120, 255, 0.12) !important;
+  border-radius: 6px !important;
+}
+
+/* ── Campo de pesquisa ───────────────────────────────────── */
+.graph-controls .search-input-container input {
+  background: rgba(10, 10, 35, 0.8) !important;
+  border-color: rgba(78, 120, 255, 0.2) !important;
+  color: rgba(200, 210, 255, 0.9) !important;
+  border-radius: 6px !important;
+}
+
+.graph-controls .search-input-container input:focus {
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15) !important;
+}
+
+/* ── Juggl canvas ────────────────────────────────────────── */
+.juggl-view {
+  background: radial-gradient(ellipse at 50% 40%,
+    #0d0d2b 0%,
+    #07071a 60%,
+    #030310 100%
+  ) !important;
+}
+
+/* ── Tooltips ────────────────────────────────────────────── */
+.juggl-popup,
+.graph-tooltip {
+  background: rgba(8, 8, 30, 0.96) !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  border-radius: 8px !important;
+  color: rgba(200, 215, 255, 0.95) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6), 0 0 12px rgba(99,102,241,0.15) !important;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+.graph-controls::-webkit-scrollbar { width: 4px; }
+.graph-controls::-webkit-scrollbar-track { background: transparent; }
+.graph-controls::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.3);
+  border-radius: 2px;
+}

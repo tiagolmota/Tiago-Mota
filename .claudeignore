@@ -1,0 +1,9 @@
+# Large generated files - load on demand only
+graphify-out/obsidian/
+.agents/
+node_modules/
+dist/
+.git/
+*.log
+*.map
+graphify-out/graph.html

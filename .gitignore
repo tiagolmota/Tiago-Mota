@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Graphify
+
+graphify-out/graph.html
+graphify-out/.graphify_*
+graphify-out/cost.json
+graphify-out/.rebuild.lock
+graphify-out/cache/
+graphify-out/2*/
+.claude/sessions/
+
+# Electron build output
+markbridge/dist/
+markbridge/node_modules/
+
+# Python
+**/__pycache__/
+*.pyc
+*.spec

@@ -1,0 +1,1818 @@
+{
+  "nodes": [
+    {
+      "id": "n_src_app_component_appcomponent",
+      "type": "file",
+      "file": "AppComponent.md",
+      "x": -110,
+      "y": -30,
+      "width": 240,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Security Vulnerabilities",
+      "x": -499,
+      "y": -1880,
+      "width": 1000,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "n_src_app_component_appcomponent_ngafterviewinit",
+      "type": "file",
+      "file": ".ngAfterViewInit().md",
+      "x": -479,
+      "y": -1820,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_component_appcomponent_ngondestroy",
+      "type": "file",
+      "file": ".ngOnDestroy().md",
+      "x": -239,
+      "y": -1820,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_component_appcomponent_selecttopic",
+      "type": "file",
+      "file": ".selectTopic().md",
+      "x": 1,
+      "y": -1820,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_dependency_management",
+      "type": "file",
+      "file": "Active Dependency Management (OWASP Dependency-Check).md",
+      "x": 241,
+      "y": -1820,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_csrf_tokens",
+      "type": "file",
+      "file": "Anti-CSRF Tokens.md",
+      "x": -479,
+      "y": -1740,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_component_html_template",
+      "type": "file",
+      "file": "AppComponent Template (app.component.html).md",
+      "x": -239,
+      "y": -1740,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_brute_force",
+      "type": "file",
+      "file": "Brute Force Attacks and Account Lockout.md",
+      "x": 1,
+      "y": -1740,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_code_injection",
+      "type": "file",
+      "file": "Code Injection.md",
+      "x": 241,
+      "y": -1740,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_csrf",
+      "type": "file",
+      "file": "Cross-Site Request Forgery (CSRF).md",
+      "x": -479,
+      "y": -1660,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_xss",
+      "type": "file",
+      "file": "Cross-Site Scripting (XSS).md",
+      "x": -239,
+      "y": -1660,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_index_html_htmlshell",
+      "type": "file",
+      "file": "HTML Shell (index.html).md",
+      "x": 1,
+      "y": -1660,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_intersection_observer",
+      "type": "file",
+      "file": "IntersectionObserver for Scroll Animations.md",
+      "x": 241,
+      "y": -1660,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_output_encoding",
+      "type": "file",
+      "file": "Output Encoding and Input Validation (XSS Defense).md",
+      "x": -479,
+      "y": -1580,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_prepared_statements",
+      "type": "file",
+      "file": "Prepared Statements (SQL Injection Defense).md",
+      "x": -239,
+      "y": -1580,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_rate_limiting",
+      "type": "file",
+      "file": "Rate Limiting and Account Lockout (Brute Force Defense).md",
+      "x": 1,
+      "y": -1580,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_sql_injection",
+      "type": "file",
+      "file": "SQL Injection.md",
+      "x": 241,
+      "y": -1580,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_secure_cookies_https",
+      "type": "file",
+      "file": "Secure Cookies and HTTPS (Session Defense).md",
+      "x": -479,
+      "y": -1500,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_component_securitytopic",
+      "type": "file",
+      "file": "SecurityTopic.md",
+      "x": -239,
+      "y": -1500,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_session_hijacking",
+      "type": "file",
+      "file": "Session Hijacking and Authentication.md",
+      "x": 1,
+      "y": -1500,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_known_vulnerabilities",
+      "type": "file",
+      "file": "Using Components with Known Vulnerabilities.md",
+      "x": 241,
+      "y": -1500,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_src_app_component_ts",
+      "type": "file",
+      "file": "app.component.ts.md",
+      "x": -479,
+      "y": -1420,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_index_tsx",
+      "type": "file",
+      "file": "index.tsx.md",
+      "x": -239,
+      "y": -1420,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Angular Build Architecture",
+      "x": 365,
+      "y": -1586,
+      "width": 1000,
+      "height": 480,
+      "color": "5"
+    },
+    {
+      "id": "n_tiago_mota_angular_app_architect",
+      "type": "file",
+      "file": "architect.md",
+      "x": 385,
+      "y": -1526,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_architect_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 625,
+      "y": -1526,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_development_buildtarget",
+      "type": "file",
+      "file": "buildTarget_1.md",
+      "x": 865,
+      "y": -1526,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_production_buildtarget",
+      "type": "file",
+      "file": "buildTarget.md",
+      "x": 1105,
+      "y": -1526,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_build_builder",
+      "type": "file",
+      "file": "builder.md",
+      "x": 385,
+      "y": -1446,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_serve_builder",
+      "type": "file",
+      "file": "builder_1.md",
+      "x": 625,
+      "y": -1446,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_build_configurations",
+      "type": "file",
+      "file": "configurations.md",
+      "x": 865,
+      "y": -1446,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_serve_configurations",
+      "type": "file",
+      "file": "configurations_1.md",
+      "x": 1105,
+      "y": -1446,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_build_defaultconfiguration",
+      "type": "file",
+      "file": "defaultConfiguration.md",
+      "x": 385,
+      "y": -1366,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_serve_defaultconfiguration",
+      "type": "file",
+      "file": "defaultConfiguration_1.md",
+      "x": 625,
+      "y": -1366,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_configurations_development",
+      "type": "file",
+      "file": "development.md",
+      "x": 865,
+      "y": -1366,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_development_extractlicenses",
+      "type": "file",
+      "file": "extractLicenses.md",
+      "x": 1105,
+      "y": -1366,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_development_optimization",
+      "type": "file",
+      "file": "optimization.md",
+      "x": 385,
+      "y": -1286,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_serve_options",
+      "type": "file",
+      "file": "options_1.md",
+      "x": 625,
+      "y": -1286,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_production_outputhashing",
+      "type": "file",
+      "file": "outputHashing.md",
+      "x": 865,
+      "y": -1286,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_options_port",
+      "type": "file",
+      "file": "port.md",
+      "x": 1105,
+      "y": -1286,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_configurations_production",
+      "type": "file",
+      "file": "production.md",
+      "x": 385,
+      "y": -1206,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_architect_serve",
+      "type": "file",
+      "file": "serve.md",
+      "x": 625,
+      "y": -1206,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_development_sourcemap",
+      "type": "file",
+      "file": "sourceMap.md",
+      "x": 865,
+      "y": -1206,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "TypeScript Configuration",
+      "x": 955,
+      "y": -904,
+      "width": 1000,
+      "height": 480,
+      "color": "3"
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_paths",
+      "type": "file",
+      "file": "@.md",
+      "x": 975,
+      "y": -844,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_allowjs",
+      "type": "file",
+      "file": "allowJs.md",
+      "x": 1215,
+      "y": -844,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_angularcompileroptions",
+      "type": "file",
+      "file": "angularCompilerOptions.md",
+      "x": 1455,
+      "y": -844,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions",
+      "type": "file",
+      "file": "compilerOptions.md",
+      "x": 1695,
+      "y": -844,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
+      "type": "file",
+      "file": "disableTypeScriptVersionCheck.md",
+      "x": 975,
+      "y": -764,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_experimentaldecorators",
+      "type": "file",
+      "file": "experimentalDecorators.md",
+      "x": 1215,
+      "y": -764,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_files",
+      "type": "file",
+      "file": "files.md",
+      "x": 1455,
+      "y": -764,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_isolatedmodules",
+      "type": "file",
+      "file": "isolatedModules.md",
+      "x": 1695,
+      "y": -764,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_jsx",
+      "type": "file",
+      "file": "jsx.md",
+      "x": 975,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_lib",
+      "type": "file",
+      "file": "lib.md",
+      "x": 1215,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_module",
+      "type": "file",
+      "file": "module.md",
+      "x": 1455,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_moduledetection",
+      "type": "file",
+      "file": "moduleDetection.md",
+      "x": 1695,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_moduleresolution",
+      "type": "file",
+      "file": "moduleResolution.md",
+      "x": 975,
+      "y": -604,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_paths",
+      "type": "file",
+      "file": "paths.md",
+      "x": 1215,
+      "y": -604,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_skiplibcheck",
+      "type": "file",
+      "file": "skipLibCheck.md",
+      "x": 1455,
+      "y": -604,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_target",
+      "type": "file",
+      "file": "target.md",
+      "x": 1695,
+      "y": -604,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_json",
+      "type": "file",
+      "file": "tsconfig.json.md",
+      "x": 975,
+      "y": -524,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_types",
+      "type": "file",
+      "file": "types.md",
+      "x": 1215,
+      "y": -524,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
+      "type": "file",
+      "file": "useDefineForClassFields.md",
+      "x": 1455,
+      "y": -524,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Dev Dependencies",
+      "x": 1083,
+      "y": 27,
+      "width": 1000,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_tiago_mota_package_devdependencies_types_node",
+      "type": "file",
+      "file": "@typesnode.md",
+      "x": 1103,
+      "y": 87,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_scripts_build",
+      "type": "file",
+      "file": "build_1.md",
+      "x": 1343,
+      "y": 87,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 1583,
+      "y": 87,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 1823,
+      "y": 87,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 1103,
+      "y": 167,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_package_json",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 1343,
+      "y": 167,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_scripts_preview",
+      "type": "file",
+      "file": "preview.md",
+      "x": 1583,
+      "y": 167,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 1823,
+      "y": 167,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 1103,
+      "y": 247,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_type",
+      "type": "file",
+      "file": "type.md",
+      "x": 1343,
+      "y": 247,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_devdependencies_typescript",
+      "type": "file",
+      "file": "typescript.md",
+      "x": 1583,
+      "y": 247,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_version",
+      "type": "file",
+      "file": "version_1.md",
+      "x": 1823,
+      "y": 247,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_devdependencies_vite",
+      "type": "file",
+      "file": "vite.md",
+      "x": 1103,
+      "y": 327,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Angular Project Config",
+      "x": 709,
+      "y": 887,
+      "width": 1000,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "n_tiago_mota_angular_schema",
+      "type": "file",
+      "file": "$schema.md",
+      "x": 729,
+      "y": 947,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_angular_json",
+      "type": "file",
+      "file": "angular.json.md",
+      "x": 969,
+      "y": 947,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_projects_app",
+      "type": "file",
+      "file": "app.md",
+      "x": 1209,
+      "y": 947,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_newprojectroot",
+      "type": "file",
+      "file": "newProjectRoot.md",
+      "x": 1449,
+      "y": 947,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_app_prefix",
+      "type": "file",
+      "file": "prefix.md",
+      "x": 729,
+      "y": 1027,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_app_projecttype",
+      "type": "file",
+      "file": "projectType.md",
+      "x": 969,
+      "y": 1027,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_projects",
+      "type": "file",
+      "file": "projects.md",
+      "x": 1209,
+      "y": 1027,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_app_root",
+      "type": "file",
+      "file": "root.md",
+      "x": 1449,
+      "y": 1027,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_app_sourceroot",
+      "type": "file",
+      "file": "sourceRoot.md",
+      "x": 729,
+      "y": 1107,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 969,
+      "y": 1107,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Angular Runtime Dependencies",
+      "x": -49,
+      "y": 1375,
+      "width": 1000,
+      "height": 320,
+      "color": "2"
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_build",
+      "type": "file",
+      "file": "@angularbuild.md",
+      "x": -29,
+      "y": 1435,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_cli",
+      "type": "file",
+      "file": "@angularcli.md",
+      "x": 211,
+      "y": 1435,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_common",
+      "type": "file",
+      "file": "@angularcommon.md",
+      "x": 451,
+      "y": 1435,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_compiler",
+      "type": "file",
+      "file": "@angularcompiler.md",
+      "x": 691,
+      "y": 1435,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_compiler_cli",
+      "type": "file",
+      "file": "@angularcompiler-cli.md",
+      "x": -29,
+      "y": 1515,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_core",
+      "type": "file",
+      "file": "@angularcore.md",
+      "x": 211,
+      "y": 1515,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_angular_platform_browser",
+      "type": "file",
+      "file": "@angularplatform-browser.md",
+      "x": 451,
+      "y": 1515,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 691,
+      "y": 1515,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_rxjs",
+      "type": "file",
+      "file": "rxjs.md",
+      "x": -29,
+      "y": 1595,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_package_dependencies_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss.md",
+      "x": 211,
+      "y": 1595,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Build Output Options",
+      "x": -950,
+      "y": 1415,
+      "width": 1000,
+      "height": 240,
+      "color": "3"
+    },
+    {
+      "id": "n_tiago_mota_angular_outputpath_base",
+      "type": "file",
+      "file": "base.md",
+      "x": -930,
+      "y": 1475,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_options_browser",
+      "type": "file",
+      "file": "browser_1.md",
+      "x": -690,
+      "y": 1475,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_outputpath_browser",
+      "type": "file",
+      "file": "browser.md",
+      "x": -450,
+      "y": 1475,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_build_options",
+      "type": "file",
+      "file": "options.md",
+      "x": -210,
+      "y": 1475,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_options_outputpath",
+      "type": "file",
+      "file": "outputPath.md",
+      "x": -930,
+      "y": 1555,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_angular_options_tsconfig",
+      "type": "file",
+      "file": "tsConfig.md",
+      "x": -690,
+      "y": 1555,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "App Bootstrap & Config",
+      "x": -1709,
+      "y": 927,
+      "width": 1000,
+      "height": 240,
+      "color": "5"
+    },
+    {
+      "id": "n_angular_json_angularconfig",
+      "type": "file",
+      "file": "Angular Project Configuration (angular.json).md",
+      "x": -1689,
+      "y": 987,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_index_tsx_bootstrapentry",
+      "type": "file",
+      "file": "Application Bootstrap Entry (index.tsx).md",
+      "x": -1449,
+      "y": 987,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_package_json_packageconfig",
+      "type": "file",
+      "file": "Package Configuration (package.json).md",
+      "x": -1209,
+      "y": 987,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_json_tsconfig",
+      "type": "file",
+      "file": "TypeScript Configuration (tsconfig.json).md",
+      "x": -969,
+      "y": 987,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_zoneless_change_detection",
+      "type": "file",
+      "file": "Zoneless Change Detection (Angular 21).md",
+      "x": -1689,
+      "y": 1067,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "App Metadata",
+      "x": -2083,
+      "y": 147,
+      "width": 1000,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "n_tiago_mota_metadata_description",
+      "type": "file",
+      "file": "description.md",
+      "x": -2063,
+      "y": 207,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_metadata_json",
+      "type": "file",
+      "file": "metadata.json.md",
+      "x": -1823,
+      "y": 207,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_metadata_name",
+      "type": "file",
+      "file": "name_1.md",
+      "x": -1583,
+      "y": 207,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_tiago_mota_metadata_requestframepermissions",
+      "type": "file",
+      "file": "requestFramePermissions.md",
+      "x": -1343,
+      "y": 207,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Course & Security Design",
+      "x": -1835,
+      "y": -744,
+      "width": 760,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "n_metadata_json_appmetadata",
+      "type": "file",
+      "file": "App Metadata (metadata.json).md",
+      "x": -1815,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_security_by_design",
+      "type": "file",
+      "file": "Security by Design.md",
+      "x": -1575,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "n_concept_ufcd10791",
+      "type": "file",
+      "file": "UFCD 10791 - Web Application Development in Java.md",
+      "x": -1335,
+      "y": -684,
+      "width": 220,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Project Documentation",
+      "x": -1005,
+      "y": -1426,
+      "width": 280,
+      "height": 160,
+      "color": "6"
+    },
+    {
+      "id": "n_readme_md_readme",
+      "type": "file",
+      "file": "README - Run and Deploy AI Studio App.md",
+      "x": -985,
+      "y": -1366,
+      "width": 220,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_angular_json_tiago_mota_angular_schema",
+      "fromNode": "n_angular_json",
+      "toNode": "n_tiago_mota_angular_schema",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_angular_json_tiago_mota_angular_version",
+      "fromNode": "n_angular_json",
+      "toNode": "n_tiago_mota_angular_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_angular_json_tiago_mota_angular_newprojectroot",
+      "fromNode": "n_angular_json",
+      "toNode": "n_tiago_mota_angular_newprojectroot",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_angular_json_tiago_mota_angular_projects",
+      "fromNode": "n_angular_json",
+      "toNode": "n_tiago_mota_angular_projects",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_projects_tiago_mota_angular_projects_app",
+      "fromNode": "n_tiago_mota_angular_projects",
+      "toNode": "n_tiago_mota_angular_projects_app",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_projects_app_tiago_mota_angular_app_projecttype",
+      "fromNode": "n_tiago_mota_angular_projects_app",
+      "toNode": "n_tiago_mota_angular_app_projecttype",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_projects_app_tiago_mota_angular_app_root",
+      "fromNode": "n_tiago_mota_angular_projects_app",
+      "toNode": "n_tiago_mota_angular_app_root",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_projects_app_tiago_mota_angular_app_sourceroot",
+      "fromNode": "n_tiago_mota_angular_projects_app",
+      "toNode": "n_tiago_mota_angular_app_sourceroot",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_projects_app_tiago_mota_angular_app_prefix",
+      "fromNode": "n_tiago_mota_angular_projects_app",
+      "toNode": "n_tiago_mota_angular_app_prefix",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_projects_app_tiago_mota_angular_app_architect",
+      "fromNode": "n_tiago_mota_angular_projects_app",
+      "toNode": "n_tiago_mota_angular_app_architect",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_app_architect_tiago_mota_angular_architect_build",
+      "fromNode": "n_tiago_mota_angular_app_architect",
+      "toNode": "n_tiago_mota_angular_architect_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_app_architect_tiago_mota_angular_architect_serve",
+      "fromNode": "n_tiago_mota_angular_app_architect",
+      "toNode": "n_tiago_mota_angular_architect_serve",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_build_tiago_mota_angular_build_builder",
+      "fromNode": "n_tiago_mota_angular_architect_build",
+      "toNode": "n_tiago_mota_angular_build_builder",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_build_tiago_mota_angular_build_options",
+      "fromNode": "n_tiago_mota_angular_architect_build",
+      "toNode": "n_tiago_mota_angular_build_options",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_build_tiago_mota_angular_build_configurations",
+      "fromNode": "n_tiago_mota_angular_architect_build",
+      "toNode": "n_tiago_mota_angular_build_configurations",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_build_tiago_mota_angular_build_defaultconfiguration",
+      "fromNode": "n_tiago_mota_angular_architect_build",
+      "toNode": "n_tiago_mota_angular_build_defaultconfiguration",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_build_options_tiago_mota_angular_options_outputpath",
+      "fromNode": "n_tiago_mota_angular_build_options",
+      "toNode": "n_tiago_mota_angular_options_outputpath",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_build_options_tiago_mota_angular_options_browser",
+      "fromNode": "n_tiago_mota_angular_build_options",
+      "toNode": "n_tiago_mota_angular_options_browser",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_build_options_tiago_mota_angular_options_tsconfig",
+      "fromNode": "n_tiago_mota_angular_build_options",
+      "toNode": "n_tiago_mota_angular_options_tsconfig",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_options_outputpath_tiago_mota_angular_outputpath_base",
+      "fromNode": "n_tiago_mota_angular_options_outputpath",
+      "toNode": "n_tiago_mota_angular_outputpath_base",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_options_outputpath_tiago_mota_angular_outputpath_browser",
+      "fromNode": "n_tiago_mota_angular_options_outputpath",
+      "toNode": "n_tiago_mota_angular_outputpath_browser",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_build_configurations_tiago_mota_angular_configurations_production",
+      "fromNode": "n_tiago_mota_angular_build_configurations",
+      "toNode": "n_tiago_mota_angular_configurations_production",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_build_configurations_tiago_mota_angular_configurations_development",
+      "fromNode": "n_tiago_mota_angular_build_configurations",
+      "toNode": "n_tiago_mota_angular_configurations_development",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_production_tiago_mota_angular_production_outputhashing",
+      "fromNode": "n_tiago_mota_angular_configurations_production",
+      "toNode": "n_tiago_mota_angular_production_outputhashing",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_production_tiago_mota_angular_serve_configurations",
+      "fromNode": "n_tiago_mota_angular_configurations_production",
+      "toNode": "n_tiago_mota_angular_serve_configurations",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_production_tiago_mota_angular_production_buildtarget",
+      "fromNode": "n_tiago_mota_angular_configurations_production",
+      "toNode": "n_tiago_mota_angular_production_buildtarget",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_development_tiago_mota_angular_development_optimization",
+      "fromNode": "n_tiago_mota_angular_configurations_development",
+      "toNode": "n_tiago_mota_angular_development_optimization",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_development_tiago_mota_angular_development_extractlicenses",
+      "fromNode": "n_tiago_mota_angular_configurations_development",
+      "toNode": "n_tiago_mota_angular_development_extractlicenses",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_development_tiago_mota_angular_development_sourcemap",
+      "fromNode": "n_tiago_mota_angular_configurations_development",
+      "toNode": "n_tiago_mota_angular_development_sourcemap",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_development_tiago_mota_angular_serve_configurations",
+      "fromNode": "n_tiago_mota_angular_configurations_development",
+      "toNode": "n_tiago_mota_angular_serve_configurations",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_configurations_development_tiago_mota_angular_development_buildtarget",
+      "fromNode": "n_tiago_mota_angular_configurations_development",
+      "toNode": "n_tiago_mota_angular_development_buildtarget",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_serve_tiago_mota_angular_serve_builder",
+      "fromNode": "n_tiago_mota_angular_architect_serve",
+      "toNode": "n_tiago_mota_angular_serve_builder",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_serve_tiago_mota_angular_serve_options",
+      "fromNode": "n_tiago_mota_angular_architect_serve",
+      "toNode": "n_tiago_mota_angular_serve_options",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_serve_tiago_mota_angular_serve_configurations",
+      "fromNode": "n_tiago_mota_angular_architect_serve",
+      "toNode": "n_tiago_mota_angular_serve_configurations",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_architect_serve_tiago_mota_angular_serve_defaultconfiguration",
+      "fromNode": "n_tiago_mota_angular_architect_serve",
+      "toNode": "n_tiago_mota_angular_serve_defaultconfiguration",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_angular_serve_options_tiago_mota_angular_options_port",
+      "fromNode": "n_tiago_mota_angular_serve_options",
+      "toNode": "n_tiago_mota_angular_options_port",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_name",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_private",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_private",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_version",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_type",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_type",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_scripts",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_dependencies",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_dependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_json_tiago_mota_package_devdependencies",
+      "fromNode": "n_package_json",
+      "toNode": "n_tiago_mota_package_devdependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_scripts_tiago_mota_package_scripts_dev",
+      "fromNode": "n_tiago_mota_package_scripts",
+      "toNode": "n_tiago_mota_package_scripts_dev",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_scripts_tiago_mota_package_scripts_build",
+      "fromNode": "n_tiago_mota_package_scripts",
+      "toNode": "n_tiago_mota_package_scripts_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_scripts_tiago_mota_package_scripts_preview",
+      "fromNode": "n_tiago_mota_package_scripts",
+      "toNode": "n_tiago_mota_package_scripts_preview",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_rxjs",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_rxjs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_compiler",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_compiler",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_platform_browser",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_platform_browser",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_core",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_core",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_common",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_common",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_build",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_cli",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_cli",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_angular_compiler_cli",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_angular_compiler_cli",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_dependencies_tiago_mota_package_dependencies_tailwindcss",
+      "fromNode": "n_tiago_mota_package_dependencies",
+      "toNode": "n_tiago_mota_package_dependencies_tailwindcss",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_devdependencies_tiago_mota_package_devdependencies_types_node",
+      "fromNode": "n_tiago_mota_package_devdependencies",
+      "toNode": "n_tiago_mota_package_devdependencies_types_node",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_devdependencies_tiago_mota_package_devdependencies_typescript",
+      "fromNode": "n_tiago_mota_package_devdependencies",
+      "toNode": "n_tiago_mota_package_devdependencies_typescript",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_package_devdependencies_tiago_mota_package_devdependencies_vite",
+      "fromNode": "n_tiago_mota_package_devdependencies",
+      "toNode": "n_tiago_mota_package_devdependencies_vite",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_metadata_json_tiago_mota_metadata_name",
+      "fromNode": "n_metadata_json",
+      "toNode": "n_tiago_mota_metadata_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_metadata_json_tiago_mota_metadata_description",
+      "fromNode": "n_metadata_json",
+      "toNode": "n_tiago_mota_metadata_description",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_metadata_json_tiago_mota_metadata_requestframepermissions",
+      "fromNode": "n_metadata_json",
+      "toNode": "n_tiago_mota_metadata_requestframepermissions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_json_tiago_mota_tsconfig_compileroptions",
+      "fromNode": "n_tsconfig_json",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_json_tiago_mota_tsconfig_files",
+      "fromNode": "n_tsconfig_json",
+      "toNode": "n_tiago_mota_tsconfig_files",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_json_tiago_mota_tsconfig_angularcompileroptions",
+      "fromNode": "n_tsconfig_json",
+      "toNode": "n_tiago_mota_tsconfig_angularcompileroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_target",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_target",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_experimentaldecorators",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_experimentaldecorators",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_usedefineforclassfields",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_module",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_module",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_lib",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_lib",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_skiplibcheck",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_skiplibcheck",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_types",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_types",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_moduleresolution",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_moduleresolution",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_isolatedmodules",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_isolatedmodules",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_moduledetection",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_moduledetection",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_allowjs",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_allowjs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_jsx",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_jsx",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_tiago_mota_tsconfig_compileroptions_paths",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions",
+      "toNode": "n_tiago_mota_tsconfig_compileroptions_paths",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_compileroptions_paths_tiago_mota_tsconfig_paths",
+      "fromNode": "n_tiago_mota_tsconfig_compileroptions_paths",
+      "toNode": "n_tiago_mota_tsconfig_paths",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tiago_mota_tsconfig_angularcompileroptions_tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
+      "fromNode": "n_tiago_mota_tsconfig_angularcompileroptions",
+      "toNode": "n_tiago_mota_tsconfig_angularcompileroptions_disabletypescriptversioncheck",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tsx_src_app_component_ts",
+      "fromNode": "n_index_tsx",
+      "toNode": "n_src_app_component_ts",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tsx_src_app_component_appcomponent",
+      "fromNode": "n_index_tsx",
+      "toNode": "n_src_app_component_appcomponent",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_ts_src_app_component_securitytopic",
+      "fromNode": "n_src_app_component_ts",
+      "toNode": "n_src_app_component_securitytopic",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_ts_src_app_component_appcomponent",
+      "fromNode": "n_src_app_component_ts",
+      "toNode": "n_src_app_component_appcomponent",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_securitytopic_src_app_component_appcomponent",
+      "fromNode": "n_src_app_component_securitytopic",
+      "toNode": "n_src_app_component_appcomponent",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_src_app_component_appcomponent_ngafterviewinit",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_src_app_component_appcomponent_ngafterviewinit",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_src_app_component_appcomponent_ngondestroy",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_src_app_component_appcomponent_ngondestroy",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_src_app_component_appcomponent_selecttopic",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_src_app_component_appcomponent_selecttopic",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_index_tsx_bootstrapentry",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_index_tsx_bootstrapentry",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_src_app_component_html_template",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_src_app_component_html_template",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_sql_injection",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_sql_injection",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_xss",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_xss",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_csrf",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_csrf",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_code_injection",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_code_injection",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_session_hijacking",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_session_hijacking",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_known_vulnerabilities",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_known_vulnerabilities",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_brute_force",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_brute_force",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_concept_intersection_observer",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_concept_intersection_observer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_component_appcomponent_index_html_htmlshell",
+      "fromNode": "n_src_app_component_appcomponent",
+      "toNode": "n_index_html_htmlshell",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_angular_json_angularconfig_index_tsx_bootstrapentry",
+      "fromNode": "n_angular_json_angularconfig",
+      "toNode": "n_index_tsx_bootstrapentry",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_angular_json_angularconfig_tsconfig_json_tsconfig",
+      "fromNode": "n_angular_json_angularconfig",
+      "toNode": "n_tsconfig_json_tsconfig",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_metadata_json_appmetadata_concept_ufcd10791",
+      "fromNode": "n_metadata_json_appmetadata",
+      "toNode": "n_concept_ufcd10791",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_tsconfig_json_tsconfig_index_tsx_bootstrapentry",
+      "fromNode": "n_tsconfig_json_tsconfig",
+      "toNode": "n_index_tsx_bootstrapentry",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_index_tsx_bootstrapentry_concept_zoneless_change_detection",
+      "fromNode": "n_index_tsx_bootstrapentry",
+      "toNode": "n_concept_zoneless_change_detection",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_sql_injection_concept_prepared_statements",
+      "fromNode": "n_concept_sql_injection",
+      "toNode": "n_concept_prepared_statements",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_xss_concept_output_encoding",
+      "fromNode": "n_concept_xss",
+      "toNode": "n_concept_output_encoding",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_xss_concept_session_hijacking",
+      "fromNode": "n_concept_xss",
+      "toNode": "n_concept_session_hijacking",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_csrf_concept_csrf_tokens",
+      "fromNode": "n_concept_csrf",
+      "toNode": "n_concept_csrf_tokens",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_session_hijacking_concept_secure_cookies_https",
+      "fromNode": "n_concept_session_hijacking",
+      "toNode": "n_concept_secure_cookies_https",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_known_vulnerabilities_concept_dependency_management",
+      "fromNode": "n_concept_known_vulnerabilities",
+      "toNode": "n_concept_dependency_management",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_concept_brute_force_concept_rate_limiting",
+      "fromNode": "n_concept_brute_force",
+      "toNode": "n_concept_rate_limiting",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_angular_json_angularconfig_package_json_packageconfig",
+      "fromNode": "n_angular_json_angularconfig",
+      "toNode": "n_package_json_packageconfig",
+      "label": "shares_data_with [INFERRED]"
+    },
+    {
+      "id": "e_concept_security_by_design_concept_ufcd10791",
+      "fromNode": "n_concept_security_by_design",
+      "toNode": "n_concept_ufcd10791",
+      "label": "rationale_for [INFERRED]"
+    },
+    {
+      "id": "e_concept_sql_injection_concept_code_injection",
+      "fromNode": "n_concept_sql_injection",
+      "toNode": "n_concept_code_injection",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_concept_xss_concept_csrf",
+      "fromNode": "n_concept_xss",
+      "toNode": "n_concept_csrf",
+      "label": "conceptually_related_to [INFERRED]"
+    }
+  ]
+}

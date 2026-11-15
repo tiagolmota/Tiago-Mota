@@ -1,0 +1,6 @@
+# Runtime dependencies for scripts/
+# Install with: pip install -r requirements.txt
+
+# Document-to-Markdown converter (PDF, Word, PowerPoint, Excel, HTML, CSV, URLs, YouTube)
+# https://github.com/microsoft/markitdown
+markitdown[pdf,docx,pptx,xlsx,youtube-transcription]>=0.1.0
