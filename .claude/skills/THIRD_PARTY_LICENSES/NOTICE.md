@@ -1,0 +1,27 @@
+# Third-party skills
+
+Skills vendored from other repositories, kept as-is with their original
+license.
+
+- `excalidraw-diagram/`, `mermaid-visualizer/`, `obsidian-canvas-creator/` —
+  from [axtonliu/axton-obsidian-visual-skills](https://github.com/axtonliu/axton-obsidian-visual-skills),
+  MIT License (Copyright (c) 2025 Axton Liu). See `axton-obsidian-visual-skills-LICENSE`.
+- `tutor-setup/`, `tutor/` — from
+  [bevibing/tutor-skills](https://github.com/bevibing/tutor-skills), MIT
+  License (Copyright (c) 2026 tak). See `tutor-skills-LICENSE`.
+- `find-community/`, `validate-idea/`, `mvp/`, `processize/`,
+  `first-customers/`, `pricing/`, `marketing-plan/`, `grow-sustainably/`,
+  `company-values/`, `minimalist-review/` — founder/business-building
+  skills based on *The Minimalist Entrepreneur* by Sahil Lavingia, from
+  [slavingia/skills](https://github.com/slavingia/skills), MIT License
+  (declared in the upstream repo's `plugin.json`). See
+  `minimalist-entrepreneur-skills-LICENSE`.
+- `sop-creator/`, `cro-optimization/`, `viral-hook-creator/`,
+  `lead-magnet-generator/`, `strategic-planning/`, `go-to-market-plan/`,
+  `x-writer/`, `linkedin-writer/`, `outreach-specialist/`,
+  `competitor-intel/`, `brand-copywriter/`, `pricing-strategist/`,
+  `prd-generator/`, `product-hunt-launch-plan/`, `marketing-ideas/` —
+  founder/marketing/product skills from
+  [ognjengt/founder-skills](https://github.com/ognjengt/founder-skills),
+  MIT License (Copyright (c) 2026 Ognjen Gatalo). See
+  `founder-skills-LICENSE`.
